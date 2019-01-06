@@ -1,7 +1,14 @@
+//ABSTRACTS
 @import "abstracts/functions.scss";
 @import "abstracts/mixins.scss";
 @import "abstracts/variables.scss";
 
+//BASE
+@import "base/base.scss";
+@import "base/typography.scss";
 
-@import "base/_base.scss";
-@import "base/_typography.scss";
+//COMPONENTS
+@import "components/button.scss";
+
+//LAYOUT
+@import "layout/header.scss";
