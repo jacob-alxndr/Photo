@@ -1,3 +1,4 @@
+//Media queries
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: 37.5em) {@content};      //600px
@@ -14,4 +15,12 @@
     @if $breakpoint == desktop {
         @media (min-width: 112.5em) {@content};     //1800px 
     }
+}
+
+
+//Mixins
+@mixin fullImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
