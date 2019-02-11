@@ -9,8 +9,25 @@
 html {
   //This is 1rem
   font-size: 62.5%;
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 body {
   box-sizing: border-box;
+}
+
+main {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
 }

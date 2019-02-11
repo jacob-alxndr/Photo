@@ -1,18 +1,15 @@
+//Require all the needed components
 var gulp = require('gulp')
 var sass = require('gulp-sass')
 var cleanCss = require('gulp-clean-css')
 var sourcemaps = require('gulp-sourcemaps')
-
 var browserSync = require('browser-sync')
-
-var imagemin = require('gulp-imagemin')
-
-
+var webpack = require('webpack-stream')
 sass.compiler = require('node-sass')
 
 
+//Run Sass through cleanCss and output to dist folder
 gulp.task('sass', function(){
-  // place code for your default task here
   return gulp.src('src/sass/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -28,27 +25,43 @@ gulp.task('sass', function(){
 
 
 
+//Output html, fonts and images to dist folder
 gulp.task('html', function() {
     return gulp.src('src/*.html')
         .pipe(gulp.dest('dist'))
 })
-
 
 gulp.task('fonts', function() {
     return gulp.src('src/fonts/*')
         .pipe(gulp.dest('dist/fonts'))
 })
 
-
 gulp.task('images', function() {
     return gulp.src('src/img/*')
-        .pipe(imagemin())
+        //.pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
 })
 
 
-gulp.task('watch', function() {
 
+//Run JS through webpack and output to dist + browserSync
+gulp.task('js', function() {
+    gulp.src('src/js/*')
+        .pipe(
+            webpack({
+                mode: 'production',
+                devtool: 'source-map',
+                output: {
+                    filename: 'main.js'
+                }
+        }))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.stream())
+}) 
+
+
+//Watch task for all files and browserSync
+gulp.task('watch', function() {
 
     browserSync.init({
         server: {
@@ -56,12 +69,12 @@ gulp.task('watch', function() {
         }
     })
 
-
     gulp.watch('src/*.html', ['html']).on('change', browserSync.reload)
     gulp.watch('src/sass/style.scss', ['sass'])
     gulp.watch('src/fonts/*', ['fonts'])
     gulp.watch('src/img/*', ['images'])
+    gulp.watch('src/js/*',['js'])
 })
 
-
-gulp.task('default', ['html', 'sass', 'fonts', 'images', 'watch'])
+//Default Gulp task
+gulp.task('default', ['html', 'sass', 'fonts', 'js', 'images', 'watch'])
