@@ -1,0 +1,19 @@
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	color: $color-secondary;
+	background-color: $color-primary;
+	padding: 1.2rem 2.5rem;
+	border: none;
+	letter-spacing: .091em;
+	line-height: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	outline: none;
+	transition: all .3s ease;
+
+		&:hover{
+			background-color: lighten($color-primary, 30%);
+		}
+}
