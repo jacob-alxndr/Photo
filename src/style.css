@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+main {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+button * {
+  pointer-events: none;
+}
+
+img,
+embed,
+iframe,
+object,
+video {
+  display: block;
+  max-width: 100%;
+  border-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 3.052rem;
+}
+
+.heading-2 {
+  font-size: 2.441rem;
+}
+
+.heading-3 {
+  font-size: 1.953rem;
+}
+
+.heading-4 {
+  font-size: 1.563rem;
+}
+
+.heading-5 {
+  font-size: 1.25rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  letter-spacing: 0.091em;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #4d4d4d;
+}

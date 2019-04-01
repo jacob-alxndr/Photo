@@ -5,6 +5,7 @@ var cleanCss = require("gulp-clean-css");
 var sourcemaps = require("gulp-sourcemaps");
 var browserSync = require("browser-sync");
 var webpack = require("webpack-stream");
+var autoprefixer = require("gulp-autoprefixer");
 sass.compiler = require("node-sass");
 
 //Run Sass through cleanCss and output to dist folder
@@ -13,6 +14,8 @@ gulp.task("sass", function() {
     .src("src/sass/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(gulp.dest("src"))
     .pipe(
       cleanCss({
         compatibility: "ie8"
@@ -33,12 +36,7 @@ gulp.task("fonts", function() {
 });
 
 gulp.task("images", function() {
-  return (
-    gulp
-      .src("src/img/*")
-      //.pipe(imagemin())
-      .pipe(gulp.dest("dist/img"))
-  );
+  return gulp.src("src/img/*").pipe(gulp.dest("dist/img"));
 });
 
 //Run JS through webpack and output to dist + browserSync
