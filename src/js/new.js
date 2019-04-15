@@ -2,5 +2,6 @@
 //Import libraries here before the export
 
 export default function() {
-   
+    const hello = document.querySelector('h1')
+    let numberTwo = '12'
 }
