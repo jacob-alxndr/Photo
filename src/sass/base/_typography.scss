@@ -10,11 +10,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-//PARAGRAPH
-.paragraph {
-    font-size: 16px;
-}
-
 //HEADINGS
 %heading {
     font-family: 'Work Sans', sans-serif;
@@ -23,25 +18,81 @@ body {
 
 .heading-1 {
     @extend %heading;
-    font-size: 3.052rem;
+    font-size: 7.2rem;
+    line-height: 1.2;
+
+        @include respond(tab-land) {
+            font-size: calc(7.2rem - 8px);
+        }
+
+        @include respond(tab-port) {
+            font-size: calc(7.2rem - 16px);
+        }
 }
 
 .heading-2 {
     @extend %heading;
-    font-size: 2.441rem;
+    font-size: 5.6rem;
+    line-height: 1.2;
+
+        @include respond(tab-land) {
+            font-size: calc(5.6rem - 8px);
+        }
+
+        @include respond(tab-port) {
+            font-size: calc(5.6rem - 16px);
+        }
 }
 
 .heading-3 {
     @extend %heading;
-    font-size: 1.953rem;
+    font-size: 4.3rem;
+    line-height: 1.3;
+
+        @include respond(tab-land) {
+            font-size: calc(4.3rem - 8px);
+        }
+
+        @include respond(tab-port) {
+            font-size: calc(4.3rem - 16px);
+        }
 }
 
 .heading-4 {
     @extend %heading;
-    font-size: 1.563rem;
+    font-size: 3.3rem;
+    line-height: 1.3;
+
+        @include respond(tab-land) {
+            font-size: calc(3.3rem - 8px);
+        }
+
+        @include respond(tab-port) {
+            font-size: calc(3.3rem - 16px);
+        }
 }
 
 .heading-5 {
     @extend %heading;
-    font-size: 1.25rem;
+    font-size: 2.4rem;
+    line-height: 1.4;
+
+        @include respond(tab-land) {
+            font-size: calc(2.4rem - 8px);
+        }
+}
+
+.heading-6 {
+    @extend %heading;
+    font-size: 1.6rem;
+    line-height: 1.4;
+
+    @include respond(tab-land) {
+        font-size: 1.4rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 1.2rem;
+    }
+
 }
