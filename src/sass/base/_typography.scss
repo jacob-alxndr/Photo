@@ -6,7 +6,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -15,39 +15,33 @@ body {
     font-size: 16px;
 }
 
-
 //HEADINGS
 %heading {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
 
-
 .heading-1 {
-	@extend %heading;
-	font-size: 3.052rem;
+    @extend %heading;
+    font-size: 3.052rem;
 }
 
 .heading-2 {
-	@extend %heading;
-	font-size: 2.441rem;
+    @extend %heading;
+    font-size: 2.441rem;
 }
-
 
 .heading-3 {
-	@extend %heading;
-	font-size: 1.953rem;
+    @extend %heading;
+    font-size: 1.953rem;
 }
-
 
 .heading-4 {
-	@extend %heading;
-	font-size: 1.563rem;
+    @extend %heading;
+    font-size: 1.563rem;
 }
-
 
 .heading-5 {
-	@extend %heading;
-	font-size: 1.25rem;
+    @extend %heading;
+    font-size: 1.25rem;
 }
-

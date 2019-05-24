@@ -1,32 +1,32 @@
 html {
-	font-size: 62.5%;
-	box-sizing: border-box;
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 main {
-  display: block;
+    display: block;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 button * {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 img,
@@ -34,16 +34,16 @@ embed,
 iframe,
 object,
 video {
-	display: block;
-  max-width: 100%;
-  border-style: none;
+    display: block;
+    max-width: 100%;
+    border-style: none;
 }
 
 input,
 textarea,
 select,
 button {
-  color: inherit; 
-  font: inherit; 
-  letter-spacing: inherit; 
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
 }
