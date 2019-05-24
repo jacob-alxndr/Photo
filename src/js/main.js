@@ -1,5 +1,7 @@
-//Importing JS files
-import newJS from "./new";
+//1.Importing and running NPM or third party libraries
 
-//Running imported files
-newJS();
+//2.Importing our own JS files
+import newJS from "./modules/new";
+
+//3. Running our imported files
+//newJS();
