@@ -67,7 +67,7 @@ gulp.task('watch', function() {
     gulp.watch('src/sass/**/*.scss', ['sass'])
     gulp.watch('src/fonts/*', ['fonts'])
     gulp.watch('src/img/*', ['images'])
-    gulp.watch('src/js/*', ['js'])
+    gulp.watch('src/js/**/*.js', ['js'])
 })
 
 //Default Gulp task
