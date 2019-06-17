@@ -114,8 +114,6 @@ body {
 .btn {
   cursor: pointer;
   display: inline-block;
-  color: #fff;
-  background-color: #000;
   padding: 1.2rem 2.5rem;
   border: none;
   letter-spacing: .091em;
@@ -125,8 +123,6 @@ body {
   white-space: nowrap;
   outline: none;
   transition: all .3s ease; }
-  .btn:hover {
-    background-color: #4d4d4d; }
 
 body {
   display: grid;
