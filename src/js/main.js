@@ -1,7 +1,5 @@
-//1.Importing and running NPM or third party libraries
+//1.Importing our own JS files
+import { lightSwitch } from "./modules/light-switch";
 
-//2.Importing our own JS files
-import newJS from "./modules/new";
 
-//3. Running our imported files
-//newJS();
+
