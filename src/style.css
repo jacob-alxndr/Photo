@@ -128,5 +128,11 @@ body {
   display: grid;
   grid-template-columns: [page-start] 1fr [content] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end]; }
 
+.white-background {
+  background-color: #f1f1f1; }
+
+.dark-text {
+  color: #0d0d0d; }
+
 body {
   background-color: #f1f1f1; }
