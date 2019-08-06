@@ -5,5 +5,43 @@
 
 .dark-text {
    
-    color: #fff;
+    color: white;
 }
+
+.light-switch{
+    display: block;
+    border: 1px solid black;
+    border-radius: .2rem;
+    width: 5.5rem;
+    height: 6rem;
+    background-color: white;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+}
+
+.light-switch.active{
+    background-color: #000;
+    border: 1px solid white;
+}
+
+.light-switch-toggle{
+    display: block;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #000;
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+
+.light-switch-toggle.active{
+    top:70%;
+}
+
