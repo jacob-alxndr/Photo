@@ -9,6 +9,11 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color .5s;
+}
+
+p{
+    transition: color .5s;
 }
 
 //HEADINGS

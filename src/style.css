@@ -48,7 +48,11 @@ body {
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color .5s; }
+
+p {
+  transition: color .5s; }
 
 .heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
   font-family: 'Work Sans', sans-serif;
@@ -129,10 +133,10 @@ body {
   grid-template-columns: [page-start] 1fr [content] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end]; }
 
 .white-background {
-  background-color: #f1f1f1; }
+  background-color: #1a1a1a; }
 
 .dark-text {
-  color: #0d0d0d; }
+  color: #fff; }
 
 body {
   background-color: #f1f1f1; }
