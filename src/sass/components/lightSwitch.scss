@@ -10,7 +10,7 @@
 
 .light-switch{
     display: block;
-    border: 1px solid black;
+    border: 1px solid #1a1a1a;
     border-radius: .2rem;
     width: 5.5rem;
     height: 6rem;
@@ -23,13 +23,13 @@
 }
 
 .light-switch.active{
-    background-color: black;
+    background-color: #1a1a1a;
     border: 1px solid white;
 }
 
 .light-switch-toggle{
     display: block;
-    border: 1px solid black;
+    border: 1px solid #1a1a1a;
     border-radius: 50%;
     width: 2.2rem;
     height: 2.2rem;
@@ -43,7 +43,7 @@
 
 .light-switch-toggle.active{
     top:70%;
-    background-color: black;
+    background-color: #1a1a1a;
     border: 1px solid white;
 }
 
