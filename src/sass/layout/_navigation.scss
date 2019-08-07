@@ -1,3 +1,22 @@
 .navigation{
-    color: $white;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: [page-start] 1fr [content] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end];
+    grid-column: col-start 1/col-end 12;
+    white-space: nowrap;
+    align-items: flex-end;
+    
+    &__nav{
+        grid-column: col-start 9/col-end 12;
+    
+    }
+
+    &__list{
+        display: flex;
+    }
+
+    &__item:not(:last-child){
+        margin-right:3.5rem;
+
+    }
 }
