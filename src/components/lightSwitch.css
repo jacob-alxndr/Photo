@@ -10,7 +10,7 @@
   border-radius: .2rem;
   width: 5.5rem;
   height: 6rem;
-  background-color: white;
+  background-color: #f1f1f1;
   position: absolute;
   top: 6%;
   left: 50%;
@@ -20,7 +20,7 @@
 
 .light-switch.active {
   background-color: #1a1a1a;
-  border: 1px solid white; }
+  border: 1px solid  #f1f1f1; }
 
 .light-switch-toggle {
   display: block;
@@ -28,7 +28,7 @@
   border-radius: 50%;
   width: 2.2rem;
   height: 2.2rem;
-  background-color: white;
+  background-color: #f1f1f1;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -39,4 +39,4 @@
 .light-switch-toggle.active {
   top: 70%;
   background-color: #1a1a1a;
-  border: 1px solid white; }
+  border: 1px solid  #f1f1f1; }
