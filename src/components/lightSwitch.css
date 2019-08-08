@@ -23,6 +23,7 @@
   border: 1px solid  #f1f1f1; }
 
 .light-switch-toggle {
+  cursor: pointer;
   display: block;
   border: 1px solid #1a1a1a;
   border-radius: 50%;

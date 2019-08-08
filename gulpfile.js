@@ -32,11 +32,11 @@ gulp.task('html', function() {
 })
 
 gulp.task('fonts', function() {
-    return gulp.src('src/fonts/*').pipe(gulp.dest('dist/fonts'))
+    return gulp.src('src/fonts/**/*').pipe(gulp.dest('dist/fonts'))
 })
 
 gulp.task('images', function() {
-    return gulp.src('src/img/*').pipe(gulp.dest('dist/img'))
+    return gulp.src('src/img/**/*').pipe(gulp.dest('dist/img'))
 })
 
 //Run JS through webpack and output to dist + browserSync

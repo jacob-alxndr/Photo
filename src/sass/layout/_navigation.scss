@@ -5,9 +5,10 @@
     grid-column: col-start 1/col-end 12;
     white-space: nowrap;
     align-items: flex-end;
+
     
     &__nav{
-        grid-column: col-start 9/col-end 12;
+        grid-column: col-start 10/col-end 12;
     
     }
 
@@ -16,7 +17,7 @@
     }
 
     &__item:not(:last-child){
-        margin-right:3.5rem;
+        margin-right:3.8rem;
 
     }
 }

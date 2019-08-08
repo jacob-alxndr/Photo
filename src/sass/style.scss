@@ -10,11 +10,14 @@
 //COMPONENTS
 @import "components/button";
 @import "components/bodygrid";
+@import "components/image-set";
 @import "components/lightSwitch.scss";
+
 
 //LAYOUT
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/gallery";
 
 //PAGES
 @import "pages/home";
