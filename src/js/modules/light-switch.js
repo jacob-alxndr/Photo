@@ -18,6 +18,9 @@ const lightSwitch = () => {
     changeTextColor(elements.text);
     elements.lightSwitch.classList.toggle('active')
     elements.toggleSwitch.classList.toggle('active')
+    elements.imgBorders.forEach(border =>{
+        border.classList.toggle('active')
+    })
 }
 
 

@@ -17,5 +17,12 @@
         position: absolute;
         top: 20px;
         left: 20px;
+        transition: border .5s;
+
+       
+    }
+
+    .border.active{
+        border: 3px solid $white;
     }
 }
