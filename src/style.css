@@ -158,27 +158,7 @@ body {
     opacity: 0;
     transition: opacity .5s; }
   .image-set img {
-<<<<<<< HEAD
-    width: 100%;
-    border-radius: 3px;
-    z-index: 2;
-    position: relative; }
-=======
-    border-radius: 3px;
-    z-index: 2;
-    position: relative; }
-  .image-set .border {
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
-    border: 3px solid #1a1a1a;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    transition: border .5s; }
-    .image-set .border.active {
-      border: 3px solid #e7e7e7; }
->>>>>>> 24daff57ea1f1696d60e86ddddc4346d16ae6146
+    width: 100%; }
 
 .white-background {
   background-color: #1a1a1a; }
