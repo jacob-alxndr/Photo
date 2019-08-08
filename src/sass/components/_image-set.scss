@@ -2,8 +2,8 @@
     // border-radius: 50px;
     // border: 2PX solid rebeccapurple;
     position: relative;
+
     img{
-        height: 100%;
         border-radius: 3px;
         z-index: 2;
         position: relative;
@@ -19,10 +19,8 @@
         left: 20px;
         transition: border .5s;
 
-       
-    }
-
-    .border.active{
-        border: 3px solid $white;
+        &.active{
+            border: 3px solid $white;
+        }
     }
 }
