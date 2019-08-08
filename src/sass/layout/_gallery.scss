@@ -1,9 +1,10 @@
 .gallery{
     // background-color: red;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(46rem, 1fr));
     grid-gap: 8rem;
     min-height: 30vw;
     grid-column: col-start 1 / col-end 12;
     margin: 12rem 0;
+    // justify-items: flex-end;
 }

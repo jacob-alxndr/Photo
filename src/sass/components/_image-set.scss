@@ -1,28 +1,49 @@
 .image-set{
-    // border-radius: 50px;
-    // border: 2PX solid rebeccapurple;
     position: relative;
+    
+    width: 90%;
+    &:nth-child(3n + 1){
+        // height: 100%;
+    }
+    &:nth-child(2){
+       width: 100%;
+    }
+    &:nth-child(3){
+        width: 100%;
+     }
+    &:hover .heading-2{
+        opacity: 1;
+    }
+    .heading-2{
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        z-index: 3;
+        color: $white;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+  
     img{
-        height: 100%;
+        // height: 100%;
+        width: 100%;
         border-radius: 3px;
         z-index: 2;
         position: relative;
     }
 
-    .border{
-        width: 100%;
-        height: 100%;
-        border-radius: 3px;
-        border: 3px solid $black;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        transition: border .5s;
+    // .border{
+    //     width: 100%;
+    //     height: 100%;
+    //     border-radius: 3px;
+    //     border: 3px solid $black;
+    //     position: absolute;
+    //     top: 20px;
+    //     left: 20px;
+    //     transition: border .5s;       
+    // }
 
-       
-    }
-
-    .border.active{
-        border: 3px solid $white;
-    }
+    // .border.active{
+    //     border: 3px solid $white;
+    // }
 }
