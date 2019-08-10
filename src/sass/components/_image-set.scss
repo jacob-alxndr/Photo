@@ -3,7 +3,7 @@
     cursor: pointer;
     width: 100%;
     height: 100%;
-
+    animation: fadeIn 1s ease;
     @include respond(tab-port) {
      width: 100%;
     }
