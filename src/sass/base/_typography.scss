@@ -24,6 +24,7 @@ p,a,h1,h1,h2,h3,h4,h5,h6{
     transition: color 1s;
 }
 
+
 //HEADINGS
 %heading {
     font-family: "Agrandir", 'Work Sans';
@@ -83,7 +84,7 @@ h4 {
         }
 
         @include respond(tab-port) {
-            font-size: calc(3.3rem - 16px);
+            font-size: calc(3.3rem - 12px);
         }
 }
 

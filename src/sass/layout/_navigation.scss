@@ -1,21 +1,26 @@
-.navigation{
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    grid-column: col-start 1/col-end 12;
-    white-space: nowrap;
-    align-items: flex-end;
-
-    
-    &__nav{
-        grid-column: col-start 10/col-end 12;
-    }
-
+    .navigation{
+        min-width: 26rem;
+        @include respond(tab-port) {
+            min-width: 22rem;
+        }
     &__list{
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-port) {
+            // min-width: 25rem;
+        }
+
+        a{
+            font-size: 1.5rem;
+            @include respond(tab-port) {
+                font-size: 80%;
+            }
+        }
     }
 
-    &__item:not(:last-child){
-        margin-right:3.8rem;
+    &__item:not(:first-child){
+        // margin-left:2.8rem;
     }
 }

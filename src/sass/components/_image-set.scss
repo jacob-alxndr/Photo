@@ -1,31 +1,36 @@
 .image-set{
     position: relative;
-    
-    width: 90%;
-    &:nth-child(3n + 1){
-        // height: 100%;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+
+    @include respond(tab-port) {
+     width: 100%;
     }
-    &:nth-child(2){
-       width: 100%;
-    }
-    &:nth-child(3){
-        width: 100%;
-     }
+
+    // &:nth-child(odd){
+    //    width: 100%;
+    // }
+    // &:nth-child(3){
+    //     width: 100%;
+    //  }
+     
     &:hover .heading-2{
         opacity: 1;
+        top: 2rem;
     }
     .heading-2{
         position: absolute;
-        top: 2rem;
+        top: 3rem;
         left: 2rem;
         z-index: 3;
         color: $white;
         opacity: 0;
-        transition: opacity .5s;
+        transition: opacity .5s, top .5s;
     }
   
     img{
-        // height: 100%;
+        height: auto;
         width: 100%;
 
     // .border{
