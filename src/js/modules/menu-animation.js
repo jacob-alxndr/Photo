@@ -13,4 +13,4 @@ const fadeUp = function () {
 }
 
 // 3. Events
-window.addEventListener('load', fadeUp);
+//window.addEventListener('load', fadeUp);

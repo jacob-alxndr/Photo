@@ -18,20 +18,10 @@ const lightSwitch = () => {
     changeTextColor(elements.text);
     elements.lightSwitch.classList.toggle('active')
     elements.toggleSwitch.classList.toggle('active')
+    elements.htmlTag.classList.toggle('dark-mode')
     elements.imgBorders.forEach(border =>{
         border.classList.toggle('active')
     })
-
-    if(elements.lightSwitch.classList.contains('active')){
-        // elements.menuList.style.backgroundColor = 'red'
-       elements.menuItems.forEach(item =>{
-        //    item.style.color = '#2a2a2a'
-        //    item.focus().style.color = '#fff'
-       })
-    }else{
-        elements.menuList.style.backgroundColor = ''
-    }
-    
 }
 
 

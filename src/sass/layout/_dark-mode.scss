@@ -1,0 +1,8 @@
+.dark-mode {
+    & .navigation__link {
+
+        &:hover {
+            color: red;
+        }
+    }
+}

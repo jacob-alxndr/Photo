@@ -6,5 +6,6 @@ export const elements = {
     toggleSwitch: document.querySelector('.light-switch-toggle'),
     imgBorders:  document.querySelectorAll('.border'),
     menuList: document.querySelector('.menu__list'),
-    menuItems: document.querySelectorAll('.menu__link')
+    menuItems: document.querySelectorAll('.menu__link'),
+    htmlTag: document.querySelector('html')
 }
