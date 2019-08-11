@@ -8,12 +8,14 @@
         width: 100%;
     }
 
-    // &:nth-child(3n + 1){
-    //    max-width: 90%;
-    // }
-    // &:nth-child(1n + 4){
-    //     max-width: 80%;
-    //  }
+    &:nth-child(odd){
+      
+       max-width: 90%;
+    }
+    &:nth-child(even){
+        // max-width: 80%;
+
+     }
     // &:nth-child(3){
     //     width: 100%;
     //  }
