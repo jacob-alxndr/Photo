@@ -8,10 +8,10 @@ const fadeUp = function () {
         time = time + .05
         item.style.opacity = 1;
    
-        item.style.transition = `all 1.2s ${time}s`;
+        item.style.transition = `opacity 1.2s ${time}s, transform 1.2s ${time}s, color .3s`;
         item.style.transform = `translateY(0)`;
       
-        console.log(item)
+        console.log(time)
     })
 
 }
