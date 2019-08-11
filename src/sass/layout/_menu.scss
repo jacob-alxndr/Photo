@@ -1,0 +1,42 @@
+.menu {
+    margin: 10rem 0;
+    grid-column: col-start 1 / col-end 3;
+    background-color: $white;
+    animation: fadeRight 0.7s ease;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: nowrap;
+        min-height: 65rem;
+        
+        &:hover .menu__link{
+            color: $gray-7;
+            font-size: 2.6rem;
+        }
+    }
+    &__item{
+        align-items:flex-start;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+        &:hover .menu__link{
+            color: $black;
+            font-size: 3.2rem;
+        }
+    }
+
+    &__link {
+        position: relative;
+        z-index: 12;
+        color: $black;
+        font-size: 2.8rem;
+        transition: all .5s;
+
+        &:hover .menu__link{
+            color: $black;
+        }
+    }
+}

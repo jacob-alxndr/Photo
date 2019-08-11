@@ -1,11 +1,13 @@
 .gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
-    grid-gap: 6rem;
+    opacity: 0;
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(46rem, 1fr));
+    grid-template-rows: auto; 
+    row-gap: 4rem;
     column-gap: 4rem;
-    min-height: 40vw;
-    grid-column: col-start 1 / col-end 12;
-    margin: 10rem 0;
+    min-height: 20vw;
+    grid-column: col-start 5 / col-end 12;
+    margin: 8rem 0;
     // justify-items: flex-end;
     @include respond(tab-port) {
         margin: 8rem 0;

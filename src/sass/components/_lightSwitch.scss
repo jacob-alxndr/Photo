@@ -16,7 +16,7 @@
     border-radius: .2rem;
     width: 5.5rem;
     height: 6rem;
-    background-color: $white;
+    background-color: transparent;
     transition: all .5s;
     @include respond(tab-port) {
         width: 5rem;
@@ -41,6 +41,7 @@
     top: 30%;
     left:50%;
     transform: translate(-50%, -50%);
+    animation: flicker 10s ease infinite;
     transition: all .5s;
     @include respond(tab-port) {
         width: 1.7rem;
