@@ -1,8 +1,29 @@
 .dark-mode {
-    & .navigation__link {
 
+    & .navigation:hover .navigation__link{
+        color: $gray-2;
+    }
+    
+    & .navigation__item {
         &:hover {
-            color: red;
+            .navigation__link{
+                color: $white;
+            }
+        }
+    } 
+
+    & .menu__list:hover .menu__link{
+        color: $gray-2;
+      }
+    
+    & .menu__item {
+        &:hover {
+            .menu__link{
+                color:$white;
+            }
         }
     }
+
+   
+   
 }
