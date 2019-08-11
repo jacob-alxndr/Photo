@@ -326,10 +326,10 @@ body {
       color: #1a1a1a;
       font-size: 3.8rem; }
   .menu__link {
-    transition: all 1s;
+    display: block;
     font-size: 3.6rem;
     transition: all .5s;
-    transform: translateY(8rem);
+    transform: translateY(10vh);
     opacity: 0; }
     .menu__link:hover .menu__link {
       color: #1a1a1a; }

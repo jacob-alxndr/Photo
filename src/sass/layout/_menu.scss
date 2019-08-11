@@ -30,10 +30,12 @@
         }
     }
 
-    &__link {       transition: all 1s;
+    &__link {       
+        display: block;
+        // transition: all 1s;
         font-size: 3.6rem;
         transition: all .5s;
-        transform: translateY(8rem);
+        transform: translateY(10vh);
         opacity: 0;
        
  
