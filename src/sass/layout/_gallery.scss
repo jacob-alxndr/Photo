@@ -1,15 +1,15 @@
 .gallery{
-    opacity: 0;
-    display: none;
-    grid-template-columns: repeat(auto-fit, minmax(46rem, 1fr));
-    grid-template-rows: auto; 
-    row-gap: 4rem;
-    column-gap: 4rem;
+    // opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    // grid-template-rows: auto; 
+    row-gap: 2rem;
+    column-gap: 2rem;
     min-height: 20vw;
-    grid-column: col-start 5 / col-end 12;
+    grid-column: col-start 4 / col-end 12;
     margin: 8rem 0;
     // justify-items: flex-end;
     @include respond(tab-port) {
-        margin: 8rem 0;
+        margin: 6rem 0;
     }
 }

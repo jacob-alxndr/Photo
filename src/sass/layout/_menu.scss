@@ -1,8 +1,10 @@
 .menu {
     margin: 10rem 0;
     grid-column: col-start 1 / col-end 3;
-    background-color: $white;
-    animation: fadeRight 0.7s ease;
+   
+    // background-color: $white;
+    // animation: fadeRight 0.7s ease;
+    // transform: translateX(-50vw);
 
     &__list {
         display: flex;
@@ -13,27 +15,28 @@
         
         &:hover .menu__link{
             color: $gray-7;
-            font-size: 2.6rem;
         }
     }
     &__item{
         align-items:flex-start;
+       
 
         &:not(:last-child){
-            margin-bottom: 1rem;
+            margin-bottom: .3rem;
         }
         &:hover .menu__link{
             color: $black;
-            font-size: 3.2rem;
+            font-size: 3.8rem;
         }
     }
 
-    &__link {
-        position: relative;
-        z-index: 12;
-        color: $black;
-        font-size: 2.8rem;
+    &__link {       transition: all 1s;
+        font-size: 3.6rem;
         transition: all .5s;
+        transform: translateY(8rem);
+        opacity: 0;
+       
+ 
 
         &:hover .menu__link{
             color: $black;
