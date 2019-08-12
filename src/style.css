@@ -369,7 +369,8 @@ body {
     grid-column: col-start 5 / col-end 12;
     margin: 8rem 0; }
     .gallery-set .image-set {
-      max-width: 100%; }
+      max-width: 100%;
+      cursor: auto; }
 
 .dark-mode .navigation:hover .navigation__link {
   color: #404040; }
