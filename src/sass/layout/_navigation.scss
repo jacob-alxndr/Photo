@@ -1,5 +1,9 @@
     .navigation{
         min-width: 26rem;
+
+        &:hover .navigation__link{
+            color:$gray-7;
+        }
         @include respond(tab-port) {
             min-width: 22rem;
         }
@@ -12,8 +16,12 @@
             // min-width: 25rem;
         }
 
-        a{
+        .navigation__link{
             font-size: 1.5rem;
+            &:hover{
+                color:$black;
+            }
+
             @include respond(tab-port) {
                 font-size: 80%;
             }

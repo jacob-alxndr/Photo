@@ -21,6 +21,7 @@
     @include respond(tab-port) {
         width: 5rem;
         height: 3rem;
+        display: none;
     }
 }
 

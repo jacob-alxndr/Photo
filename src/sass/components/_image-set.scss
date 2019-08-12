@@ -9,16 +9,12 @@
     }
 
     &:nth-child(odd){
-      
        max-width: 90%;
-    }
-    &:nth-child(even){
-        // max-width: 80%;
 
-     }
-    // &:nth-child(3){
-    //     width: 100%;
-    //  }
+       @include respond(tab-port) {
+        max-width: 100%;
+        }
+    }
 
     &:hover h4 {
         opacity: 1;

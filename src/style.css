@@ -214,6 +214,9 @@ body {
       width: 100%; } }
   .image-set:nth-child(odd) {
     max-width: 90%; }
+    @media (max-width: 56.25em) {
+      .image-set:nth-child(odd) {
+        max-width: 100%; } }
   .image-set:hover h4 {
     opacity: 1;
     top: 2rem; }
@@ -248,7 +251,8 @@ body {
   @media (max-width: 56.25em) {
     .light-switch {
       width: 5rem;
-      height: 3rem; } }
+      height: 3rem;
+      display: none; } }
 
 .light-switch.active {
   background-color: #1a1a1a;
@@ -296,6 +300,8 @@ body {
 
 .navigation {
   min-width: 26rem; }
+  .navigation:hover .navigation__link {
+    color: #CCCCCC; }
   @media (max-width: 56.25em) {
     .navigation {
       min-width: 22rem; } }
@@ -303,34 +309,38 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between; }
-    .navigation__list a {
+    .navigation__list .navigation__link {
       font-size: 1.5rem; }
+      .navigation__list .navigation__link:hover {
+        color: #1a1a1a; }
       @media (max-width: 56.25em) {
-        .navigation__list a {
+        .navigation__list .navigation__link {
           font-size: 80%; } }
 
 .menu {
-  margin: 6rem 0;
+  margin-top: 6rem;
   grid-column: col-start 1 / col-end 3; }
+  @media (max-width: 37.5em) {
+    .menu {
+      grid-column: col-end 3 / col-end 12; } }
   .menu__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     white-space: nowrap;
-    min-height: 65rem;
+    max-height: 80vh;
     transition: color 1.2s; }
     .menu__list:hover .menu__link {
       color: #CCCCCC; }
   .menu__item {
     align-items: flex-start;
     transition: color .2s; }
-    .menu__item:not(:last-child) {
-      margin-bottom: .1rem; }
     .menu__item:hover .menu__link {
-      color: #1a1a1a; }
+      color: #1a1a1a;
+      margin-left: .5rem; }
   .menu__link {
     display: block;
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     transition: all .5s;
     transform: translateY(10vh);
     opacity: 0; }
@@ -349,6 +359,17 @@ body {
   @media (max-width: 56.25em) {
     .gallery {
       margin: 6rem 0; } }
+  .gallery-set {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 6rem;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+    min-height: 20vw;
+    grid-column: col-start 5 / col-end 12;
+    margin: 8rem 0; }
+    .gallery-set .image-set {
+      max-width: 100%; }
 
 .dark-mode .navigation:hover .navigation__link {
   color: #404040; }
