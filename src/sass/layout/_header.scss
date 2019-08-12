@@ -7,4 +7,12 @@
     align-items: flex-end;
     position: relative;
     animation: fadeDown 1.3s ease;
+
+    @include respond(phone) {
+        margin-top: 3rem;
+       max-height: 6rem;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+    }
 }

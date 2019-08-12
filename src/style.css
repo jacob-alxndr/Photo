@@ -186,9 +186,11 @@ h6 {
     h6 {
       font-size: 1.2rem; } }
 
-.btn {
+button {
   cursor: pointer;
   display: inline-block;
+  color: #1a1a1a;
+  background-color: #fcfaf8;
   padding: 1.2rem 2.5rem;
   border: none;
   letter-spacing: .091em;
@@ -297,6 +299,13 @@ body {
   position: relative;
   -webkit-animation: fadeDown 1.3s ease;
           animation: fadeDown 1.3s ease; }
+  @media (max-width: 37.5em) {
+    .header {
+      margin-top: 3rem;
+      max-height: 6rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; } }
 
 .navigation {
   min-width: 26rem; }
@@ -347,26 +356,49 @@ body {
     .menu__link:hover {
       color: #1a1a1a; }
 
+footer {
+  grid-column: col-start 9 / col-end 12;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem; }
+  footer .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 11rem; }
+    footer .buttons .light {
+      background-color: #1a1a1a;
+      color: #fcfaf8; }
+    footer .buttons .dark {
+      border: 2px solid #1a1a1a; }
+  footer svg {
+    align-content: flex-end; }
+    footer svg path {
+      fill: #1a1a1a; }
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   row-gap: 7rem;
   -moz-column-gap: 4rem;
        column-gap: 4rem;
   min-height: 20vw;
   grid-column: col-start 1 / col-end 12;
-  margin: 8rem 0; }
+  margin: 8rem 0 6rem 0; }
   @media (max-width: 56.25em) {
     .gallery {
       margin: 6rem 0; } }
+  @media (max-width: 37.5em) {
+    .gallery {
+      margin: 3rem 0; } }
   .gallery-set {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     row-gap: 6rem;
     -moz-column-gap: 6rem;
          column-gap: 6rem;
     min-height: 20vw;
-    grid-column: col-start 5 / col-end 12;
+    grid-column: col-start 2 / col-end 10;
     margin: 8rem 0; }
     .gallery-set .image-set {
       max-width: 100%;
