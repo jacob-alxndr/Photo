@@ -45,3 +45,30 @@
         background-color: $white;
     }
 }
+
+@keyframes float {
+    0% {
+        transform: translateY(10%)
+    }
+    50% {
+        transform: translateY(-10%)
+    }
+    100% {
+        transform: translateY(10%)
+    }
+}
+
+@keyframes floatHor{
+    0% {
+        transform: translateX(100%)
+    }
+    50% {
+        transform: translateX(-200%)
+    }
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+
+

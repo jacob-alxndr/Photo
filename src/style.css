@@ -62,6 +62,38 @@
   100% {
     background-color: #fcfaf8; } }
 
+@-webkit-keyframes float {
+  0% {
+    transform: translateY(10%); }
+  50% {
+    transform: translateY(-10%); }
+  100% {
+    transform: translateY(10%); } }
+
+@keyframes float {
+  0% {
+    transform: translateY(10%); }
+  50% {
+    transform: translateY(-10%); }
+  100% {
+    transform: translateY(10%); } }
+
+@-webkit-keyframes floatHor {
+  0% {
+    transform: translateX(100%); }
+  50% {
+    transform: translateX(-200%); }
+  100% {
+    transform: translateX(100%); } }
+
+@keyframes floatHor {
+  0% {
+    transform: translateX(100%); }
+  50% {
+    transform: translateX(-200%); }
+  100% {
+    transform: translateX(100%); } }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -246,9 +278,9 @@ body {
   transform: translate(-50%, -50%);
   border: 2px solid #1a1a1a;
   border-radius: .2rem;
-  width: 5.5rem;
+  width: 3.5rem;
   height: 6rem;
-  background-color: transparent;
+  background-color: #1a1a1a;
   transition: all .5s; }
   @media (max-width: 56.25em) {
     .light-switch {
@@ -257,7 +289,7 @@ body {
       display: none; } }
 
 .light-switch.active {
-  background-color: #1a1a1a;
+  background-color: #fcfaf8;
   border: 2px solid #fcfaf8; }
 
 .light-switch-toggle {
@@ -283,7 +315,7 @@ body {
 .light-switch-toggle.active {
   top: 70%;
   background-color: #1a1a1a;
-  border: 2px solid #fcfaf8; }
+  border: 2px solid #1a1a1a; }
   @media (max-width: 56.25em) {
     .light-switch-toggle.active {
       top: 50%;
@@ -357,7 +389,7 @@ body {
       color: #1a1a1a; }
 
 footer {
-  grid-column: col-start 10 / col-end 12;
+  grid-column: col-start 10 / col-end 11;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -366,25 +398,32 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 11rem; }
+    min-height: 11rem;
+    margin-right: 2rem; }
     footer .buttons .light {
       background-color: #1a1a1a;
       color: #fcfaf8; }
     footer .buttons .dark {
       border: 2px solid #1a1a1a; }
   footer svg {
+    -webkit-animation: float 2s ease infinite;
+            animation: float 2s ease infinite;
+    height: 50;
+    transition: height .3s;
     cursor: pointer; }
+    footer svg:hover {
+      height: 70; }
     footer svg path {
       fill: #1a1a1a; }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   row-gap: 7rem;
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   min-height: 20vw;
-  grid-column: col-start 1 / col-end 12;
+  grid-column: col-start 2 / col-end 11;
   margin: 8rem 0 6rem 0; }
   @media (max-width: 56.25em) {
     .gallery {

@@ -14,9 +14,9 @@
     transform: translate(-50%,-50%);
     border: 2px solid $black;
     border-radius: .2rem;
-    width: 5.5rem;
+    width: 3.5rem;
     height: 6rem;
-    background-color: transparent;
+    background-color: $black;
     transition: all .5s;
     @include respond(tab-port) {
         width: 5rem;
@@ -26,7 +26,7 @@
 }
 
 .light-switch.active{
-    background-color: $black;
+    background-color: $white;
     border: 2px solid  $white;
 }
 
@@ -42,7 +42,6 @@
     top: 30%;
     left:50%;
     transform: translate(-50%, -50%);
-    // animation: flicker 10s ease infinite;
     transition: all .5s;
     @include respond(tab-port) {
         width: 1.7rem;
@@ -55,7 +54,7 @@
 .light-switch-toggle.active{
     top:70%;
     background-color: $black;
-    border: 2px solid  $white;
+    border: 2px solid  $black;
     @include respond(tab-port) {
         top:50%;
         left:70%;

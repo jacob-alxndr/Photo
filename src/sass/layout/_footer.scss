@@ -1,0 +1,41 @@
+footer{
+    grid-column: col-start 10 / col-end 11;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+    
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 11rem;
+        margin-right: 2rem;
+        .light{
+            background-color: $black;
+            color: $white;
+        }
+    
+        .dark{
+            border: 2px solid $black;
+    
+        }
+    }
+
+    svg{
+        animation: float 2s ease infinite;
+        height:50;
+        transition: height .3s;
+        &:hover{
+            height:70;
+
+        }
+        cursor: pointer;
+        path{
+            fill: $black;
+          
+        }
+        
+    }
+}
