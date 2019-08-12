@@ -357,9 +357,10 @@ body {
       color: #1a1a1a; }
 
 footer {
-  grid-column: col-start 9 / col-end 12;
+  grid-column: col-start 10 / col-end 12;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 4rem; }
   footer .buttons {
     display: flex;
@@ -372,7 +373,7 @@ footer {
     footer .buttons .dark {
       border: 2px solid #1a1a1a; }
   footer svg {
-    align-content: flex-end; }
+    cursor: pointer; }
     footer svg path {
       fill: #1a1a1a; }
 
