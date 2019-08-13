@@ -7,5 +7,8 @@ export const elements = {
     imgBorders:  document.querySelectorAll('.border'),
     menuList: document.querySelector('.menu__list'),
     menuItems: document.querySelectorAll('.menu__link'),
-    htmlTag: document.querySelector('html')
+    htmlTag: document.querySelector('html'),
+    gallery: document.querySelector('.gallery'),
+    portfolioSet: document.querySelector('.gallery-set'),
+    // images: portfolioSet.querySelectorAll('.image-set')
 }
