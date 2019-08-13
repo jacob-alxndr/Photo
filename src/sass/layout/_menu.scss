@@ -4,7 +4,7 @@
  
 
     @include respond(phone) {
-        margin-top: 6rem;
+        margin-top: 4rem;
         grid-column: col-start 1 / col-end 12;
     }
    
@@ -47,7 +47,7 @@
         opacity: 0;
        
         @include respond(phone) {
-            font-size: 3.2rem;
+            font-size: 3rem;
         }
        
  

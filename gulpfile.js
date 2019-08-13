@@ -28,7 +28,7 @@ gulp.task('sass', function() {
 
 //Output html, fonts and images to dist folder
 gulp.task('html', function() {
-    return gulp.src('src/*.html').pipe(gulp.dest('dist'))
+    return gulp.src('src/**/*.html').pipe(gulp.dest('dist'))
 })
 
 gulp.task('fonts', function() {
