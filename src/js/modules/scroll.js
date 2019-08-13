@@ -31,7 +31,7 @@ if (elements.gallerySet){
                 image.style.opacity = 0
                 image.style.animation = ""
             }
-        }, 2000)
+        })
        
     }
     //3.Events
@@ -41,6 +41,8 @@ if (elements.gallerySet){
 }
 
 
+
+if (elements.upArrow){
 const scrollTop = function () {
     window.scroll({top: 0, behavior: 'smooth'})
 }
@@ -49,7 +51,7 @@ const scrollTop = function () {
  //3.Events
 elements.upArrow.addEventListener('click', scrollTop)
 
-
+}
 
 
 

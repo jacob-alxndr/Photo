@@ -4,7 +4,8 @@
  
 
     @include respond(phone) {
-        grid-column: col-end 3 / col-end 12;
+        margin-top: 6rem;
+        grid-column: col-end 2 / col-end 3;
     }
    
     // background-color: $white;

@@ -346,7 +346,8 @@ body {
   grid-column: col-start 2 / col-end 3; }
   @media (max-width: 37.5em) {
     .menu {
-      grid-column: col-end 3 / col-end 12; } }
+      margin-top: 6rem;
+      grid-column: col-end 2 / col-end 3; } }
   .menu__list {
     display: flex;
     flex-direction: column;
