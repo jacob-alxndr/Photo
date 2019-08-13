@@ -6,7 +6,7 @@ footer{
     margin-bottom: 4rem;
 
     @include respond(phone) {
-        grid-column: col-start 7 / col-end 9;
+        grid-column: col-start 1 / col-end 3;
     }
     
 

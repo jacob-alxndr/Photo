@@ -1,12 +1,12 @@
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        // transform: translateY(1vw);
+        transform: translateY(1vw);
     }
 
     100% {
         opacity: 1;
-        // transform: translate(0);
+        transform: translate(0);
     }
 }
 

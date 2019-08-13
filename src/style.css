@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400");
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateY(1vw); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translate(0); } }
 @keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateY(1vw); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translate(0); } }
 
 @-webkit-keyframes fadeDown {
   0% {
@@ -242,8 +246,7 @@ body {
     opacity: 0;
     transition: opacity 0.5s, top 0.5s; }
   .image-set img {
-    width: 100%;
-    top: 0; }
+    width: 100%; }
 
 .white-background {
   background-color: #1a1a1a; }
@@ -376,7 +379,7 @@ footer {
   margin-bottom: 4rem; }
   @media (max-width: 37.5em) {
     footer {
-      grid-column: col-start 7 / col-end 9; } }
+      grid-column: col-start 1 / col-end 3; } }
   footer .buttons {
     display: flex;
     flex-direction: column;
@@ -425,7 +428,9 @@ footer {
     margin: 8rem 0; }
     .gallery-set .image-set {
       max-width: 100%;
-      cursor: auto; }
+      cursor: auto;
+      -webkit-animation: none;
+              animation: none; }
 
 .dark-mode .navigation:hover .navigation__link {
   color: #404040; }
