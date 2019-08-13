@@ -122,10 +122,6 @@ button {
 
 @font-face {
   font-family: "Agrandir";
-  src: url(../fonts/Agrandir/Agrandir-variable.ttf); }
-
-@font-face {
-  font-family: "Agrandir";
   src: url(./fonts/Agrandir/Agrandir-regular.otf); }
 
 body {
