@@ -12,7 +12,7 @@
     }
     @include respond(phone) {
         margin: 3rem 0;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
      
     }
 
@@ -27,7 +27,7 @@
 
     @include respond(phone) {
         margin: 3rem 0;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
      
 
     & .image-set{
