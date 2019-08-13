@@ -438,7 +438,7 @@ footer {
     -moz-column-gap: 6rem;
          column-gap: 6rem;
     min-height: 20vw;
-    grid-column: col-start 2 / col-end 10;
+    grid-column: col-start 1 / col-end 12;
     margin: 8rem 0 6rem 0; }
     @media (max-width: 37.5em) {
       .gallery-set {
