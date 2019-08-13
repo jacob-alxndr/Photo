@@ -4,6 +4,10 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 4rem;
+
+    @include respond(phone) {
+        grid-column: col-start 7 / col-end 9;
+    }
     
 
     .buttons{

@@ -378,6 +378,9 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 4rem; }
+  @media (max-width: 37.5em) {
+    footer {
+      grid-column: col-start 7 / col-end 9; } }
   footer .buttons {
     display: flex;
     flex-direction: column;
