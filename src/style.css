@@ -371,7 +371,7 @@ body {
     opacity: 0; }
     @media (max-width: 37.5em) {
       .menu__link {
-        font-size: 3.8rem; } }
+        font-size: 3.2rem; } }
     .menu__link:hover {
       color: #1a1a1a; }
 
