@@ -5,8 +5,8 @@ footer{
     align-items: center;
     margin-bottom: 4rem;
 
-    @include respond(phone) {
-        grid-column: col-start 2 / col-end 4;
+    @include respond(tab-land) {
+        grid-column: col-start 4 / col-end 9;
         flex-direction: column-reverse;
     }
     
@@ -17,6 +17,11 @@ footer{
         justify-content: space-around;
         min-height: 11rem;
         margin-right: 2rem;
+
+        @include respond(tab-land) {
+            margin-right: 0;
+         
+        }
         .light{
             background-color: $black;
             color: $white;
@@ -44,11 +49,6 @@ footer{
         animation: float 2s ease infinite;
         height:50;
         transition: height .3s;
-
-        @include respond(phone) {
-            height:10;
-         
-        }
         &:hover{
             height:70;
 

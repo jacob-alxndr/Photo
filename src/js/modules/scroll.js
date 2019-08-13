@@ -31,7 +31,7 @@ if (elements.gallerySet){
                 image.style.opacity = 0
                 image.style.animation = ""
             }
-        })
+        }, 2000)
        
     }
     //3.Events

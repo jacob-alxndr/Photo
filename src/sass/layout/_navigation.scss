@@ -5,7 +5,7 @@
             color:$gray-7;
         }
         @include respond(tab-port) {
-            min-width: 22rem;
+            min-width: 28rem;
         }
     &__list{
         width: 100%;
@@ -23,7 +23,7 @@
             }
 
             @include respond(tab-port) {
-                font-size: 80%;
+                font-size: 90%;
             }
         }
     }
