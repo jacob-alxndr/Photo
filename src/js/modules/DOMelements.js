@@ -9,6 +9,4 @@ export const elements = {
     menuItems: document.querySelectorAll('.menu__link'),
     htmlTag: document.querySelector('html'),
     gallery: document.querySelector('.gallery'),
-    portfolioSet: document.querySelector('.gallery-set'),
-    // images: portfolioSet.querySelectorAll('.image-set')
 }
