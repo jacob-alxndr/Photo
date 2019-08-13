@@ -6,7 +6,8 @@ footer{
     margin-bottom: 4rem;
 
     @include respond(phone) {
-        grid-column: col-start 3 / col-end 4;
+        grid-column: col-start 2 / col-end 4;
+        flex-direction: column-reverse;
     }
     
 
@@ -43,6 +44,11 @@ footer{
         animation: float 2s ease infinite;
         height:50;
         transition: height .3s;
+
+        @include respond(phone) {
+            height:10;
+         
+        }
         &:hover{
             height:70;
 

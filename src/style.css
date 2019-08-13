@@ -379,7 +379,8 @@ footer {
   margin-bottom: 4rem; }
   @media (max-width: 37.5em) {
     footer {
-      grid-column: col-start 3 / col-end 4; } }
+      grid-column: col-start 2 / col-end 4;
+      flex-direction: column-reverse; } }
   footer .buttons {
     display: flex;
     flex-direction: column;
@@ -405,6 +406,9 @@ footer {
     height: 50;
     transition: height .3s;
     cursor: pointer; }
+    @media (max-width: 37.5em) {
+      footer svg {
+        height: 10; } }
     footer svg:hover {
       height: 70; }
     footer svg path {
