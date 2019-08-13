@@ -347,7 +347,7 @@ body {
   @media (max-width: 37.5em) {
     .menu {
       margin-top: 6rem;
-      grid-column: col-end 2 / col-end 3; } }
+      grid-column: col-start 1 / col-end 12; } }
   .menu__list {
     display: flex;
     flex-direction: column;
@@ -369,6 +369,9 @@ body {
     transition: all .5s;
     transform: translateY(10vh);
     opacity: 0; }
+    @media (max-width: 37.5em) {
+      .menu__link {
+        font-size: 3.8rem; } }
     .menu__link:hover {
       color: #1a1a1a; }
 
