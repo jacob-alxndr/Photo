@@ -1,8 +1,13 @@
 //1.Selectors
 import { elements } from "./DOMelements";
-// const gallerySet = document.querySelector('.gallery-set')
-// const images = gallerySet.querySelectorAll('.image-set')
- 
+
+if (elements.gallerySet.querySelectorAll('.image-set')) {
+    const images = elements.gallerySet.querySelectorAll('.image-set')
+    console.log(images)
+}
+
+
+
 //2.Actions
 const scroll = function () {
   
