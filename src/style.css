@@ -389,8 +389,16 @@ footer {
     footer .buttons .light {
       background-color: #1a1a1a;
       color: #fcfaf8; }
+      footer .buttons .light:hover {
+        border: 2px solid #1a1a1a;
+        background-color: #fcfaf8;
+        color: #1a1a1a; }
     footer .buttons .dark {
       border: 2px solid #1a1a1a; }
+      footer .buttons .dark:hover {
+        border: 2px solid #1a1a1a;
+        background-color: #1a1a1a;
+        color: #fcfaf8; }
   footer svg {
     -webkit-animation: float 2s ease infinite;
             animation: float 2s ease infinite;
@@ -431,6 +439,18 @@ footer {
       cursor: auto;
       -webkit-animation: none;
               animation: none; }
+
+.dark-mode button.dark {
+  border: 2px solid #fcfaf8;
+  color: #fcfaf8;
+  background-color: #1a1a1a; }
+  .dark-mode button.dark:hover {
+    background-color: #fcfaf8;
+    color: #1a1a1a;
+    border: 2px solid #fcfaf8; }
+
+.dark-mode path {
+  fill: #fcfaf8; }
 
 .dark-mode .navigation:hover .navigation__link {
   color: #404040; }

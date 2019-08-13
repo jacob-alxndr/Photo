@@ -1,5 +1,22 @@
 .dark-mode {
 
+    & button.dark{
+        border: 2px solid $white;
+        color: $white;
+        background-color: $black;
+
+        &:hover{
+            background-color: $white;
+            color: $black;
+            border: 2px solid $white;
+        }
+    }
+
+    path{
+        fill: $white;
+      
+    }
+
 
     & .navigation:hover .navigation__link{
         color: $gray-2;
@@ -24,7 +41,5 @@
             }
         }
     }
-
-   
-   
+      
 }
