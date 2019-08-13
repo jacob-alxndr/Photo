@@ -41,6 +41,14 @@ if (elements.gallerySet){
 }
 
 
+const scrollTop = function () {
+    window.scroll({top: 0, behavior: 'smooth'})
+}
+
+
+ //3.Events
+elements.upArrow.addEventListener('click', scrollTop)
+
 
 
 

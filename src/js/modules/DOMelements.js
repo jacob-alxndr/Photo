@@ -9,5 +9,7 @@ export const elements = {
     menuItems: document.querySelectorAll('.menu__link'),
     htmlTag: document.querySelector('html'),
     gallery: document.querySelector('.gallery'),
-    gallerySet: document.querySelector('.gallery-set')
+    gallerySet: document.querySelector('.gallery-set'),
+    upArrow: document.querySelector('.upArrow'),
+    
 }
