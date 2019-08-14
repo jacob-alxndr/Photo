@@ -1,6 +1,6 @@
 .gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     row-gap: 7rem;
     column-gap: 2rem;
     min-height: 20vw;
@@ -18,7 +18,7 @@
 
     &-set{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     row-gap: 6rem;
     column-gap: 6rem;
     min-height: 20vw;

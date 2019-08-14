@@ -246,7 +246,10 @@ body {
     opacity: 0;
     transition: opacity 0.5s, top 0.5s; }
   .image-set img {
-    width: 100%; }
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    border-radius: .2rem; }
 
 .white-background {
   background-color: #1a1a1a; }
@@ -420,7 +423,7 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   row-gap: 7rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
@@ -436,7 +439,7 @@ footer {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
   .gallery-set {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     row-gap: 6rem;
     -moz-column-gap: 6rem;
          column-gap: 6rem;
