@@ -260,7 +260,7 @@ body {
 
 .light-switch {
   position: fixed;
-  bottom: 7%;
+  bottom: 9%;
   left: 4%;
   transform: translate(-50%, -50%);
   border: 2px solid transparent;
