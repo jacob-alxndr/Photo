@@ -8,15 +8,15 @@
 
 
 .light-switch{
-    position: absolute;
-    top: 75%;
-    left: 50%;
+    position: fixed;
+    bottom: 7%;
+    left: 4%;
     transform: translate(-50%,-50%);
-    border: 2px solid $black;
-    border-radius: .2rem;
-    width: 3.5rem;
-    height: 6rem;
-    background-color: $black;
+    border: 2px solid transparent;
+    border-radius: 100rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
     transition: all .5s;
     @include respond(tab-port) {
         width: 5rem;
@@ -26,8 +26,8 @@
 }
 
 .light-switch.active{
-    background-color: $white;
-    border: 2px solid  $white;
+    background-color: transparent;
+    border: 2px solid  transparent;
 }
 
 .light-switch-toggle{
@@ -35,8 +35,8 @@
     display: block;
     border: 2px solid $black;
     border-radius: 50%;
-    width: 2.1rem;
-    height: 2.1rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color:  $white;
     position: absolute;
     top: 30%;
@@ -52,12 +52,12 @@
 }
 
 .light-switch-toggle.active{
-    top:70%;
+    // top:70%;
     background-color: $black;
-    border: 2px solid  $black;
+    border: 2px solid  $white;
     @include respond(tab-port) {
-        top:50%;
-        left:70%;
+        // top:50%;
+        // left:70%;
     }
 }
 

@@ -9,7 +9,6 @@ const fadeUp = function () {
         item.style.transition = `opacity 1.2s ${time}s, transform 1.2s ${time}s, color .3s, margin .1s`;
         item.style.transform = `translateY(0)`;
     })
-
 }
 
 // 3. Events

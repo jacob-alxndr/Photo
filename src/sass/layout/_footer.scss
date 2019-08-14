@@ -1,7 +1,7 @@
 footer{
-    grid-column: col-start 10 / col-end 11;
+    grid-column: col-start 6 / content-end;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
 
@@ -33,8 +33,11 @@ footer{
             }
         }
     
-        .dark{
+        button.dark{
+            border-radius: .2rem;
             border: 2px solid $black;
+            padding: 0.8rem 1.8rem;
+            letter-spacing: 1.0;
 
             &:hover{
                 border: 2px solid $black;
