@@ -1,7 +1,7 @@
 footer{
-    grid-column: col-start 10 / col-end 11;
+    grid-column: col-start 6 / content-end;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
 

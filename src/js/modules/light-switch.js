@@ -16,7 +16,7 @@ const changeTextColor = (text) => {
 const lightSwitch = () => {
     changeBackgroundcolor(elements.body);
     changeTextColor(elements.text);
-    elements.lightSwitch.classList.toggle('active')
+    // elements.lightSwitch.classList.toggle('active')
     elements.toggleSwitch.classList.toggle('active')
     elements.htmlTag.classList.toggle('dark-mode')
     elements.imgBorders.forEach(border =>{

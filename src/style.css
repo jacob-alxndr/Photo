@@ -224,6 +224,7 @@ body {
   position: relative;
   cursor: pointer;
   width: 100%;
+  margin: 0 auto;
   -webkit-animation: fadeIn 2.3s ease;
           animation: fadeIn 2.3s ease; }
   @media (max-width: 56.25em) {
@@ -258,15 +259,15 @@ body {
   color: #fcfaf8; }
 
 .light-switch {
-  position: absolute;
-  top: 75%;
-  left: 50%;
+  position: fixed;
+  bottom: 7%;
+  left: 4%;
   transform: translate(-50%, -50%);
-  border: 2px solid #1a1a1a;
-  border-radius: .2rem;
-  width: 3.5rem;
-  height: 6rem;
-  background-color: #1a1a1a;
+  border: 2px solid transparent;
+  border-radius: 100rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
   transition: all .5s; }
   @media (max-width: 56.25em) {
     .light-switch {
@@ -275,16 +276,16 @@ body {
       display: none; } }
 
 .light-switch.active {
-  background-color: #fcfaf8;
-  border: 2px solid #fcfaf8; }
+  background-color: transparent;
+  border: 2px solid  transparent; }
 
 .light-switch-toggle {
   cursor: pointer;
   display: block;
   border: 2px solid #1a1a1a;
   border-radius: 50%;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #fcfaf8;
   position: absolute;
   top: 30%;
@@ -299,13 +300,8 @@ body {
       left: 30%; } }
 
 .light-switch-toggle.active {
-  top: 70%;
   background-color: #1a1a1a;
-  border: 2px solid #1a1a1a; }
-  @media (max-width: 56.25em) {
-    .light-switch-toggle.active {
-      top: 50%;
-      left: 70%; } }
+  border: 2px solid #fcfaf8; }
 
 .header {
   height: 8rem;
@@ -379,9 +375,9 @@ body {
       color: #1a1a1a; }
 
 footer {
-  grid-column: col-start 10 / col-end 11;
+  grid-column: col-start 6 / content-end;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 4rem; }
   @media (max-width: 75em) {
@@ -427,9 +423,9 @@ footer {
   row-gap: 7rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-  min-height: 20vw;
-  grid-column: col-start 1 / col-end 12;
-  margin: 8rem 0 6rem 0; }
+  min-height: 10vw;
+  grid-column: col-start 2 / col-end 11;
+  margin: 6rem 0 6rem 0; }
   @media (max-width: 56.25em) {
     .gallery {
       margin: 6rem 0; } }
@@ -453,8 +449,8 @@ footer {
     .gallery-set .image-set {
       max-width: 100%;
       cursor: auto;
-      -webkit-animation: none;
-              animation: none; }
+      -webkit-animation: fadeIn 1s ease;
+              animation: fadeIn 1s ease; }
 
 .dark-mode button.dark {
   border: 2px solid #fcfaf8;
