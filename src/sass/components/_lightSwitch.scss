@@ -43,6 +43,7 @@
     left:50%;
     transform: translate(-50%, -50%);
     transition: all .5s;
+  
     @include respond(tab-port) {
         width: 1.7rem;
         height: 1.7rem;
@@ -52,7 +53,6 @@
 }
 
 .light-switch-toggle.active{
-    // top:70%;
     background-color: $black;
     border: 2px solid  $white;
     @include respond(tab-port) {

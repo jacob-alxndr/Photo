@@ -1,5 +1,9 @@
 .dark-mode {
 
+    // & .light-switch-toggle{
+    //     animation: stretchIt .3s ease;
+    // }
+
     & button.dark{
         border: 2px solid $white;
         color: $white;

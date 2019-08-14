@@ -53,7 +53,7 @@ footer{
         height:50;
         transition: height .3s;
         &:hover{
-            height:70;
+            animation: float .5s ease infinite;
 
         }
         cursor: pointer;

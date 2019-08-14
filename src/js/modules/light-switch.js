@@ -18,12 +18,21 @@ const lightSwitch = () => {
     changeTextColor(elements.text);
     // elements.lightSwitch.classList.toggle('active')
     elements.toggleSwitch.classList.toggle('active')
+    elements.toggleSwitch.style.animation = 'stretchIt .3s ease'
     elements.htmlTag.classList.toggle('dark-mode')
     elements.imgBorders.forEach(border =>{
         border.classList.toggle('active')
     })
+  
 }
+
+const removeAni = () =>{
+    elements.toggleSwitch.style.animation = ''
+}
+
+
 
 
 //3.Events
 elements.lightSwitch.addEventListener('click', lightSwitch);
+elements.toggleSwitch.addEventListener('transitionend', removeAni);
