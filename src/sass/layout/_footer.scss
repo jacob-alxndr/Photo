@@ -33,8 +33,11 @@ footer{
             }
         }
     
-        .dark{
+        button.dark{
+            border-radius: .2rem;
             border: 2px solid $black;
+            padding: 0.8rem 1.8rem;
+            letter-spacing: 1.0;
 
             &:hover{
                 border: 2px solid $black;

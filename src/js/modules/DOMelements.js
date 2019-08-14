@@ -11,5 +11,6 @@ export const elements = {
     gallery: document.querySelector('.gallery'),
     gallerySet: document.querySelector('.gallery-set'),
     upArrow: document.querySelector('.upArrow'),
+    deleteDivs: document.querySelectorAll(".remove")
     
 }
