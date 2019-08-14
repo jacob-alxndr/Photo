@@ -48,19 +48,19 @@
 
 @-webkit-keyframes flicker {
   0% {
-    background-color: #fcfaf8; }
+    background-color: #fcf8ed; }
   50% {
     background-color: #1a1a1a; }
   100% {
-    background-color: #fcfaf8; } }
+    background-color: #fcf8ed; } }
 
 @keyframes flicker {
   0% {
-    background-color: #fcfaf8; }
+    background-color: #fcf8ed; }
   50% {
     background-color: #1a1a1a; }
   100% {
-    background-color: #fcfaf8; } }
+    background-color: #fcf8ed; } }
 
 @-webkit-keyframes float {
   0% {
@@ -205,7 +205,7 @@ button {
   cursor: pointer;
   display: inline-block;
   color: #1a1a1a;
-  background-color: #fcfaf8;
+  background-color: #fcf8ed;
   padding: 1.2rem 2.5rem;
   border: none;
   letter-spacing: .091em;
@@ -243,7 +243,7 @@ body {
     top: 3rem;
     left: 2rem;
     z-index: 3;
-    color: #fcfaf8;
+    color: #fcf8ed;
     opacity: 0;
     transition: opacity 0.5s, top 0.5s; }
   .image-set img {
@@ -256,7 +256,7 @@ body {
   background-color: #1a1a1a; }
 
 .dark-text {
-  color: #fcfaf8; }
+  color: #fcf8ed; }
 
 .light-switch {
   position: fixed;
@@ -286,7 +286,7 @@ body {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #fcfaf8;
+  background-color: #fcf8ed;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -301,7 +301,7 @@ body {
 
 .light-switch-toggle.active {
   background-color: #1a1a1a;
-  border: 2px solid #fcfaf8; }
+  border: 2px solid #fcf8ed; }
 
 .header {
   height: 8rem;
@@ -382,7 +382,7 @@ footer {
   margin-bottom: 4rem; }
   @media (max-width: 75em) {
     footer {
-      grid-column: col-start 4 / col-end 9;
+      grid-column: col-start 3 / col-end 10;
       flex-direction: column-reverse; } }
   footer .buttons {
     display: flex;
@@ -395,10 +395,10 @@ footer {
         margin-right: 0; } }
     footer .buttons .light {
       background-color: #1a1a1a;
-      color: #fcfaf8; }
+      color: #fcf8ed; }
       footer .buttons .light:hover {
         border: 2px solid #1a1a1a;
-        background-color: #fcfaf8;
+        background-color: #fcf8ed;
         color: #1a1a1a; }
     footer .buttons button.dark {
       border-radius: .2rem;
@@ -408,7 +408,7 @@ footer {
       footer .buttons button.dark:hover {
         border: 2px solid #1a1a1a;
         background-color: #1a1a1a;
-        color: #fcfaf8; }
+        color: #fcf8ed; }
   footer svg {
     -webkit-animation: float 2s ease infinite;
             animation: float 2s ease infinite;
@@ -456,28 +456,28 @@ footer {
               animation: fadeIn 1s ease; }
 
 .dark-mode button.dark {
-  border: 2px solid #fcfaf8;
-  color: #fcfaf8;
+  border: 2px solid #fcf8ed;
+  color: #fcf8ed;
   background-color: #1a1a1a; }
   .dark-mode button.dark:hover {
-    background-color: #fcfaf8;
+    background-color: #fcf8ed;
     color: #1a1a1a;
-    border: 2px solid #fcfaf8; }
+    border: 2px solid #fcf8ed; }
 
 .dark-mode path {
-  fill: #fcfaf8; }
+  fill: #fcf8ed; }
 
 .dark-mode .navigation:hover .navigation__link {
   color: #404040; }
 
 .dark-mode .navigation__item:hover .navigation__link {
-  color: #fcfaf8; }
+  color: #fcf8ed; }
 
 .dark-mode .menu__list:hover .menu__link {
   color: #404040; }
 
 .dark-mode .menu__item:hover .menu__link {
-  color: #fcfaf8; }
+  color: #fcf8ed; }
 
 body {
-  background-color: #fcfaf8; }
+  background-color: #fcf8ed; }

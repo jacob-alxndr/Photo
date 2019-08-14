@@ -6,7 +6,7 @@ footer{
     margin-bottom: 4rem;
 
     @include respond(tab-land) {
-        grid-column: col-start 4 / col-end 9;
+        grid-column: col-start 3 / col-end 10;
         flex-direction: column-reverse;
     }
     
