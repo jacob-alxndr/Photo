@@ -1,12 +1,18 @@
 .header{
     height: 8rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     grid-column: col-start 1/col-end 12;
     white-space: nowrap;
     align-items: flex-end;
     position: relative;
     animation: fadeDown 1.3s ease;
+
+    @include respond(tab-port) {
+        grid-column: col-start 2 /col-end 11;
+        align-items: center;
+    }
 
     @include respond(phone) {
         margin-top: 3rem;
