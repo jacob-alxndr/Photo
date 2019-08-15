@@ -1,8 +1,12 @@
 .dark-mode {
 
-    // & .light-switch-toggle{
-    //     animation: stretchIt .3s ease;
-    // }
+    & body{
+        background-color: $black;
+    }
+
+    & p,a,h1,h2,h3,h4,h5,h6{
+        color: $white;
+    }
 
     & button.dark{
         border: 2px solid $white;
