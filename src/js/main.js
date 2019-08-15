@@ -4,7 +4,7 @@ import  removeAni  from "./modules/light-switch";
 import  fadeUp  from "./modules/menu-animation";
 import  scroll  from "./modules/scroll";
 import  scrollTop  from "./modules/scroll";
-import  addClass  from "./modules/storeTheme";
+import  store  from "./modules/storeTheme";
 
 // import  removeDivs  from "./modules/removeDivs";
 

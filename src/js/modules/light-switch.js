@@ -4,7 +4,7 @@ import { elements } from "./DOMelements";
 const lightSwitch = () => {
     elements.toggleSwitch.classList.toggle('active')
     elements.toggleSwitch.style.animation = 'stretchIt .2s ease'
-    elements.htmlTag.classList.toggle('dark-mode')
+    // elements.htmlTag.classList.toggle('dark-mode')
 }
 
 const removeAni = () =>{
