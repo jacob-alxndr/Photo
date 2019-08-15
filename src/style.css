@@ -2,49 +2,61 @@
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(1vw); }
+    -webkit-transform: translateY(1vw);
+            transform: translateY(1vw); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(1vw); }
+    -webkit-transform: translateY(1vw);
+            transform: translateY(1vw); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
 
 @-webkit-keyframes fadeDown {
   0% {
     opacity: 0;
-    transform: translateY(-2vw); }
+    -webkit-transform: translateY(-2vw);
+            transform: translateY(-2vw); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
 
 @keyframes fadeDown {
   0% {
     opacity: 0;
-    transform: translateY(-2vw); }
+    -webkit-transform: translateY(-2vw);
+            transform: translateY(-2vw); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
 
 @-webkit-keyframes fadeRight {
   0% {
     opacity: 0;
-    transform: translateX(-50vw); }
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
 
 @keyframes fadeRight {
   0% {
     opacity: 0;
-    transform: translateX(-50vw); }
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
 
 @-webkit-keyframes flicker {
   0% {
@@ -64,19 +76,25 @@
 
 @-webkit-keyframes float {
   0% {
-    transform: translateY(10%); }
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%); }
   50% {
-    transform: translateY(-10%); }
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%); }
   100% {
-    transform: translateY(10%); } }
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%); } }
 
 @keyframes float {
   0% {
-    transform: translateY(10%); }
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%); }
   50% {
-    transform: translateY(-10%); }
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%); }
   100% {
-    transform: translateY(10%); } }
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%); } }
 
 @-webkit-keyframes stretchIt {
   0% {
@@ -279,7 +297,8 @@ body {
   position: fixed;
   bottom: 9%;
   left: 4%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 2.5rem;
   height: 2.5rem;
   transition: all .5s; }
@@ -302,7 +321,8 @@ body {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   transition: all .5s; }
 
 .light-switch-toggle-ui {
@@ -317,7 +337,8 @@ body {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   transition: all .5s; }
 
 .light-switch-toggle-ui.active {
@@ -373,7 +394,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
     .navigation__hamburger::before {
       content: "";
       display: block;
@@ -431,7 +453,8 @@ body {
     display: block;
     font-size: 2.4rem;
     transition: all .5s;
-    transform: translateY(10vh);
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
     opacity: 0; }
     @media (max-width: 37.5em) {
       .menu__link {
@@ -490,8 +513,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   row-gap: 7rem;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
   min-height: 10vw;
   grid-column: col-start 2 / col-end 11;
   margin: 6rem 0 6rem 0; }
@@ -506,8 +529,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     row-gap: 6rem;
-    -moz-column-gap: 6rem;
-         column-gap: 6rem;
+    -webkit-column-gap: 6rem;
+            column-gap: 6rem;
     min-height: 20vw;
     grid-column: col-start 1 / col-end 12;
     margin: 8rem 0 6rem 0; }
@@ -524,34 +547,34 @@ footer {
       .gallery-set .remove {
         display: none; } }
 
-.dark-mode body {
+[data-theme="dark-mode"] body {
   background-color: #1a1a1a; }
 
-.dark-mode p, .dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+[data-theme="dark-mode"] p, [data-theme="dark-mode"] a, [data-theme="dark-mode"] h1, [data-theme="dark-mode"] h2, [data-theme="dark-mode"] h3, [data-theme="dark-mode"] h4, [data-theme="dark-mode"] h5, [data-theme="dark-mode"] h6 {
   color: #f8f8f8; }
 
-.dark-mode button.dark {
+[data-theme="dark-mode"] button.dark {
   border: 2px solid #f8f8f8;
   color: #f8f8f8;
   background-color: #1a1a1a; }
-  .dark-mode button.dark:hover {
+  [data-theme="dark-mode"] button.dark:hover {
     background-color: #f8f8f8;
     color: #1a1a1a;
     border: 2px solid #f8f8f8; }
 
-.dark-mode path {
+[data-theme="dark-mode"] path {
   fill: #f8f8f8; }
 
-.dark-mode .navigation:hover .navigation__link {
+[data-theme="dark-mode"] .navigation:hover .navigation__link {
   color: #404040; }
 
-.dark-mode .navigation__item:hover .navigation__link {
+[data-theme="dark-mode"] .navigation__item:hover .navigation__link {
   color: #f8f8f8; }
 
-.dark-mode .menu__list:hover .menu__link {
+[data-theme="dark-mode"] .menu__list:hover .menu__link {
   color: #404040; }
 
-.dark-mode .menu__item:hover .menu__link {
+[data-theme="dark-mode"] .menu__item:hover .menu__link {
   color: #f8f8f8; }
 
 body {
