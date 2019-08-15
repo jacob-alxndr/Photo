@@ -11,7 +11,7 @@ if (elements.gallerySet){
     })
     
     const scroll = function () {
-        // let odd = 2
+
         let delay = 0.25
         images.forEach(image =>{
             const topTag = image.getBoundingClientRect().top
@@ -19,15 +19,9 @@ if (elements.gallerySet){
 
             if(topTag < window.innerHeight && bottomTag > 0){
                 image.style.animation = `fadeIn 1s ${delay}s both`
-                // odd = odd + 1
-                // if(odd%2 == 0){
-                    delay = delay + 0.25
-                // }
-                console.log(delay)
+                delay = delay + 0.25
                 image.style.opacity = 1;
-                // image.style.border = "5px solid green"
-            }
-            else{
+            }else{
                 image.style.opacity = 0
                 image.style.animation = ""
             }
@@ -37,9 +31,7 @@ if (elements.gallerySet){
     //3.Events
     window.addEventListener('scroll', scroll);
     window.addEventListener('load', scroll);
-
 }
-
 
 
 if (elements.upArrow){
@@ -47,10 +39,8 @@ const scrollTop = function () {
     window.scroll({top: 0, behavior: 'smooth'})
 }
 
-
  //3.Events
 elements.upArrow.addEventListener('click', scrollTop)
-
 }
 
 
