@@ -1,25 +1,19 @@
 .menu {
-    margin-top: 12rem;
     grid-column: col-start 2 / col-end 3;
- 
+    margin-top: 12rem;
 
     @include respond(phone) {
         margin-top: 4rem;
         grid-column: col-start 1 / col-end 12;
     }
    
-    // background-color: $white;
-    // animation: fadeRight 0.7s ease;
-    // transform: translateX(-50vw);
-
     &__list {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        white-space: nowrap;
         min-height: 70vh;
+        white-space: nowrap;
         transition: color 1.2s;
-
         
         &:hover .menu__link{
             color: $gray-7;
@@ -27,11 +21,8 @@
     }
     &__item{
         align-items:flex-start;
-       transition: color .2s;
+        transition: color .2s;
 
-        &:not(:last-child){
-            // margin-bottom: .1rem;
-        }
         &:hover .menu__link{
             color: $black;
             margin-left:.5rem;
@@ -40,18 +31,15 @@
 
     &__link {       
         display: block;
-        // transition: all 1s;
+        opacity: 0;
+        transform: translateY(10vh);
         font-size: 2.4rem;
         transition: all .5s;
-        transform: translateY(10vh);
-        opacity: 0;
        
         @include respond(phone) {
             font-size: 3rem;
         }
        
- 
-
         &:hover {
             color: $black;
         }

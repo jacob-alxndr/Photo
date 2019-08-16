@@ -1,61 +1,52 @@
 .light-switch{
-    z-index: 3;
     position: fixed;
+    z-index: 3;
     bottom: 9%;
     left: 4%;
     transform: translate(-50%,-50%);
     width: 2.5rem;
     height: 2.5rem;
     transition: all .5s;
+
     @include respond(tab-port) {
-     
         display: none;
     }
 }
 
-.light-switch.active{
-    background-color: transparent;
-    border: 2px solid  transparent;
-}
-
 .light-switch-toggle{
-    // -webkit-appearance: none;
-    // opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    border: 2px solid $black;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color:  $white;
     position: absolute;
+    z-index: 1;
     top: 30%;
     left:50%;
     transform: translate(-50%, -50%);
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid $black;
+    border-radius: 50%;
+    background-color:  $white;
     transition: all .5s;
   
     @include respond(tab-port) {
-        // width: 1.7rem;
-        // height: 1.7rem;
-        // top: 50%;
-        // left:30%;
+       
     }
 }
 
 .light-switch-toggle-ui{
     position: absolute;
-    cursor: pointer;
-    display: block;
-    border: 2px solid $black;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    background-color:  $white;
-    position: absolute;
     top: 30%;
     left:50%;
     transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $black;
+    border-radius: 50%;
+    background-color:  $white;
     transition: all .5s;
+    cursor: pointer;
 }
 
 .light-switch-toggle-ui.active{

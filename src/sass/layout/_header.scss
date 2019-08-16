@@ -1,12 +1,11 @@
 .header{
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-column: col-start 1/col-end 12;
-    white-space: nowrap;
-    align-items: flex-end;
     position: relative;
+    display: flex;
+    grid-column: col-start 1/col-end 12;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 8rem;
+    white-space: nowrap;
     animation: fadeDown 1.3s ease;
 
     @include respond(tab-port) {
@@ -15,10 +14,11 @@
     }
 
     @include respond(phone) {
+        justify-content: space-between;
+        align-items: center;
+        max-height: 6rem;
         margin-top: 3rem;
-       max-height: 6rem;
-       flex-direction: column;
-       justify-content: space-between;
-       align-items: center;
+        flex-direction: column;
+      
     }
 }

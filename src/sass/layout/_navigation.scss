@@ -1,6 +1,6 @@
 .navigation{
-    min-width: 26rem;
     display: flex;
+    min-width: 26rem;
     justify-content: flex-end;
     align-content: flex-end;
 
@@ -11,11 +11,11 @@
         min-width: 28rem;
     }
     &__menu{
-        cursor: pointer;
-        height: 3rem;
-        width: 3rem;
         position: relative;
         display: none;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
 
         @include respond(tab-port) {
             display: block;
@@ -23,39 +23,40 @@
     }
 
     &__hamburger{
-        height: .2rem;
-        background-color: $black;
-        width: 3rem;
         position: absolute;
         top: 50%;
         left: 50%;
+        width: 3rem;
+        height: .2rem;
+        background-color: $black;
         transform: translate(-50%,-50%);
 
         &::before{
             content: "";
-            display: block;
             position: absolute;
+            top: -.8rem;
+            display: block;
+            width: 3rem;
             height: .2rem;
             background-color: $black;
-            width: 3rem;
-            top: -.8rem;
         }
         &::after{
             content: "";
-            display: block;
             position: absolute;
-            height: .2rem;
-            background-color: $black;
-            width: 3rem;
             top: .8rem;
+            display: block;
+            height: .2rem;
+            width: 3rem;
+            background-color: $black;
         }
         
     }
 
     &__list{
-        width: 100%;
         display: flex;
         justify-content: space-between;
+        width: 100%;
+
 
         @include respond(tab-port) {
             display: none;
@@ -71,9 +72,5 @@
                 font-size: 90%;
             }
         }
-    }
-
-    &__item:not(:first-child){
-        // margin-left:2.8rem;
     }
 }

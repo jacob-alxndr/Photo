@@ -1,14 +1,15 @@
 html {
-    font-size: 62.5%;
     box-sizing: border-box;
+    font-size: 62.5%;
+
 }
 
 *,
 *::after,
 *::before {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 
 main {
@@ -16,9 +17,10 @@ main {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
     background-color: transparent;
+    text-decoration: none;
+    
 }
 
 ul {

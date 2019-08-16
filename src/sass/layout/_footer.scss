@@ -1,13 +1,13 @@
 footer{
-    grid-column: col-start 6 / content-end;
     display: flex;
+    grid-column: col-start 6 / content-end;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
 
     @include respond(tab-land) {
-        grid-column: col-start 3 / col-end 10;
-        flex-direction: column-reverse;
+        grid-column: col-start 1 / col-end 12;
+        // flex-direction: column-reverse;
     }
     
 
@@ -22,35 +22,26 @@ footer{
             margin-right: 0;
          
         }
-        .light{
-            background-color: $black;
-            color: $white;
-
-            &:hover{
-                border: 2px solid $black;
-                background-color: $white;
-                color: $black;
-            }
-        }
     
         .dark{
-            border-radius: .2rem;
+            padding: 0.7rem 1.6rem;
             border: 2px solid $black;
-            padding: 0.8rem 1.8rem;
+            border-radius: .2rem;
             letter-spacing: 1.0;
 
             &:hover{
                 border: 2px solid $black;
-                background-color: $black;
                 color: $white;
+                background-color: $black;
             }
     
         }
     }
 
     svg{
-        animation: float 2s ease infinite;
+      
         height:50;
+        animation: float 2s ease infinite;
         transition: height .3s;
         &:hover{
             animation: float .5s ease infinite;

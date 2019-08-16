@@ -2,12 +2,11 @@
 import { elements } from "./DOMelements";
 
 const currentTheme = localStorage.getItem('theme');
-console.log(currentTheme)
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme)
   
-    if (currentTheme === 'dark') {
+    if (currentTheme === 'dark-mode') {
         elements.toggleSwitch.checked = true;
     }
 }
@@ -31,9 +30,9 @@ const removeAni = () =>{
     elements.toggleSwitchUI.style.animation = ''
 }
 
+
 //3.Events
 elements.toggleSwitch.addEventListener('click', addAni);
 elements.toggleSwitchUI.addEventListener('transitionend', removeAni);
 elements.toggleSwitch.addEventListener('change', switchTheme)
-elements.toggleSwitch.addEventListener('load', switchTheme)
 elements.toggleSwitchUI.addEventListener('transitionend', removeAni);

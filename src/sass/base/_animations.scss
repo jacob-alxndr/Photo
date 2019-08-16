@@ -22,42 +22,17 @@
     }
 }
 
-@keyframes fadeRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-50vw);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes flicker {
-    0% {
-        background-color: $white;
-    }
-    50% {
-        background-color: $black;
-    }
-    100% {
-        background-color: $white;
-    }
-}
-
 @keyframes float {
     0% {
-        transform: translateY(10%)
+        transform: translateY(10%);
     }
     50% {
-        transform: translateY(-10%)
+        transform: translateY(-10%);
     }
     100% {
-        transform: translateY(10%)
+        transform: translateY(10%);
     }
 }
-
 
 @keyframes stretchIt {
     0% {
@@ -73,5 +48,3 @@
         height: 2.5rem;
     }
 }
-
-

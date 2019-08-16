@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
-// @font-face{
-//     font-family: "Agrandir";
-//     src: url(../fonts/Agrandir/Agrandir-variable.ttf); 
-// }
 
 @font-face {
     src: url(./fonts/Agrandir/Agrandir-regular.otf);
@@ -23,14 +19,11 @@ body {
 }
 
 p,a,h1,h1,h2,h3,h4,h5,h6{
-    transition: color .2s;
-    font-family: "Agrandir";
+    font-family: "Agrandir";  
     font-weight: 400;
+    transition: color .2s;
 }
 
-a{
-    // text-transform: uppercase;
-}
 
 
 //HEADINGS
