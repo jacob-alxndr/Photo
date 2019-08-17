@@ -32,3 +32,27 @@
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin auto {
+    margin: 0 auto;
+    
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//STYLE
+@mixin boxShadow {
+    box-shadow: 0 1.5rem 5rem rgba($color-black, .2); 
+}
+
+@mixin gradientText {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}

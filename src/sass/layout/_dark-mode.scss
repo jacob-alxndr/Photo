@@ -24,6 +24,10 @@
       
     }
 
+    & .menu-full{
+        background-color: $black;
+    }
+
     .light-switch-toggle-ui{
         background-color: $black;
         border: 2px solid  $white;
@@ -41,6 +45,14 @@
             }
         }
     } 
+
+    & .navigation__icon{
+        background-color: $white;
+
+        &::before, &::after{
+            background-color: $white;
+        }
+    }
 
     & .menu__list:hover .menu__link{
         color: $gray-2;

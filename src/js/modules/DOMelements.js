@@ -11,7 +11,7 @@ export const elements = {
     gallery: document.querySelector('.gallery'),
     gallerySet: document.querySelector('.gallery-set'),
     upArrow: document.querySelector('.upArrow'),
-    toggleSwitch: document.querySelector('.light-switch-toggle')
-
-    
+    toggleSwitch: document.querySelector('.light-switch-toggle'),
+    menuSwitch: document.getElementById('navigation-toggle'),
+    menuPopup: document.querySelector('.menu-full')    
 }

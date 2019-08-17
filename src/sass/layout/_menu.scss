@@ -43,5 +43,46 @@
         &:hover {
             color: $black;
         }
+ 
+    }
+
+    &-full{
+        z-index: 2;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        background-color: $white;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s;
+
+        &__list {
+            @include center;
+            white-space: nowrap;
+            
+            &:hover .menu__link{
+                color: $gray-7;
+            }
+
+            & .menu__item{
+                align-items:flex-start;
+                transition: color .2s;
+             
+
+               & .menu__link{
+                font-size: 6rem;
+
+                @include respond(phone) {
+                    font-size: 4rem;
+                }
+               }
+                &:hover .menu__link{
+                    color: $black;
+                    margin-left:.5rem;
+                   
+                }
+            }
+        }
     }
 }
