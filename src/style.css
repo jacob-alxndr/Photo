@@ -213,6 +213,56 @@ body {
   display: grid;
   grid-template-columns: [page-start] 1fr [content] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end]; }
 
+.form {
+  max-width: 100%; }
+  .form .heading {
+    margin-bottom: 2.4rem; }
+  .form__group:not(:last-child) {
+    margin-bottom: .4rem; }
+  .form__input {
+    display: block;
+    width: 50%;
+    padding: 1.2rem 2.2rem .5rem 1.2rem;
+    border: none;
+    border: 1px solid #1a1a1a;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #1a1a1a; }
+    .form__input--textarea {
+      width: 100%;
+      min-height: 15rem;
+      border: 1px solid #1a1a1a; }
+  .form__input::-webkit-input-placeholder {
+    color: #595959; }
+  .form__input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #595959; }
+  .form__input::-ms-input-placeholder {
+    /* IE 10+ */
+    color: #595959; }
+  .form__input::-moz-placeholder {
+    /* Firefox 18- */
+    color: #595959; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 1px solid #4a4aff; }
+  .form__input:focus:invalid {
+    border-bottom: 1px solid orangered; }
+  .form__label {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    display: block;
+    margin-top: .5rem;
+    margin-left: 1.2rem;
+    color: #1a1a1a;
+    font-size: 1.2rem;
+    transition: all .3s ease; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3rem); }
+
 .image-set {
   position: relative;
   width: 100%;
@@ -498,17 +548,19 @@ footer {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-column: col-start 1 / col-end 12;
+  grid-column: col-start 2 / col-end 11;
   grid-gap: 6rem 6rem;
   min-height: 10vw;
   margin: 6rem 0 6rem 0; }
   @media (max-width: 56.25em) {
     .gallery {
+      grid-column: col-start 1 / col-end 12;
       margin: 6rem 0; } }
   @media (max-width: 37.5em) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-      margin: 3rem 0; } }
+      margin: 3rem 0;
+      grid-column: col-start 1 / col-end 12; } }
   .gallery-set {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
@@ -571,5 +623,58 @@ footer {
 [data-theme="dark-mode"] .menu__item:hover .menu__link {
   color: #f8f8f8; }
 
+[data-theme="dark-mode"] .form__input {
+  color: #f8f8f8;
+  border: 1px solid #f8f8f8; }
+  [data-theme="dark-mode"] .form__input--textarea {
+    border: 1px solid #f8f8f8; }
+
+[data-theme="dark-mode"] .form__input::-webkit-input-placeholder {
+  color: #ebebeb; }
+
+[data-theme="dark-mode"] .form__input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ebebeb; }
+
+[data-theme="dark-mode"] .form__input::-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ebebeb; }
+
+[data-theme="dark-mode"] .form__input::-moz-placeholder {
+  /* Firefox 18- */
+  color: #ebebeb; }
+
+[data-theme="dark-mode"] .form__input:focus {
+  border-bottom: 1px solid #4a4aff; }
+  [data-theme="dark-mode"] .form__input:focus--textarea {
+    border: 1px solid #f8f8f8; }
+
+[data-theme="dark-mode"] .form__input:focus:invalid {
+  border-bottom: 1px solid orangered; }
+  [data-theme="dark-mode"] .form__input:focus:invalid--textarea {
+    border: 1px solid #f8f8f8; }
+
+[data-theme="dark-mode"] .form__label {
+  color: #f8f8f8; }
+
 body {
   background-color: #f8f8f8; }
+
+.contact {
+  display: grid;
+  grid-template-columns: [page-start] 1fr [content] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end];
+  grid-column: page-start/ page-end; }
+  .contact .info {
+    display: grid;
+    grid-column: col-start 4 / col-end 9;
+    margin: 10rem 0 6rem 0; }
+    @media (max-width: 56.25em) {
+      .contact .info {
+        grid-column: col-start 1 / col-end 12; } }
+    .contact .info .heading > *:not(:last-child) {
+      margin-bottom: 2.4rem; }
+  .contact .form {
+    grid-column: col-start 4 / col-end 9; }
+    @media (max-width: 56.25em) {
+      .contact .form {
+        grid-column: col-start 1 / col-end 12; } }

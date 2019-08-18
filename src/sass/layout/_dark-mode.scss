@@ -65,5 +65,57 @@
             }
         }
     }
+
+    .form{
+    
+
+        &__input{
+          color: $white;
+            border: 1px solid $white;
+
+            &--textarea{
+                border: 1px solid $white;
+            }
+        }
+    
+        &__input::-webkit-input-placeholder{
+            color: rgb(235, 235, 235);
+        }
+        &__input::-moz-placeholder { /* Firefox 19+ */
+            color: rgb(235, 235, 235);
+        }
+        &__input::-ms-input-placeholder { /* IE 10+ */
+            color: rgb(235, 235, 235);
+        }
+        &__input::-moz-placeholder { /* Firefox 18- */
+            color: rgb(235, 235, 235);
+        }
+    
+        &__input:focus{
+    
+            border-bottom: 1px solid rgb(74, 74, 255);
+            &--textarea{
+                border: 1px solid $white;
+            }
+        }
+    
+        &__input:focus:invalid{
+            border-bottom: 1px solid orangered;
+            &--textarea{
+                border: 1px solid $white;
+            }
+        }
+    
+        &__label{
+           
+            color: $white;
+      
+        }
+    
+        &__input:placeholder-shown + &__label{
+         
+        }
+    
+    }
       
 }
