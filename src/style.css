@@ -290,9 +290,7 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   height: 8rem;
-  white-space: nowrap;
-  -webkit-animation: fadeDown 1.3s ease;
-          animation: fadeDown 1.3s ease; }
+  white-space: nowrap; }
   @media (max-width: 56.25em) {
     .header {
       grid-column: col-start 2 /col-end 11; } }
