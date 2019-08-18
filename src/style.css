@@ -308,7 +308,7 @@ body {
       align-items: center;
       max-height: 6rem;
       margin-top: 3rem;
-      grid-column: col-start 2 /col-end 11; } }
+      grid-column: col-start 1 /col-end 12; } }
 
 .navigation {
   display: flex;
