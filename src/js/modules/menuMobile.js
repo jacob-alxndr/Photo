@@ -29,7 +29,7 @@ const menuFadeIn = ()=>{
     else{
         elements.menuPopup.style.opacity = 0
         elements.menuPopup.style.visibility = 'hidden'
-        elements.body.style.overflow = ""
+        elements.body.style.overflow = "visible"
     }
 }
 
