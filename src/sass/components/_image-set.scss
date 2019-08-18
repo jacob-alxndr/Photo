@@ -4,17 +4,7 @@
     margin: 0 auto;
     animation: fadeIn 2.3s ease;
     cursor: pointer;
-    // @include respond(tab-port) {
-    //     width: 100%;
-    // }
 
-    // &:nth-child(odd){
-    //    max-width: 90%;
-
-    //    @include respond(tab-port) {
-    //     max-width: 100%;
-    //     }
-    // }
 
     &:hover h4 {
         top: 2rem;

@@ -1,7 +1,7 @@
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    grid-column: col-start 2 / col-end 11;
+    grid-column: col-start 1 / col-end 12;
     grid-gap:  7rem 1rem;
     min-height: 10vw;
     margin: 6rem 0 6rem 0;
@@ -10,10 +10,12 @@
         margin: 6rem 0;
     }
     @include respond(phone) {
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         margin: 3rem 0;
      
     }
+
+   
 
     &-set{
     display: grid;
@@ -41,4 +43,14 @@
 
         }
     }
+
+
+    // div[class~="gallery"]{
+
+//     @include respond(phone) {
+//         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+//         margin: 3rem 0;
+//     }
+// }
 }
+
