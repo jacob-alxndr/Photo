@@ -14,6 +14,11 @@ const menuFadeIn = ()=>{
         elements.menuPopup.style.opacity = 1
         elements.menuPopup.style.visibility = 'visible'
         elements.body.style.overflowY = "hidden"
+        elements.menuBtn.style.position = 'fixed'
+        elements.menuBtn.style.top = '4rem'
+
+        // position: fixed;
+        // top: 4rem;
 
     //     let time = 0
     // elements.menuItems.forEach(item =>{
@@ -30,6 +35,8 @@ const menuFadeIn = ()=>{
         elements.menuPopup.style.opacity = 0
         elements.menuPopup.style.visibility = 'hidden'
         elements.body.style.overflowY = "visible"
+        elements.menuBtn.style.position = 'relative'
+        elements.menuBtn.style.top = ''
     }
 }
 
