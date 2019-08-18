@@ -13,7 +13,7 @@ const menuFadeIn = ()=>{
     if(elements.menuSwitch.checked){
         elements.menuPopup.style.opacity = 1
         elements.menuPopup.style.visibility = 'visible'
-        elements.body.style.overflow = "hidden"
+        elements.body.style.overflowY = "hidden"
 
     //     let time = 0
     // elements.menuItems.forEach(item =>{
@@ -29,7 +29,7 @@ const menuFadeIn = ()=>{
     else{
         elements.menuPopup.style.opacity = 0
         elements.menuPopup.style.visibility = 'hidden'
-        elements.body.style.overflow = "visible"
+        elements.body.style.overflowY = "visible"
     }
 }
 
