@@ -3,7 +3,7 @@
     margin-top: 12rem;
 
     @include respond(phone) {
-        margin-top: 4rem;
+        margin-top: 2rem;
         grid-column: col-start 1 / col-end 12;
     }
    
@@ -37,7 +37,7 @@
         transition: all .5s;
        
         @include respond(phone) {
-            font-size: 3rem;
+            font-size: 2.8rem;
         }
        
         &:hover {
