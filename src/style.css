@@ -110,6 +110,9 @@ button {
   font: inherit;
   letter-spacing: inherit; }
 
+body {
+  overflow-y: hidden; }
+
 @font-face {
   src: url(./fonts/Agrandir/Agrandir-regular.otf);
   font-family: "Agrandir";
@@ -518,7 +521,7 @@ footer {
     margin: 8rem 0 6rem 0; }
     @media (max-width: 37.5em) {
       .gallery-set {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         margin: 3rem 0; } }
     .gallery-set .image-set {
       max-width: 100%;
