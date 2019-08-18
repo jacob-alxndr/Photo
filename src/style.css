@@ -448,6 +448,7 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      top: 30%;
       white-space: nowrap; }
       .menu-full__list:hover .menu__link {
         color: #CCCCCC; }

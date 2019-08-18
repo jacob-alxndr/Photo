@@ -59,6 +59,7 @@
 
         &__list {
             @include center;
+            top:30%;
             white-space: nowrap;
             
             &:hover .menu__link{
