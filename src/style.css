@@ -110,6 +110,9 @@ button {
   font: inherit;
   letter-spacing: inherit; }
 
+body {
+  -webkit-overflow-scrolling: touch; }
+
 @font-face {
   src: url(./fonts/Agrandir/Agrandir-regular.otf);
   font-family: "Agrandir";
@@ -215,8 +218,7 @@ body {
   width: 100%;
   margin: 0 auto;
   -webkit-animation: fadeIn 2.3s ease;
-          animation: fadeIn 2.3s ease;
-  cursor: pointer; }
+          animation: fadeIn 2.3s ease; }
   .image-set:hover h4 {
     top: 2rem;
     opacity: 1; }
@@ -316,7 +318,8 @@ body {
     color: #CCCCCC; }
   .navigation__button {
     z-index: 10;
-    position: relative;
+    position: fixed;
+    top: 4rem;
     height: 4rem;
     width: 4rem;
     cursor: pointer; }
