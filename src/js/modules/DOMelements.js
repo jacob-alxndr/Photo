@@ -12,7 +12,9 @@ export const elements = {
     gallerySet: document.querySelector('.gallery-set'),
     upArrow: document.querySelector('.upArrow'),
     toggleSwitch: document.querySelector('.light-switch-toggle'),
-    menuSwitch: document.getElementById('navigation-toggle'),
+    navToggle: document.getElementById('navigation-toggle'),
     menuPopup: document.querySelector('.menu-full'),
-    menuBtn: document.querySelector('.navigation__button')
+    navBtn: document.querySelector('.navigation__button'),
+    menuFullLinks: document.querySelectorAll('.menu-full__list .menu__link')
+  
 }
