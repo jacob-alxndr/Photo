@@ -21,7 +21,10 @@
 
     path{
         fill: $white;
-      
+    }
+
+    .connect .social__list path{
+        fill: $white;
     }
 
     & .menu-full{

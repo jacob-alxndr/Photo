@@ -10,7 +10,7 @@ export const elements = {
     htmlTag: document.querySelector('html'),
     gallery: document.querySelector('.gallery'),
     gallerySet: document.querySelector('.gallery-set'),
-    upArrow: document.querySelector('.upArrow'),
+    upArrow: document.querySelector('footer .upArrow'),
     toggleSwitch: document.querySelector('.light-switch-toggle'),
     navToggle: document.getElementById('navigation-toggle'),
     menuPopup: document.querySelector('.menu-full'),
