@@ -2,9 +2,10 @@
     position: relative;
     display: flex;
     grid-column: col-start 1/col-end 12;
-    align-items: flex-end;
+    align-items: baseline;
     justify-content: space-between;
-    height: 8rem;
+    max-height: 8rem;
+    margin-top: 3.2rem;
     white-space: nowrap;
     // animation: fadeDown 1.3s ease;
 

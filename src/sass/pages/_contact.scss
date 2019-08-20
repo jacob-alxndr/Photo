@@ -1,0 +1,126 @@
+.contact{
+    display: grid;
+    grid-template-columns: [page-start] 1fr [content] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end];
+    grid-column: page-start/ page-end;
+
+    .info{
+        display: grid;
+        grid-column: col-start 4 / col-end 9;
+        margin: 8rem 0 3rem 0;
+
+        // @include respond(tab-land){
+        //     grid-column: col-start 3 / col-end 10;
+        // }
+
+        // @include respond(tab-port){
+        //     grid-column: col-start 3 / col-end 10;
+        // }
+
+        @include respond(phone){
+            grid-column: col-start 1 / col-end 12;
+        }
+    
+        & .heading{
+
+            & > *:not(:last-child){
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+
+    .connect{
+        grid-column: col-start 2 / col-end 5;
+        // display:flex;
+        // justify-content: space-between;
+        // margin: 0rem 0 10rem 0;
+
+        @include respond(tab-land){
+            grid-column: col-start 3 / col-end 10;
+            // flex-direction: column-reverse;
+            // align-content: space-between;
+        }
+
+        @include respond(tab-port){
+            grid-column: col-start 3 / col-end 10;
+            // flex-direction: column-reverse;
+            // align-content: space-between;
+        }
+
+        @include respond(phone){
+            grid-column: col-start 1 / col-end 12;
+            flex-direction: column-reverse;
+            align-content: space-between;
+            margin: 0rem 0 2.4rem 0;
+        }
+
+
+        & .heading{
+            margin-bottom: 1.6rem;
+            font-size: 3.2rem;
+            @include respond(tab-port){
+                margin-top: 2.6rem;
+            }
+        }
+
+        &__content{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            // grid-column: col-start 4 / col-end 5;
+        }
+
+        img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            border-radius: .2rem;
+    
+        }
+
+        svg{
+            margin-top: 3.2rem;
+            animation: float 2s ease infinite;
+            transition: height .3s;
+
+
+        @include respond(phone){
+            display: none;
+        }
+
+            &:hover{
+                animation: float .5s ease infinite;
+        
+            }
+            cursor: pointer;
+            path{
+                fill: $black;
+                transform-origin: center;
+                transform: rotate(180deg);
+     
+              
+            }
+        }
+        
+        
+    }
+
+    .form{
+        grid-column: col-start 4 / col-end 9;
+
+        @include respond(tab-land){
+            grid-column: col-start 3 / col-end 10;
+        }
+
+        @include respond(tab-port){
+            grid-column: col-start 1 / col-end 12;
+        }
+
+
+        @include respond(phone){
+         
+            margin: 0rem 0 2.4rem 0;
+        }
+        
+    }
+
+}

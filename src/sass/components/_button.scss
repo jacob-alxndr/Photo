@@ -1,19 +1,21 @@
 button {
 	display: inline-block;
 	border: none;
-	padding: 1rem 1rem;
+	padding: 1rem 2rem 0.7rem 2rem;
 	color: $black;
 	background-color: $white;
+	border: 1px solid $black;
 	letter-spacing: .091em;
 	line-height: 1em;
 	text-align: center;
-	text-transform: uppercase;
 	white-space: nowrap;
 	outline: none;
 	transition: all .3s ease;
 	cursor: pointer;
 
-		// &:hover{
-			
-		// }
+	&:hover{
+		border: 1px solid $black;
+		color: $white;
+		background-color: $black;
+	}	
 }

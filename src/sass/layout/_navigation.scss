@@ -1,8 +1,8 @@
 .navigation{
     display: flex;
-    min-width: 28rem;
+    min-width: 30rem;
     justify-content: flex-end;
-    align-content: flex-end;
+    align-items: baseline;
 
     @include respond(phone) {
         min-width: 0;
@@ -125,7 +125,7 @@
         }
 
         .navigation__link{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             &:hover{
                 color:$black;
             }

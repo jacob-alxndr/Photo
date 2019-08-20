@@ -59,17 +59,19 @@
 
 <section class="contact">
   <div class="info">
-      <div class="heading">
-        <h3>Info</h3>
-        <p >Jacob Martinez is a San Francisco-based photographer. Experienced in all aspects of image-making. Jacob roots himself in every project, from ideation to execution. His work focuses on simplistic visual concepts inspired by organic colors, human form and emotions.</p>
-      </div>
-    </div>  
+    <div class="heading">
+      <h4>Info</h4>
+      <p >Jacob Martinez is a San Francisco-based photographer. Experienced in all aspects of image-making. Jacob roots himself in every project, from ideation to execution. His work focuses on simplistic visual concepts inspired by organic colors, human form and emotions.</p>
+    </div>
+  </div>  
 
-  <div class="connect">
+  <!-- <div class="connect">
+    <div class="heading">
+      <h3>Connect</h3>
+    </div>
+
+    <div class="connect__content">
     <div class="copy__container">
-      <div class="heading">
-        <h3>Connect</h3>
-      </div>
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link">Email</a>
@@ -90,17 +92,18 @@
     </div>
     <div class="img__container">
         <img 
-        srcset="./img/1x/ijji_2.JPG 300w, ./img/2x/ijji-2x_2.JPG 1000w"
-        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-        alt="ijji co"
-        src="./img/2x/ijji-2x_2.JPG">
+        srcset="./img/2x/me.JPG 300w, ./img/2x/me.JPG 1000w"
+        sizes="(max-width: 56.25em) 30vw, (max-width: 37.5em) 30vw, 250px"
+        alt="Jacob Martinez"
+        src="./img/2x/me.JPG">
     </div>
-  </div>
+    </div>
+  </div> -->
 
 
-      <form action="" class="form">
+      <form action="" name="contact"class="form" data-netlify="true">
           <div class="heading">
-              <h3>Get in touch</h3>
+              <h4>Get in touch</h4>
           </div>
         <div class="form__group">
           <input type="text" class="form__input" placeholder="Name" id="name" required>
@@ -118,7 +121,7 @@
         </div>
 
         <div class="form__group">
-          <button class="">
+          <button class="dark">
             Submit
             <input type="submit" class="form__input form__input--submit" id="submit" value="Submit">
           </button>
