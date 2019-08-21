@@ -16,8 +16,8 @@ if (elements.gallerySet){
         images.forEach(image =>{
             const topTag = image.getBoundingClientRect().top
             const bottomTag = image.getBoundingClientRect().bottom
-
-            if(topTag < window.innerHeight && bottomTag > 0){
+                                            // && bottomTag > 0
+            if(topTag < window.innerHeight){
                 image.style.animation = `fadeIn 1s ${delay}s both`
                 delay = delay + 0.25
                 image.style.opacity = 1;

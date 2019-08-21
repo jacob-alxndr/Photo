@@ -8,14 +8,21 @@ const reset = () => {
     elements.navToggle.checked = false
 }
 
+
+
 const menuFadeIn = ()=>{
+    const height = window.innerHeight
 
     if(elements.navToggle.checked){
         elements.menuPopup.style.opacity = 1
         elements.menuPopup.style.visibility = 'visible'
-        elements.body.style.overflowY = "hidden"
-        elements.navBtn.style.position = 'fixed'
-        elements.navBtn.style.top = '4rem'
+        elements.htmlTag.style.height = `${height}px`
+        elements.htmlTag.classList.add('open')
+
+        // elements.htmlTag.style.overflowY = 'hidden'
+        
+        // elements.navBtn.style.position = 'fixed'
+        // elements.navBtn.style.top = '1rem'
 
         let time = 0
     elements.menuFullLinks.forEach(item =>{
@@ -31,9 +38,11 @@ const menuFadeIn = ()=>{
     else{
         elements.menuPopup.style.opacity = 0
         elements.menuPopup.style.visibility = 'hidden'
-        elements.body.style.overflowY = "visible"
-        elements.navBtn.style.position = 'relative'
-        elements.navBtn.style.top = ''
+        elements.htmlTag.style.height = ''
+        elements.htmlTag.classList.remove('open')
+        // elements.htmlTag.style.overflowY = 'visible'
+        // elements.navBtn.style.position = ''
+        // elements.navBtn.style.top = ''
         
         elements.menuFullLinks.forEach(item =>{
                 item.style.opacity = 0;

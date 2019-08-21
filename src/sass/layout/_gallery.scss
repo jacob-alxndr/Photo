@@ -21,9 +21,9 @@
 
     &-set{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    grid-column: col-start 1 / col-end 12;
-    grid-gap: 6rem 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column: col-start 2 / col-end 11;
+    grid-gap: 3rem 3rem;
     min-height: 20vw;
     margin: 8rem 0 6rem 0;
 

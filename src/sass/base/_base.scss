@@ -4,6 +4,12 @@ html {
 
 }
 
+
+html.open{
+    overflow-y: hidden;
+    -webkit-overflow-scrolling:none;
+}
+
 *,
 *::after,
 *::before {
@@ -51,6 +57,7 @@ button {
 }
 
 
-body{
+body.open{
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 }

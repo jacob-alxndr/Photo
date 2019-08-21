@@ -1,13 +1,17 @@
 footer{
     display: flex;
-    grid-column: col-start 6 / content-end;
+    grid-column: col-start 11/ col-end 12;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
 
     @include respond(tab-land) {
         grid-column: col-start 1 / col-end 12;
-        // flex-direction: column-reverse;
+    }
+
+
+    @include respond(phone) {
+        grid-column: col-start 2 / col-end 12;
     }
     
 
