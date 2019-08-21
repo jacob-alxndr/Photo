@@ -16,6 +16,10 @@
         &:hover span{
             top:110%;
             opacity: 1;
+
+            @include respond(tab-port){
+                opacity: 0;
+            }
         }
 
         span{

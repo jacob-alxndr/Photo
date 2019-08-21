@@ -368,6 +368,9 @@ body {
     .prevNext a:hover span {
       top: 110%;
       opacity: 1; }
+      @media (max-width: 56.25em) {
+        .prevNext a:hover span {
+          opacity: 0; } }
     .prevNext a span {
       position: absolute;
       position: absolute;
