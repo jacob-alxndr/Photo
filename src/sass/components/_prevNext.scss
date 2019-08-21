@@ -1,0 +1,38 @@
+.prevNext{
+    display: flex;
+    grid-column: col-start 6/col-end 7;
+    align-items: baseline;
+    justify-content: space-between;
+    // max-height: 8rem;
+    margin: 3.2rem 0;
+
+    @include respond(phone){
+        grid-column: col-start 1/col-end 12;
+        margin: 1rem 0;
+    }
+
+    a{
+        position: relative;
+        &:hover span{
+            top:110%;
+            opacity: 1;
+        }
+
+        span{
+            position: absolute;
+            @include center;
+            opacity: 0;
+            transition: all .4s;
+            
+        }
+    }
+
+    [class^='arrow']{
+        transform-origin: center;
+            path{
+                fill: $black;
+            }
+    }
+    .arrow__left{ transform: rotate(-90deg);}
+    .arrow__right{ transform: rotate(90deg);}
+}
