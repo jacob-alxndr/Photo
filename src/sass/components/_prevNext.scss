@@ -18,6 +18,7 @@
             opacity: 1;
 
             @include respond(tab-port){
+                top:0;
                 opacity: 0;
             }
         }
