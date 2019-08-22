@@ -29,15 +29,3 @@
     }
 }
 
-
-.image-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-column: col-start 7/ col-end 10;
-    margin-top: 12rem;
-
-
-   & .image-set{
-        opacity: 0;
-    }
-}

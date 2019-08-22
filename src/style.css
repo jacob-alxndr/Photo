@@ -305,14 +305,6 @@ body {
     width: 100%;
     border-radius: .2rem; }
 
-.image-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-column: col-start 7/ col-end 10;
-  margin-top: 12rem; }
-  .image-list .image-set {
-    opacity: 0; }
-
 .light-switch {
   position: fixed;
   z-index: 3;
