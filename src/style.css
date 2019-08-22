@@ -274,18 +274,17 @@ body {
     transform: translate(-5.5rem, -3rem);
     margin-top: .5rem;
     margin-left: 1.2rem;
+    opacity: 0;
     color: #1a1a1a;
     font-size: 1.2rem;
     transition: all .3s ease; }
   .form__input:placeholder-shown + .form__label {
     opacity: 0;
-    visibility: hidden;
-    transform: translateX(-3rem);
-    transform: translateY(-3rem); }
+    visibility: hidden; }
 
 .image-set {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   -webkit-animation: fadeIn 2.3s ease;
           animation: fadeIn 2.3s ease; }
@@ -305,6 +304,14 @@ body {
     z-index: 1;
     width: 100%;
     border-radius: .2rem; }
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-column: col-start 7/ col-end 10;
+  margin-top: 12rem; }
+  .image-list .image-set {
+    opacity: 0; }
 
 .light-switch {
   position: fixed;
@@ -379,6 +386,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 0;
+      font-size: 1.3rem;
       transition: all .4s; }
   .prevNext [class^='arrow'] {
     transform-origin: center; }
@@ -520,6 +528,8 @@ body {
   .menu__item {
     align-items: flex-start;
     transition: color .2s; }
+    .menu__item:hover ~ .image-list > .image-set {
+      opacity: 1; }
     .menu__item:hover .menu__link {
       color: #1a1a1a;
       margin-left: .5rem; }
@@ -555,7 +565,7 @@ body {
       top: 40%;
       white-space: nowrap; }
       .menu-full__list:hover .menu__link {
-        color: #404040; }
+        color: #CCCCCC; }
       .menu-full__list .menu__item {
         align-items: flex-start;
         transition: color .2s; }
@@ -590,7 +600,7 @@ footer {
       footer .buttons {
         margin-right: 0; } }
   footer svg {
-    height: 50;
+    height: 25%;
     -webkit-animation: float 2s ease infinite;
             animation: float 2s ease infinite;
     transition: height .3s;
@@ -627,6 +637,7 @@ footer {
     @media (max-width: 37.5em) {
       .gallery-set {
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-column: col-start 1 / col-end 12;
         margin: 3rem 0; } }
     .gallery-set .image-set {
       max-width: 100%;
@@ -715,6 +726,9 @@ footer {
 
 [data-theme="dark-mode"] .form__label {
   color: #f8f8f8; }
+
+[data-theme="dark-mode"] .prevNext [class^='arrow'] path {
+  fill: #f8f8f8; }
 
 body {
   background-color: #f8f8f8; }

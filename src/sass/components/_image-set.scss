@@ -1,6 +1,6 @@
 .image-set {
     position: relative;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     animation: fadeIn 2.3s ease;
 
@@ -26,5 +26,18 @@
         width: 100%;
         border-radius: .2rem;
 
+    }
+}
+
+
+.image-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column: col-start 7/ col-end 10;
+    margin-top: 12rem;
+
+
+   & .image-set{
+        opacity: 0;
     }
 }

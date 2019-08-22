@@ -23,6 +23,10 @@
         align-items:flex-start;
         transition: color .2s;
 
+        &:hover ~ .image-list > .image-set{
+            opacity: 1;
+        }
+
         &:hover .menu__link{
             color: $black;
             margin-left:.5rem;
@@ -35,6 +39,7 @@
         transform: translateY(10vh);
         font-size: 2.4rem;
         transition: all .5s;
+        
        
         @include respond(phone) {
             font-size: 2.8rem;
@@ -67,7 +72,7 @@
         
             
             &:hover .menu__link{
-                color: $gray-2;
+                color: $gray-7;
             }
 
             & .menu__item{

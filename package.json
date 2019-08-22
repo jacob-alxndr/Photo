@@ -3,7 +3,11 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build",
+        "deploy": "npm run build && mv dist docs && git add . && git commit -m 'deploying build' && git push"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/danielhult/starter.git"

@@ -12,18 +12,15 @@ if (elements.gallerySet){
     
     const scroll = function () {
 
-        let delay = 0.25
+        let delay = 0.15
         images.forEach(image =>{
             const topTag = image.getBoundingClientRect().top
             const bottomTag = image.getBoundingClientRect().bottom
                                             // && bottomTag > 0
             if(topTag < window.innerHeight){
                 image.style.animation = `fadeIn 1s ${delay}s both`
-                delay = delay + 0.25
+                delay = delay + 0.15
                 image.style.opacity = 1;
-            }else{
-                image.style.opacity = 0
-                image.style.animation = ""
             }
         })
        
