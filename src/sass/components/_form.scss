@@ -1,9 +1,11 @@
 .form{
-    max-width: 100%;
-    & .heading{
-       
-            margin-bottom: 2.4rem;
+    min-width: 35rem;
 
+    @include respond(tab-port){
+        min-width: 100%;
+    }
+    & .heading{
+        margin-bottom: 2.4rem;
     }
 
     // &__group:not(:last-child){
@@ -12,7 +14,7 @@
 
     &__input{
         display: block;
-        width: 50%; 
+        width: 100%; 
         padding: 1.2rem 2.2rem .5rem 1.2rem;
         border: none;
         border: 1px solid $gray-6;

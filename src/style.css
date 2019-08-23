@@ -226,12 +226,15 @@ body {
   grid-template-columns: [page-start] 1fr [content] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end]; }
 
 .form {
-  max-width: 100%; }
+  min-width: 35rem; }
+  @media (max-width: 56.25em) {
+    .form {
+      min-width: 100%; } }
   .form .heading {
     margin-bottom: 2.4rem; }
   .form__input {
     display: block;
-    width: 50%;
+    width: 100%;
     padding: 1.2rem 2.2rem .5rem 1.2rem;
     border: none;
     border: 1px solid #A6A6A6;
@@ -731,13 +734,19 @@ body {
   grid-column: page-start/ page-end; }
   .contact .info {
     display: grid;
-    grid-column: col-start 4 / col-end 9;
-    margin: 8rem 0 3rem 0; }
-    @media (max-width: 37.5em) {
+    grid-column: col-start 2 / col-end 11;
+    grid-gap: 2rem 2rem;
+    margin: 12rem 0 3rem 0; }
+    @media (max-width: 56.25em) {
       .contact .info {
-        grid-column: col-start 1 / col-end 12; } }
-    .contact .info .heading > *:not(:last-child) {
-      margin-bottom: 1.6rem; }
+        display: flex;
+        flex-direction: column;
+        grid-column: col-start 1 / col-end 12;
+        margin: 8rem 0 3rem 0; } }
+    .contact .info .heading {
+      max-width: 46rem; }
+      .contact .info .heading > *:not(:last-child) {
+        margin-bottom: 1.6rem; }
   .contact .connect {
     grid-column: col-start 2 / col-end 5; }
     @media (max-width: 75em) {
