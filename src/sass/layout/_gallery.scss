@@ -6,15 +6,17 @@
     min-height: 10vw;
     margin: 6rem 0 6rem 0;
 
+    @include respond(tab-land) {
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    }
+
     @include respond(tab-port) {
         grid-column: col-start 1 / col-end 12;
         margin: 6rem 0;
     }
     @include respond(phone) {
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         margin: 3rem 0;
-        grid-column: col-start 1 / col-end 12;
-     
+
     }
 
    
@@ -28,14 +30,13 @@
     margin: 8rem 0 6rem 0;
 
     @include respond(phone) {
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-column: col-start 1 / col-end 12;
         margin: 3rem 0;
     }
 
     & .image-set{
         max-width: 100%;
-        animation: fadeIn 1s ease;
         cursor: auto;
         }
 

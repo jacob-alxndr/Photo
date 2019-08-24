@@ -92,16 +92,18 @@
     }
 
      &__checkbox:checked ~ &__button > &__icon::before{
-         transform-origin: center;
-        transform: rotate(225deg); 
         top: 0rem;
+        transform-origin: center;
+        transform: rotate(225deg); 
+       
     
     }
 
      &__checkbox:checked ~ &__button > &__icon::after{
+        top: 0rem;
         transform-origin: center;
         transform: rotate(-45deg); 
-        top: 0rem;
+       
     
     }
 
