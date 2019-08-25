@@ -19,7 +19,7 @@ if (isset($_POST["name"]) && isset($_POST["email"])) {
     
     mail($to,$email_subject,$email_body);
 
-    header("Location: contact.html");
+    header("Location: contact.html?mailsend");
     
 }
     ?>
