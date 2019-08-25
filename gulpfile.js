@@ -31,6 +31,10 @@ gulp.task('html', function() {
     return gulp.src('src/**/*.html').pipe(gulp.dest('dist'))
 })
 
+gulp.task('php', function() {
+    return gulp.src('src/**/*.php').pipe(gulp.dest('dist'))
+})
+
 gulp.task('fonts', function() {
     return gulp.src('src/fonts/**/*').pipe(gulp.dest('dist/fonts'))
 })
@@ -71,5 +75,5 @@ gulp.task('watch', function() {
 })
 
 //Default Gulp task
-gulp.task('default', ['html', 'sass', 'fonts', 'js', 'images', 'watch'])
+gulp.task('default', ['html', 'php', 'sass', 'fonts', 'js', 'images', 'watch'])
 // gulp.task('build', ['html', 'sass', 'fonts', 'js', 'images',])
