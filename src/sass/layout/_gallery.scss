@@ -5,6 +5,7 @@
     grid-gap:  6rem 6rem;
     min-height: 10vw;
     margin: 6rem 0 6rem 0;
+  
 
     @include respond(tab-land) {
         grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
@@ -23,11 +24,17 @@
 
     &-set{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-column: col-start 2 / col-end 11;
-    grid-gap: 3rem 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column: col-start 1 / col-end 11;
+    grid-gap: 5rem 5rem;
     min-height: 20vw;
     margin: 8rem 0 6rem 0;
+    // border: 2px dotted orangered;
+
+    @include respond(tab-land) {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column: col-start 2 / col-end 11;
+    }
 
     @include respond(phone) {
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -36,8 +43,32 @@
     }
 
     & .image-set{
-        max-width: 100%;
+        z-index: 5;
+        position: relative;
+        width: 100%;
         cursor: auto;
+
+        @include respond(tab-land) {
+            max-width: 100%;
+        }
+
+        @include respond(phone) {
+            max-width: 100%;
+        }
+
+        &:nth-child(odd){
+            width: 130%;
+
+            @include respond(tab-land) {
+                width: 110%;
+            }
+
+            @include respond(phone) {
+                max-width: 100%;
+            }
+        }
+
+      
         }
 
         .remove{
