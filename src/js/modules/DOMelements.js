@@ -16,6 +16,7 @@ export const elements = {
     navToggle: document.getElementById('navigation-toggle'),
     menuPopup: document.querySelector('.menu-full'),
     navBtn: document.querySelector('.navigation__button'),
-    menuFullLinks: document.querySelectorAll('.menu-full__list .menu__link')
+    menuFullLinks: document.querySelectorAll('.menu-full__list .menu__link'),
+    imgs: document.querySelectorAll('.image-set img')
   
 }

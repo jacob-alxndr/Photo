@@ -32,19 +32,17 @@
     }
 
     .light-switch-toggle-ui{
-    transform: rotate(90deg);
-    transform-origin: center;
-
-}
-    .light-switch-toggle-ui--left{
-     
+ 
         background-color: $white;
         border: 2px solid  $white;
-    }
+
+}
+
     .light-switch-toggle-ui--right{
-        width: 60%;
+        // width: 60%;
         background-color: $black;
-        border: 2px solid  $white;
+        // border: 2px solid  $white;
+        left:25%;
     }
 
 
