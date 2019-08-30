@@ -13,6 +13,7 @@ function selectImg(e){
 const close = () =>{
     elements.modal.style.opacity = 0
     elements.modal.style.visibility = "hidden"
+    elements.modalImg.src = ""
 
 }
 
