@@ -38,7 +38,10 @@ const scrollTop = function () {
 
  //3.Events
 elements.upArrow.addEventListener('click', scrollTop)
+elements.toTop.addEventListener('click', scrollTop)
 }
+
+
 
 
 

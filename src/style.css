@@ -311,8 +311,8 @@ body {
 .light-switch {
   position: fixed;
   z-index: 3;
-  bottom: 9%;
-  left: 7%;
+  bottom: 10%;
+  right: 5%;
   transform: translate(-50%, -50%);
   width: 2.5rem;
   height: 2.5rem;
@@ -596,36 +596,24 @@ body {
 
 footer {
   display: flex;
-  grid-column: col-start 11/ col-end 12;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4rem; }
+  grid-column: col-start 1/ col-end 2;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 8rem; }
   @media (max-width: 75em) {
     footer {
       grid-column: col-start 1 / col-end 12; } }
   @media (max-width: 37.5em) {
     footer {
       grid-column: col-start 2 / col-end 12; } }
-  footer .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 11rem;
-    margin-right: 2rem; }
-    @media (max-width: 75em) {
-      footer .buttons {
-        margin-right: 0; } }
   footer svg {
     height: 40%;
-    -webkit-animation: float 2s ease infinite;
-            animation: float 2s ease infinite;
-    transition: height .3s;
     cursor: pointer; }
-    footer svg:hover {
-      -webkit-animation: float .5s ease infinite;
-              animation: float .5s ease infinite; }
     footer svg path {
       fill: #1a1a1a; }
+  footer span {
+    font-size: 1.6rem;
+    cursor: pointer; }
 
 .gallery {
   display: grid;
@@ -663,7 +651,8 @@ footer {
     .gallery-set .image-set {
       position: relative;
       width: 100%;
-      cursor: auto; }
+      cursor: auto;
+      cursor: pointer; }
       @media (max-width: 75em) {
         .gallery-set .image-set {
           max-width: 100%; } }
@@ -731,6 +720,11 @@ footer {
 [data-theme="dark-mode"] .menu__item:hover .menu__link {
   color: #f8f8f8; }
 
+[data-theme="dark-mode"] .modal {
+  background-color: #1a1a1a; }
+  [data-theme="dark-mode"] .modal__icon::before, [data-theme="dark-mode"] .modal__icon::after {
+    background-color: #f8f8f8; }
+
 [data-theme="dark-mode"] .form__input {
   color: #f8f8f8;
   border: 1px solid #f8f8f8; }
@@ -767,6 +761,86 @@ footer {
 
 [data-theme="dark-mode"] .prevNext [class^='arrow'] path {
   fill: #f8f8f8; }
+
+[data-theme="dark-mode"] footer span {
+  color: #f8f8f8; }
+
+.modal {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-color: #f8f8f8;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s; }
+  .modal .image-container {
+    height: 60rem;
+    width: auto; }
+    .modal .image-container img {
+      height: 100%;
+      width: 100%; }
+  .modal__checkbox {
+    display: none; }
+  .modal__button {
+    z-index: 10;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer; }
+    @media (max-width: 56.25em) {
+      .modal__button {
+        display: block; } }
+  .modal__icon {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 3rem;
+    height: .2rem;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out; }
+    @media (max-width: 56.25em) {
+      .modal__icon {
+        display: block; } }
+    @media (max-width: 37.5em) {
+      .modal__icon {
+        width: 2.2rem; } }
+    .modal__icon::before {
+      content: "";
+      position: absolute;
+      top: 0rem;
+      transform-origin: center;
+      transform: rotate(225deg);
+      display: block;
+      width: 3rem;
+      height: .2rem;
+      background-color: #1a1a1a;
+      transition: all .3s ease-in-out; }
+      @media (max-width: 37.5em) {
+        .modal__icon::before {
+          width: 2.2rem; } }
+    .modal__icon::after {
+      content: "";
+      position: absolute;
+      top: 0rem;
+      transform-origin: center;
+      transform: rotate(-45deg);
+      display: block;
+      height: .2rem;
+      width: 3rem;
+      background-color: #1a1a1a;
+      transition: all .3s ease-in-out; }
+      @media (max-width: 37.5em) {
+        .modal__icon::after {
+          width: 2.2rem; } }
 
 body {
   background-color: #f8f8f8; }

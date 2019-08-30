@@ -12,11 +12,16 @@ export const elements = {
     gallery: document.querySelector('.gallery'),
     gallerySet: document.querySelector('.gallery-set'),
     upArrow: document.querySelector('footer .upArrow'),
+    toTop: document.querySelector('footer span'),
     toggleSwitch: document.querySelector('.light-switch-toggle'),
     navToggle: document.getElementById('navigation-toggle'),
     menuPopup: document.querySelector('.menu-full'),
     navBtn: document.querySelector('.navigation__button'),
     menuFullLinks: document.querySelectorAll('.menu-full__list .menu__link'),
-    imgs: document.querySelectorAll('.image-set img')
+    imgs: document.querySelectorAll('.image-set img'),
+    modal:document.querySelector('.modal'),
+    modalImg:document.querySelector('.modal img'),
+    closeModal:document.querySelector('.modal__button')
+
   
 }

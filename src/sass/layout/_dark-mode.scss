@@ -78,9 +78,15 @@
         }
     }
 
+    .modal{
+        background-color: $black;
+
+        &__icon::before, &__icon::after{
+            background-color: $white;
+        }
+    }
     .form{
     
-
         &__input{
           color: $white;
             border: 1px solid $white;
@@ -136,6 +142,10 @@
                 fill: $white;
             }
         }
+    }
+
+    footer span{
+        color: $white;
     }
       
 }
