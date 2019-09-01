@@ -2,8 +2,8 @@
 import { elements } from "./DOMelements";
 
 //2. Actions
-
 function selectImg(e){
+        elements.modalCheck.checked = false
         elements.modal.style.opacity = 1
         elements.modal.style.visibility = "visible"
         elements.modalImg.style.display = 'block'
@@ -15,14 +15,9 @@ const close = () =>{
     elements.modal.style.visibility = "hidden"
     elements.modalImg.style.display = 'none'
     elements.modalImg.src = ""
-
 }
 
-
-
 //3. Events
-
-
 elements.imgs.forEach(img =>{
     img.addEventListener('click', selectImg)
 })

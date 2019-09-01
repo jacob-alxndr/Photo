@@ -21,7 +21,6 @@ export const elements = {
     imgs: document.querySelectorAll('.image-set img'),
     modal:document.querySelector('.modal'),
     modalImg:document.querySelector('.modal img'),
+    modalCheck:document.querySelector('.modal__checkbox'),
     closeModal:document.querySelector('.modal__button')
-
-  
 }

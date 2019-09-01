@@ -15,13 +15,12 @@
     transition: all .5s;
 
     & .image-container{
-        height: 60rem;
-        width: auto;
-
+        max-width:45rem;
 
         img{
             height: 100%;
             width: 100%;
+            border-radius: .3rem;
         }
     }
 
@@ -36,35 +35,38 @@
     &__button{
         // display: none;
         z-index: 10;
-        // position: relative;
         position: absolute;
         top: 10%;
         right: 5%;
-        height: 4rem;
-        width: 4rem;
+        height: 3.5rem;
+        width: 3.5rem;
         cursor: pointer;
+   
         @include respond(tab-port) {
             display: block;
         }
 
-        // &:hover .model__icon::before{
-        //     top: -.9rem;
-        // }
-        // &:hover .model__icon::after{
-        //     top: .9rem;
-        // }
+        &:hover .modal__icon::before{
+            transform: rotate(225deg) scale(1.2); 
+        }
+        &:hover .modal__icon::after{
+            transform: rotate(-45deg) scale(1.2); 
+            
+        }
     }
 
     &__icon{
-        position: absolute;
-        top: 10%;
-        right: 5%;
+        // position: absolute;
+        // top: 10%;
+        // right: 5%;
         // display: none;
-        width: 3rem;
-        height: .2rem;
+        display: block;
+        width: 100%;
+        height: 100%;
         background-color: transparent;
-        transform: translate(-50%,-50%);
+        // transform: translate(-50%,-50%);
         transition: all .3s ease-in-out;
+        
 
         @include respond(tab-port) {
             display: block;
@@ -76,7 +78,7 @@
         &::before{
             content: "";
             position: absolute;
-            top: 0rem;
+            top: 50%;
             transform-origin: center;
             transform: rotate(225deg); 
             display: block;
@@ -85,7 +87,7 @@
             background-color: $black;
             transition: all .3s ease-in-out;
             
-
+         
 
             @include respond(phone) {
                 width: 2.2rem;
@@ -95,7 +97,7 @@
         &::after{
             content: "";
             position: absolute;
-            top: 0rem;
+            top: 50%;
             transform-origin: center;
             transform: rotate(-45deg); 
             display: block;
@@ -103,10 +105,6 @@
             width: 3rem;
             background-color: $black;
             transition: all .3s ease-in-out;
-
-            // &:hover{
-            //     top: .8rem;
-            // }
 
 
             @include respond(phone) {
@@ -117,10 +115,8 @@
     }
 
      &__checkbox:checked ~ &__button > &__icon::before{
-        // top: 0rem;
-        // transform-origin: center;
-        // transform: rotate(225deg); 
-       
+    
+        transform: rotate(0deg); 
     
     }
 
@@ -130,9 +126,8 @@
     // }
 
      &__checkbox:checked ~ &__button > &__icon::after{
-        // top: 0rem;
-        // transform-origin: center;
-        // transform: rotate(-45deg); 
+       
+        transform: rotate(0deg); 
        
     
     }
