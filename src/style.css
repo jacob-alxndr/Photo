@@ -372,6 +372,20 @@ body {
   background-color: #1a1a1a;
   border: 2px solid #f8f8f8; }
 
+.circle {
+  z-index: 10;
+  width: 0rem;
+  height: 0rem;
+  display: block;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  pointer-events: none; }
+
 .prevNext {
   display: flex;
   grid-column: col-start 6/col-end 7;
@@ -619,7 +633,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-column: col-start 2 / col-end 11;
-  grid-gap: 6rem 6rem;
+  grid-gap: 6rem 3rem;
   min-height: 10vw;
   margin: 6rem 0 6rem 0; }
   @media (max-width: 75em) {
@@ -857,7 +871,7 @@ body {
   .contact .info {
     display: grid;
     grid-column: col-start 2 / col-end 5;
-    grid-gap: 2rem 2rem;
+    grid-gap: 0rem 2rem;
     margin: 12rem 0 3rem 0; }
     @media (max-width: 75em) {
       .contact .info {

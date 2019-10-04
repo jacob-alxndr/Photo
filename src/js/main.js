@@ -7,6 +7,7 @@ import  store  from "./modules/storeTheme";
 import  removeAni  from "./modules/storeTheme";
 import  menuFadeIn  from "./modules/menuMobile";
 import  selectImg  from "./modules/modal";
+import  mouse  from "./modules/mouse";
 
 // import  removeDivs  from "./modules/removeDivs";
 

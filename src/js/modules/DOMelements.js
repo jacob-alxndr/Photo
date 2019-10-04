@@ -22,5 +22,6 @@ export const elements = {
     modal:document.querySelector('.modal'),
     modalImg:document.querySelector('.modal img'),
     modalCheck:document.querySelector('.modal__checkbox'),
-    closeModal:document.querySelector('.modal__button')
+    closeModal:document.querySelector('.modal__button'),
+    mouse: document.querySelector('.circle')
 }
