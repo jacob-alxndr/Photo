@@ -1,12 +1,13 @@
 .header{
     position: relative;
     display: flex;
-    grid-column: col-start 1/col-end 12;
+    grid-column: col-start 2/col-end 11;
     align-items: baseline;
     justify-content: space-between;
     max-height: 8rem;
     margin-top: 3.2rem;
     white-space: nowrap;
+
     // animation: fadeDown 1.3s ease;
 
     @include respond(tab-port) {

@@ -7,6 +7,7 @@ export const elements = {
     toggleSwitchUIRight: document.querySelector('.light-switch-toggle-ui--right'),
     imgBorders: document.querySelectorAll('.border'),
     menuList: document.querySelector('.menu__list'),
+    menuItem: document.querySelectorAll('.menu__item'),
     menuItems: document.querySelectorAll('.menu__link'),
     htmlTag: document.querySelector('html'),
     gallery: document.querySelector('.gallery'),

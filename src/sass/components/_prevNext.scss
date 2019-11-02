@@ -1,6 +1,6 @@
 .prevNext{
     display: flex;
-    grid-column: col-start 6/col-end 7;
+    grid-column: col-start 11/col-end 11;
     align-items: baseline;
     justify-content: space-between;
     // max-height: 8rem;
@@ -12,29 +12,40 @@
     }
 
     a{
+
         position: relative;
         &:hover span{
-            top:110%;
+            // top:110%;
             opacity: 1;
 
             @include respond(tab-port){
-                top:0;
-                opacity: 0;
+                // top:0;
+                // opacity: 0;
             }
         }
 
         span{
-            position: absolute;
-            @include center;
-            opacity: 0;
-            font-size: 1.3rem;
+            // position: absolute;
+            // @include center;
+            // opacity: 0;
+            font-size: 1.6rem;
             transition: all .4s;
+            padding-bottom: .2rem;
+            border-bottom: 1px solid transparent;;
+
+        &:hover{
+            border-bottom: 1px solid white;;
+        }
             
         }
     }
 
+    a:not(:first-child){
+        margin-left: 2rem;
+        }
+
     [class^='arrow']{
-        transform-origin: center;
+        // transform-origin: center;
             path{
                 fill: $black;
             }

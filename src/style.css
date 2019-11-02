@@ -312,7 +312,7 @@ body {
   position: fixed;
   z-index: 3;
   bottom: 10%;
-  right: 5%;
+  right: 13%;
   transform: translate(-50%, -50%);
   width: 2.5rem;
   height: 2.5rem;
@@ -388,7 +388,7 @@ body {
 
 .prevNext {
   display: flex;
-  grid-column: col-start 6/col-end 7;
+  grid-column: col-start 11/col-end 11;
   align-items: baseline;
   justify-content: space-between;
   margin: 3.2rem 0; }
@@ -399,25 +399,18 @@ body {
   .prevNext a {
     position: relative; }
     .prevNext a:hover span {
-      top: 110%;
       opacity: 1; }
-      @media (max-width: 56.25em) {
-        .prevNext a:hover span {
-          top: 0;
-          opacity: 0; } }
     .prevNext a span {
-      position: absolute;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      font-size: 1.3rem;
-      transition: all .4s; }
-  .prevNext [class^='arrow'] {
-    transform-origin: center; }
-    .prevNext [class^='arrow'] path {
-      fill: #1a1a1a; }
+      font-size: 1.6rem;
+      transition: all .4s;
+      padding-bottom: .2rem;
+      border-bottom: 1px solid transparent; }
+      .prevNext a span:hover {
+        border-bottom: 1px solid white; }
+  .prevNext a:not(:first-child) {
+    margin-left: 2rem; }
+  .prevNext [class^='arrow'] path {
+    fill: #1a1a1a; }
   .prevNext .arrow__left {
     transform: rotate(-90deg); }
   .prevNext .arrow__right {
@@ -426,7 +419,7 @@ body {
 .header {
   position: relative;
   display: flex;
-  grid-column: col-start 1/col-end 12;
+  grid-column: col-start 2/col-end 11;
   align-items: baseline;
   justify-content: space-between;
   max-height: 8rem;
@@ -610,18 +603,21 @@ body {
 
 footer {
   display: flex;
-  grid-column: col-start 1/ col-end 2;
+  grid-column: col-start 2/ col-end 11;
   justify-content: flex-start;
   align-items: baseline;
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  padding-top: 3.2rem;
+  border-top: 1px solid #f8f8f8; }
   @media (max-width: 75em) {
     footer {
       grid-column: col-start 1 / col-end 12; } }
   @media (max-width: 37.5em) {
     footer {
-      grid-column: col-start 2 / col-end 12; } }
+      grid-column: col-start 1 / col-end 12;
+      justify-content: flex-end; } }
   footer svg {
-    height: 40%;
+    height: 30%;
     cursor: pointer; }
     footer svg path {
       fill: #1a1a1a; }
@@ -649,7 +645,7 @@ footer {
   .gallery-set {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-column: col-start 1 / col-end 11;
+    grid-column: col-start 2 / col-end 11;
     grid-gap: 5rem 5rem;
     min-height: 20vw;
     margin: 8rem 0 6rem 0; }
@@ -946,3 +942,17 @@ body {
     @media (max-width: 37.5em) {
       .contact .form {
         margin: 0rem 0 8rem 0; } }
+
+.img-container {
+  grid-column: col-start 6/ col-end 11;
+  margin-top: 10rem; }
+  .img-container .image-set {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    max-width: 80%; }
+
+li[data-tag="banke"]:hover ~ .image-set[data-tag="banke"] {
+  opacity: 1;
+  visibility: visible;
+  display: block; }

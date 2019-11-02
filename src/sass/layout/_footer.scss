@@ -1,9 +1,11 @@
 footer{
     display: flex;
-    grid-column: col-start 1/ col-end 2;
+    grid-column: col-start 2/ col-end 11;
     justify-content: flex-start;
     align-items: baseline;
     margin-bottom: 8rem;
+    padding-top: 3.2rem;
+    border-top: 1px solid $white;
 
     @include respond(tab-land) {
         grid-column: col-start 1 / col-end 12;
@@ -11,7 +13,8 @@ footer{
 
 
     @include respond(phone) {
-        grid-column: col-start 2 / col-end 12;
+        grid-column: col-start 1 / col-end 12;
+        justify-content: flex-end;
     }
     
 
@@ -31,7 +34,7 @@ footer{
 
     svg{
       
-        height:40%;
+        height:30%;
         // animation: float 2s ease infinite;
         // transition: height .3s;
         &:hover{

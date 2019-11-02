@@ -8,6 +8,7 @@ import  removeAni  from "./modules/storeTheme";
 import  menuFadeIn  from "./modules/menuMobile";
 import  selectImg  from "./modules/modal";
 import  mouse  from "./modules/mouse";
+import  portfolioHover  from "./modules/portfolioHover";
 
 // import  removeDivs  from "./modules/removeDivs";
 

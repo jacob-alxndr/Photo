@@ -1,0 +1,17 @@
+.img-container{
+    grid-column: col-start 6/ col-end 11;
+    margin-top: 10rem;
+
+    & .image-set{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        max-width: 80%;;
+    }
+}
+
+li[data-tag="banke"]:hover ~ .image-set[data-tag="banke"]{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
