@@ -782,6 +782,9 @@ footer {
 [data-theme="dark-mode"] footer span {
   color: #f8f8f8; }
 
+[data-theme="dark-mode"] .thankyou a {
+  border-bottom: 1px solid #f8f8f8; }
+
 .modal {
   z-index: 3;
   display: flex;
@@ -962,3 +965,24 @@ li[data-tag="banke"]:hover ~ .image-set[data-tag="banke"] {
   opacity: 1;
   visibility: visible;
   display: block; }
+
+.thankyou {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-column: col-start 2 / col-end 11;
+  grid-gap: 6rem 3rem;
+  min-height: 10vw;
+  margin: 6rem 0 6rem 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  white-space: nowrap; }
+  .thankyou h1 {
+    font-size: 5rem; }
+  .thankyou h1, .thankyou p {
+    text-align: center; }
+  .thankyou a {
+    border-bottom: 1px solid #1a1a1a; }

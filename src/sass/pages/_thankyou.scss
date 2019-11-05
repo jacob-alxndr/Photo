@@ -1,0 +1,23 @@
+.thankyou{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-column: col-start 2 / col-end 11;
+    grid-gap:  6rem 3rem;
+    min-height: 10vw;
+    margin: 6rem 0 6rem 0;
+    text-align: center;
+    @include center;
+    top:40%;
+    white-space: nowrap;
+
+    h1{
+        font-size: 5rem;
+    }
+    h1,p{
+        text-align: center;
+    }
+
+    a{
+        border-bottom: 1px solid $black ;
+    }
+}
