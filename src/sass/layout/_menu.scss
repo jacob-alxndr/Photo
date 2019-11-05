@@ -1,5 +1,5 @@
 .menu {
-    grid-column: col-start 2 / col-end 3;
+    grid-column: col-start 3 / col-end 3;
     margin-top: 12rem;
 
     @include respond(phone) {
