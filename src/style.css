@@ -525,9 +525,13 @@ body {
     .navigation__list .navigation__item {
       align-items: flex-start; }
     .navigation__list .navigation__link {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      padding-bottom: .3rem;
+      border-bottom: 1px solid transparent; }
       .navigation__list .navigation__link:hover {
         color: #1a1a1a; }
+      .navigation__list .navigation__link--checked {
+        border-bottom: 1px solid #1a1a1a; }
       @media (max-width: 56.25em) {
         .navigation__list .navigation__link {
           font-size: 90%; } }
@@ -715,6 +719,9 @@ footer {
 
 [data-theme="dark-mode"] .navigation:hover .navigation__link {
   color: #404040; }
+
+[data-theme="dark-mode"] .navigation__item .navigation__link--checked {
+  border-bottom: 1px solid #f8f8f8; }
 
 [data-theme="dark-mode"] .navigation__item:hover .navigation__link {
   color: #f8f8f8; }
@@ -946,11 +953,10 @@ body {
 .img-container {
   grid-column: col-start 6/ col-end 11;
   margin-top: 10rem; }
-  .img-container .image-set {
-    display: none;
+  .img-container .image-set img {
     opacity: 0;
-    visibility: hidden;
-    max-width: 80%; }
+    max-width: 40rem;
+    transition: opacity .5s ease; }
 
 li[data-tag="banke"]:hover ~ .image-set[data-tag="banke"] {
   opacity: 1;

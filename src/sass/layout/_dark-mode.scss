@@ -51,6 +51,9 @@
     }
     
     & .navigation__item {
+        & .navigation__link--checked{
+            border-bottom: 1px solid $white;
+        }
         &:hover {
             .navigation__link{
                 color: $white;

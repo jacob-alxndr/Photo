@@ -135,8 +135,13 @@
 
         .navigation__link{
             font-size: 1.4rem;
+            padding-bottom: .3rem;
+            border-bottom: 1px solid transparent;
             &:hover{
                 color:$black;
+            }
+            &--checked{
+                border-bottom: 1px solid $black;
             }
 
             @include respond(tab-port) {
