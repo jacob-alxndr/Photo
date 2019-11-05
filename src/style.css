@@ -287,7 +287,7 @@ body {
 
 .image-set {
   position: relative;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   -webkit-animation: fadeIn 2.3s ease;
           animation: fadeIn 2.3s ease; }
@@ -537,8 +537,8 @@ body {
           font-size: 90%; } }
 
 .menu {
-  grid-column: col-start 3 / col-end 3;
-  margin-top: 12rem; }
+  grid-column: col-start 8 / col-end 10;
+  margin-top: 10rem; }
   @media (max-width: 37.5em) {
     .menu {
       margin-top: 2rem;
@@ -631,11 +631,11 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-column: col-start 2 / col-end 11;
   grid-gap: 6rem 3rem;
   min-height: 10vw;
-  margin: 6rem 0 6rem 0; }
+  margin: 10rem 0 6rem 0; }
   @media (max-width: 75em) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
@@ -954,17 +954,12 @@ body {
         margin: 0rem 0 8rem 0; } }
 
 .img-container {
-  grid-column: col-start 6/ col-end 11;
+  grid-column: col-start 2/ col-end 7;
   margin-top: 10rem; }
   .img-container .image-set img {
     opacity: 0;
     max-width: 40rem;
     transition: opacity .5s ease; }
-
-li[data-tag="banke"]:hover ~ .image-set[data-tag="banke"] {
-  opacity: 1;
-  visibility: visible;
-  display: block; }
 
 .thankyou {
   display: grid;

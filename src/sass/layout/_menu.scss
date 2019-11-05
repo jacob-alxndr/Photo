@@ -1,6 +1,7 @@
 .menu {
-    grid-column: col-start 3 / col-end 3;
-    margin-top: 12rem;
+    grid-column: col-start 8 / col-end 10;
+    margin-top: 10rem;
+
 
     @include respond(phone) {
         margin-top: 2rem;
