@@ -140,11 +140,19 @@
     }
 
     .prevNext{
+        span{
+            &:hover{
+                border-bottom: 1px solid $white;}
+        }
         [class^='arrow']{
             path{
                 fill: $white;
             }
         }
+    }
+
+    footer{
+        border-top: 1px solid $white;
     }
 
     footer span{

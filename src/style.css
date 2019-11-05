@@ -406,7 +406,7 @@ body {
       padding-bottom: .2rem;
       border-bottom: 1px solid transparent; }
       .prevNext a span:hover {
-        border-bottom: 1px solid white; }
+        border-bottom: 1px solid #1a1a1a; }
   .prevNext a:not(:first-child) {
     margin-left: 2rem; }
   .prevNext [class^='arrow'] path {
@@ -612,7 +612,7 @@ footer {
   align-items: baseline;
   margin-bottom: 8rem;
   padding-top: 3.2rem;
-  border-top: 1px solid #f8f8f8; }
+  border-top: 1px solid #1a1a1a; }
   @media (max-width: 75em) {
     footer {
       grid-column: col-start 1 / col-end 12; } }
@@ -776,8 +776,14 @@ footer {
 [data-theme="dark-mode"] .form__label {
   color: #f8f8f8; }
 
+[data-theme="dark-mode"] .prevNext span:hover {
+  border-bottom: 1px solid #f8f8f8; }
+
 [data-theme="dark-mode"] .prevNext [class^='arrow'] path {
   fill: #f8f8f8; }
+
+[data-theme="dark-mode"] footer {
+  border-top: 1px solid #f8f8f8; }
 
 [data-theme="dark-mode"] footer span {
   color: #f8f8f8; }
