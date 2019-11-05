@@ -981,7 +981,7 @@ li[data-tag="banke"]:hover ~ .image-set[data-tag="banke"] {
   top: 40%;
   white-space: nowrap; }
   .thankyou h1 {
-    font-size: 5rem; }
+    font-size: 12rem; }
   .thankyou h1, .thankyou p {
     text-align: center; }
   .thankyou a {
