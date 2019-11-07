@@ -231,7 +231,7 @@ body {
     .form {
       min-width: 100%; } }
   .form .heading {
-    margin-bottom: 2.4rem; }
+    margin-bottom: 1rem; }
   .form__input {
     display: block;
     width: 100%;
@@ -901,7 +901,10 @@ body {
         margin-bottom: 1.6rem; }
     .contact .info p {
       font-size: 1.5rem;
-      margin-bottom: 1.6rem; }
+      margin-bottom: 9.6rem; }
+      @media (max-width: 75em) {
+        .contact .info p {
+          margin-bottom: 2.6rem; } }
   @media (max-width: 75em) {
     .contact .connect {
       grid-column: col-start 3 / col-end 10; } }

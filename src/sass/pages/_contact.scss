@@ -34,11 +34,16 @@
             & > *:not(:last-child){
                 margin-bottom: 1.6rem;
             }
+        
         }
 
         p{
             font-size: 1.5rem;
-            margin-bottom: 1.6rem;
+            margin-bottom: 9.6rem;
+
+            @include respond(tab-land){
+                margin-bottom: 2.6rem;
+            }
         }
     }
 
