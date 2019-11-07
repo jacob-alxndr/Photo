@@ -311,8 +311,8 @@ body {
 .light-switch {
   position: fixed;
   z-index: 3;
-  bottom: 10%;
-  right: 13%;
+  bottom: 3%;
+  right: 3%;
   transform: translate(-50%, -50%);
   width: 2.5rem;
   height: 2.5rem;
