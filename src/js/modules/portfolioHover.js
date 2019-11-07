@@ -8,6 +8,7 @@ import { elements } from "./DOMelements";
 // }
 
 //3. Events
+if(window.innerWidth > 800){
 elements.menuItem.forEach(item =>{ 
     item.addEventListener('mouseover', function (){
         elements.imgs.forEach(img => {
@@ -25,7 +26,5 @@ elements.menuItem.forEach(item =>{
         })
     })
 })
-
-
-
+}
 

@@ -962,10 +962,16 @@ body {
 .img-container {
   grid-column: col-start 2/ col-end 7;
   margin-top: 10rem; }
+  @media (max-width: 56.25em) {
+    .img-container {
+      margin-top: 6rem; } }
   .img-container .image-set img {
     opacity: 0;
     max-width: 40rem;
     transition: opacity .5s ease; }
+    @media (max-width: 56.25em) {
+      .img-container .image-set img {
+        display: none; } }
 
 .thankyou {
   display: grid;
