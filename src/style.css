@@ -967,7 +967,7 @@ body {
   margin-top: 10rem; }
   @media (max-width: 56.25em) {
     .img-container {
-      margin-top: 6rem; } }
+      margin-top: 4rem; } }
   .img-container .image-set img {
     opacity: 0;
     max-width: 40rem;
@@ -992,6 +992,9 @@ body {
   white-space: nowrap; }
   .thankyou h1 {
     font-size: 12rem; }
+    @media (max-width: 56.25em) {
+      .thankyou h1 {
+        font-size: 4rem; } }
   .thankyou h1, .thankyou p {
     text-align: center; }
   .thankyou a {
