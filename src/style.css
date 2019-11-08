@@ -133,7 +133,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   transition: background-color .5s; }
 
-p, a, h1, h1, h2, h3, h4, h5, h6 {
+p,
+a,
+h1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Agrandir";
   font-weight: 400;
   transition: color .2s; }
@@ -231,7 +239,7 @@ body {
     .form {
       min-width: 100%; } }
   .form .heading {
-    margin-bottom: 1rem; }
+    margin-bottom: 2.4rem; }
   .form__input {
     display: block;
     width: 100%;
@@ -688,7 +696,14 @@ footer {
 [data-theme="dark-mode"] body {
   background-color: #1a1a1a; }
 
-[data-theme="dark-mode"] p, [data-theme="dark-mode"] a, [data-theme="dark-mode"] h1, [data-theme="dark-mode"] h2, [data-theme="dark-mode"] h3, [data-theme="dark-mode"] h4, [data-theme="dark-mode"] h5, [data-theme="dark-mode"] h6 {
+[data-theme="dark-mode"] p,
+[data-theme="dark-mode"] a,
+[data-theme="dark-mode"] h1,
+[data-theme="dark-mode"] h2,
+[data-theme="dark-mode"] h3,
+[data-theme="dark-mode"] h4,
+[data-theme="dark-mode"] h5,
+[data-theme="dark-mode"] h6 {
   color: #f8f8f8; }
 
 [data-theme="dark-mode"] button.dark {
@@ -804,13 +819,13 @@ footer {
   background-color: #f8f8f8;
   opacity: 0;
   visibility: hidden;
-  transition: all .5s; }
+  transition: all 0.5s; }
   .modal .image-container {
     max-width: 45rem; }
     .modal .image-container img {
       height: 100%;
       width: 100%;
-      border-radius: .3rem; }
+      border-radius: 0.3rem; }
   .modal__checkbox {
     display: none; }
   .modal__button {
@@ -833,7 +848,7 @@ footer {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    transition: all .3s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     @media (max-width: 56.25em) {
       .modal__icon {
         display: block; } }
@@ -841,30 +856,30 @@ footer {
       .modal__icon {
         width: 2.2rem; } }
     .modal__icon::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 50%;
       transform-origin: center;
       transform: rotate(225deg);
       display: block;
       width: 3rem;
-      height: .2rem;
+      height: 0.2rem;
       background-color: #1a1a1a;
-      transition: all .3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       @media (max-width: 37.5em) {
         .modal__icon::before {
           width: 2.2rem; } }
     .modal__icon::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 50%;
       transform-origin: center;
       transform: rotate(-45deg);
       display: block;
-      height: .2rem;
+      height: 0.2rem;
       width: 3rem;
       background-color: #1a1a1a;
-      transition: all .3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       @media (max-width: 37.5em) {
         .modal__icon::after {
           width: 2.2rem; } }

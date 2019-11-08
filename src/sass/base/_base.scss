@@ -5,9 +5,9 @@ html {
 }
 
 
-html.open{
+html.open {
     overflow-y: hidden;
-    -webkit-overflow-scrolling:none;
+    -webkit-overflow-scrolling: none;
 }
 
 *,
@@ -26,7 +26,7 @@ a {
     color: inherit;
     background-color: transparent;
     text-decoration: none;
-    
+
 }
 
 ul {
@@ -57,7 +57,7 @@ button {
 }
 
 
-body.open{
+body.open {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 }

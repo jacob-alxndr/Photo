@@ -7,7 +7,7 @@
         margin-top: 2rem;
         grid-column: col-start 1 / col-end 12;
     }
-   
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -15,44 +15,45 @@
         min-height: 70vh;
         white-space: nowrap;
         transition: color 1.2s;
-        
-        &:hover .menu__link{
+
+        &:hover .menu__link {
             color: $gray-7;
         }
     }
-    &__item{
-        align-items:flex-start;
+
+    &__item {
+        align-items: flex-start;
         transition: color .2s;
 
-        &:hover ~ .image-list > .image-set{
+        &:hover~.image-list>.image-set {
             opacity: 1;
         }
 
-        &:hover .menu__link{
+        &:hover .menu__link {
             color: $black;
-            margin-left:.5rem;
+            margin-left: .5rem;
         }
     }
 
-    &__link {       
+    &__link {
         display: block;
         opacity: 0;
         transform: translateY(10vh);
         font-size: 2.4rem;
         transition: all .5s;
-        
-       
+
+
         @include respond(phone) {
             font-size: 2.8rem;
         }
-       
+
         &:hover {
             color: $black;
         }
- 
+
     }
 
-    &-full{
+    &-full {
         z-index: 2;
         position: fixed;
         height: 100vh;
@@ -68,30 +69,31 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            top:40%;
+            top: 40%;
             white-space: nowrap;
-        
-            
-            &:hover .menu__link{
+
+
+            &:hover .menu__link {
                 color: $gray-7;
             }
 
-            & .menu__item{
-                align-items:flex-start;
+            & .menu__item {
+                align-items: flex-start;
                 transition: color .2s;
-             
 
-               & .menu__link{
-                font-size: 6rem;
 
-                @include respond(phone) {
-                    font-size: 4rem;
+                & .menu__link {
+                    font-size: 6rem;
+
+                    @include respond(phone) {
+                        font-size: 4rem;
+                    }
                 }
-               }
-                &:hover .menu__link{
+
+                &:hover .menu__link {
                     color: $black;
-                    margin-left:.5rem;
-                   
+                    margin-left: .5rem;
+
                 }
             }
         }

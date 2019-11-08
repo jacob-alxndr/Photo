@@ -1,79 +1,80 @@
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-column: col-start 2 / col-end 11;
-    grid-gap:  6rem 3rem;
+    grid-gap: 6rem 3rem;
     min-height: 10vw;
     margin: 10rem 0 6rem 0;
-  
+
 
     @include respond(tab-land) {
-        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
 
     @include respond(tab-port) {
         grid-column: col-start 1 / col-end 12;
         margin: 6rem 0;
     }
+
     @include respond(phone) {
         margin: 3rem 0;
 
     }
 
-   
 
-    &-set{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-column: col-start 2 / col-end 11;
-    grid-gap: 5rem 5rem;
-    min-height: 20vw;
-    margin: 8rem 0 6rem 0;
-    // border: 2px dotted orangered;
 
-    @include respond(tab-land) {
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-column: col-start 2 / col-end 11;
-    }
-
-    @include respond(phone) {
+    &-set {
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-column: col-start 1 / col-end 12;
-        margin: 3rem 0;
-    }
-
-    & .image-set{
-        position: relative;
-        width: 100%;
-        cursor: auto;
-        cursor: pointer;
+        grid-column: col-start 2 / col-end 11;
+        grid-gap: 5rem 5rem;
+        min-height: 20vw;
+        margin: 8rem 0 6rem 0;
+        // border: 2px dotted orangered;
 
         @include respond(tab-land) {
-            max-width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            grid-column: col-start 2 / col-end 11;
         }
 
         @include respond(phone) {
-            max-width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-column: col-start 1 / col-end 12;
+            margin: 3rem 0;
         }
 
-        &:nth-child(3n + 1){
-            width: 130%;
+        & .image-set {
+            position: relative;
+            width: 100%;
+            cursor: auto;
+            cursor: pointer;
 
             @include respond(tab-land) {
-                width: 110%;
+                max-width: 100%;
             }
 
             @include respond(phone) {
                 max-width: 100%;
             }
+
+            &:nth-child(3n + 1) {
+                width: 130%;
+
+                @include respond(tab-land) {
+                    width: 110%;
+                }
+
+                @include respond(phone) {
+                    max-width: 100%;
+                }
+            }
+
+
         }
 
-      
-        }
-
-        .remove{
+        .remove {
             @include respond(tab-port) {
-              display: none;
+                display: none;
             }
 
         }
@@ -82,10 +83,9 @@
 
     // div[class~="gallery"]{
 
-//     @include respond(phone) {
-//         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-//         margin: 3rem 0;
-//     }
-// }
+    //     @include respond(phone) {
+    //         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    //         margin: 3rem 0;
+    //     }
+    // }
 }
-

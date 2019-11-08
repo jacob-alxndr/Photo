@@ -9,67 +9,68 @@
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
-<body>  
-<!-- MOUSE -->
-<div class="circle"></div>
-<!-- LIGHTSWITCH -->
-<label class="light-switch">
+<body>
+  <!-- MOUSE -->
+  <div class="circle"></div>
+  <!-- LIGHTSWITCH -->
+  <label class="light-switch">
     <input type="checkbox" class="light-switch-toggle">
-    <div class="light-switch-toggle-ui">  
+    <div class="light-switch-toggle-ui">
       <div class="light-switch-toggle-ui--left"></div>
       <div class="light-switch-toggle-ui--right">
+      </div>
     </div>
-  </div>
   </label>
 
   <div class="menu-full">
-      <ul class="menu-full__list">
-          <li class="menu__item">
-            <a href="index.html" class="menu__link">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="portfolio.html" class="menu__link">Portfolio</a>
-          </li>
-          <li class="menu__item">
-            <a href="contact.html" class="menu__link">Contact + Info</a>
-          </li>
-        </ul>
+    <ul class="menu-full__list">
+      <li class="menu__item">
+        <a href="index.html" class="menu__link">Home</a>
+      </li>
+      <li class="menu__item">
+        <a href="portfolio.html" class="menu__link">Portfolio</a>
+      </li>
+      <li class="menu__item">
+        <a href="contact.html" class="menu__link">Contact + Info</a>
+      </li>
+    </ul>
   </div>
 
 
 
 
-<!-- NAVIGATION -->
-<header class="header">
-  <h4><a href="/">Jacob Martinez</a></h4>
-  <nav class="navigation">
+  <!-- NAVIGATION -->
+  <header class="header">
+    <h4><a href="/">Jacob Martinez</a></h4>
+    <nav class="navigation">
 
-    <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
-    <label for="navigation-toggle" class="navigation__button"> <span class="navigation__icon"></span></label>
-    
-    <ul class="navigation__list">
+      <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+      <label for="navigation-toggle" class="navigation__button"> <span class="navigation__icon"></span></label>
+
+      <ul class="navigation__list">
         <li class="navigation__item">
-            <a href="index.html" class="navigation__link"> Home </a>
+          <a href="index.html" class="navigation__link"> Home </a>
         </li>
         <li class="navigation__item">
-            <a href="portfolio.html" class="navigation__link"> Portfolio</a>
+          <a href="portfolio.html" class="navigation__link"> Portfolio</a>
         </li>
         <li class="navigation__item">
-            <a href="contact.html" class="navigation__link navigation__link--checked"> Contact + Info</a>
+          <a href="contact.html" class="navigation__link navigation__link--checked"> Contact + Info</a>
         </li>
-    </ul>
-  </nav>
-</header>
+      </ul>
+    </nav>
+  </header>
 
-<!-- CONTACT -->
+  <!-- CONTACT -->
 
-<section class="contact">
-  <div class="info">
+  <section class="contact">
+    <div class="info">
 
-    <div class="heading">
-      <h4>Info</h4>
-    </div>
-      <p >Jacob Martinez is a San Francisco Bay Area photographer. He roots himself in every project, from ideation to execution. His work focuses on visual concepts influenced by color, form and emotion.   </p>
+      <div class="heading">
+        <h4>Info</h4>
+      </div>
+      <p>Jacob Martinez is a San Francisco Bay Area photographer. He roots himself in every project, from ideation to
+        execution. His work focuses on visual concepts influenced by color, form and emotion. </p>
       <div class="heading">
         <h4>Connect</h4>
       </div>
@@ -88,42 +89,43 @@
         </li> -->
       </ul>
 
-    </div>  
+    </div>
 
 
-    <form action="http://formstatic.dev" method="post" class="form"  >
+    <form action="http://formstatic.dev" method="post" class="form">
       <input type="hidden" name="$processor" value="email">
       <input type="hidden" name="$to" value="hellojacobmartinez@gmail.com">
-      <input type="hidden"  name="$redirect_to" value="https://jacobmartinez.photo/thankyou">
-     
-      <div class="heading">
-          <h4>Get in touch</h4>
-      </div>
-    <div class="form__group">
-      <input type="text" name="name" class="form__input" placeholder="Name" id="name" required>
-      <label for="name" class="form__label"> Name</label>
-    </div>
+      <input type="hidden" name="$redirect_to" value="https://jacobmartinez.photo/thankyou">
 
-    <div class="form__group">
+      <div class="heading">
+        <h4>Get in touch</h4>
+      </div>
+      <div class="form__group">
+        <input type="text" name="name" class="form__input" placeholder="Name" id="name" required>
+        <label for="name" class="form__label"> Name</label>
+      </div>
+
+      <div class="form__group">
         <input type="email" name="email" class="form__input" placeholder="Email" id="email" required>
         <label for="email" class="form__label">Email</label>
-    </div>
+      </div>
 
-    <div class="form__group">
-        <textarea type="textarea" name="message" class="form__input form__input--textarea" placeholder="Message" id="message" required></textarea>
+      <div class="form__group">
+        <textarea type="textarea" name="message" class="form__input form__input--textarea" placeholder="Message"
+          id="message" required></textarea>
         <label for="message" class="form__label">Message</label>
-    </div>
+      </div>
 
-    <div class="form__group">
-      <button class="dark">
-        Submit
-        <input type="submit" class="form__input form__input--submit" id="submit" value="Submit">
-      </button>
-    </div>
-  </form>
+      <div class="form__group">
+        <button class="dark">
+          Submit
+          <input type="submit" class="form__input form__input--submit" id="submit" value="Submit">
+        </button>
+      </div>
+    </form>
 
 
-  <!-- <div class="connect">
+    <!-- <div class="connect">
     <div class="heading">
       <h3>Connect</h3>
     </div>
@@ -159,7 +161,7 @@
   </div> -->
 
 
-      <!-- <form action="" name="contact" class="form" >
+    <!-- <form action="" name="contact" class="form" >
           <div class="heading">
               <h4>Get in touch</h4>
           </div>
@@ -186,19 +188,19 @@
         </div>
       </form> -->
 
-  
-</section>
-  
-   
-  
+
+  </section>
+
+
+
   <!-- FOOTER -->
   <!-- <footer class="footer">
       <svg class="upArrow" href="#" width="88" height="30" viewBox="0 0 88 113" fill="$black" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M44 0L88 44.161L82.6677 49.4398L47.7576 14.402V113H40.2424V14.402L5.3323 49.4398L0 44.161L44 0Z" fill="#F1F1F1"/>
       </svg>
     </footer> -->
-  
-    <script src="js/main.js"></script>
-  </body>
+
+  <script src="js/main.js"></script>
+</body>
 
 </html>

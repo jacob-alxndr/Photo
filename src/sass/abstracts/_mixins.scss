@@ -1,20 +1,36 @@
 //MEDIA QUERIES
 @mixin respond($breakpoint) {
 
-	@if $breakpoint == phone {
-			@media (max-width: 37.5em) {@content};      //600px
+	@if $breakpoint==phone {
+		@media (max-width: 37.5em) {
+			@content
+		}
+
+		; //600px
 	}
 
-	@if $breakpoint == tab-port {
-			@media (max-width: 56.25em) {@content};     //900px
+	@if $breakpoint==tab-port {
+		@media (max-width: 56.25em) {
+			@content
+		}
+
+		; //900px
 	}
 
-	@if $breakpoint == tab-land {
-			@media (max-width: 75em) {@content};        //1200px
+	@if $breakpoint==tab-land {
+		@media (max-width: 75em) {
+			@content
+		}
+
+		; //1200px
 	}
 
-	@if $breakpoint == desktop {
-			@media (min-width: 112.5em) {@content};     //1800px 
+	@if $breakpoint==desktop {
+		@media (min-width: 112.5em) {
+			@content
+		}
+
+		; //1800px 
 	}
 
 }
@@ -34,25 +50,25 @@
 }
 
 @mixin auto {
-    margin: 0 auto;
-    
+	margin: 0 auto;
+
 }
 
 @mixin center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 //STYLE
 @mixin boxShadow {
-    box-shadow: 0 1.5rem 5rem rgba(red, .2); 
+	box-shadow: 0 1.5rem 5rem rgba(red, .2);
 }
 
 @mixin gradientText {
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color:transparent;
+	background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }

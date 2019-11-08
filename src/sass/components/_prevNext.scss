@@ -1,4 +1,4 @@
-.prevNext{
+.prevNext {
     display: flex;
     grid-column: col-start 11/col-end 11;
     align-items: baseline;
@@ -6,50 +6,60 @@
     // max-height: 8rem;
     margin: 3.2rem 0;
 
-    @include respond(phone){
+    @include respond(phone) {
         grid-column: col-start 1/col-end 12;
         margin: 1rem 0;
     }
 
-    a{
+    a {
 
         position: relative;
-        &:hover span{
+
+        &:hover span {
             // top:110%;
             opacity: 1;
 
-            @include respond(tab-port){
+            @include respond(tab-port) {
                 // top:0;
                 // opacity: 0;
             }
         }
 
-        span{
+        span {
             // position: absolute;
             // @include center;
             // opacity: 0;
             font-size: 1.6rem;
             transition: all .4s;
             padding-bottom: .2rem;
-            border-bottom: 1px solid transparent;;
+            border-bottom: 1px solid transparent;
+            ;
 
-        &:hover{
-            border-bottom: 1px solid $black;;
-        }
-            
-        }
-    }
-
-    a:not(:first-child){
-        margin-left: 2rem;
-        }
-
-    [class^='arrow']{
-        // transform-origin: center;
-            path{
-                fill: $black;
+            &:hover {
+                border-bottom: 1px solid $black;
+                ;
             }
+
+        }
     }
-    .arrow__left{ transform: rotate(-90deg);}
-    .arrow__right{ transform: rotate(90deg);}
+
+    a:not(:first-child) {
+        margin-left: 2rem;
+    }
+
+    [class^='arrow'] {
+
+        // transform-origin: center;
+        path {
+            fill: $black;
+        }
+    }
+
+    .arrow__left {
+        transform: rotate(-90deg);
+    }
+
+    .arrow__right {
+        transform: rotate(90deg);
+    }
 }

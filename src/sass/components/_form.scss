@@ -1,93 +1,100 @@
-.form{
+.form {
     min-width: 35rem;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
         min-width: 100%;
     }
-    & .heading{
-        margin-bottom: 1rem;
+
+    & .heading {
+        margin-bottom: 2.4rem;
     }
 
     // &__group:not(:last-child){
     //     margin-bottom: 0rem;
     // }
 
-    &__input{
+    &__input {
         display: block;
-        width: 100%; 
+        width: 100%;
         padding: 1.2rem 2.2rem .5rem 1.2rem;
         border: none;
         border: 1px solid $gray-6;
         background-color: transparent;
-        font-family: inherit; 
+        font-family: inherit;
         font-size: 1.2rem;
         color: $black;
 
 
-        @include respond(tab-port){
+        @include respond(tab-port) {
             width: 100%;
         }
 
-        &--textarea{
+        &--textarea {
             resize: none;
-            width: 100%; 
-           min-height: 15rem;
-           border: 1px solid $gray-6;
+            width: 100%;
+            min-height: 15rem;
+            border: 1px solid $gray-6;
 
-        //    &:placeholder-shown + &__label{
-        //     transform: translate(-7.4rem, -14.2rem);
-        // }
+            //    &:placeholder-shown + &__label{
+            //     transform: translate(-7.4rem, -14.2rem);
+            // }
 
-           & ~ .form__label{
-            transform: translate(-7.4rem, -14.2rem);
-           }
+            &~.form__label {
+                transform: translate(-7.4rem, -14.2rem);
+            }
         }
 
-        &--submit{
+        &--submit {
             display: none;
             // width: 18%; 
             // color: orangered;
         }
-     
+
     }
 
-    &__input::-webkit-input-placeholder{
-        color: $gray-3;
-    }
-    &__input::-moz-placeholder { /* Firefox 19+ */
-        color: $gray-3;
-    }
-    &__input::-ms-input-placeholder { /* IE 10+ */
-        color: $gray-3;
-    }
-    &__input::-moz-placeholder { /* Firefox 18- */
+    &__input::-webkit-input-placeholder {
         color: $gray-3;
     }
 
-    &__input:focus{
+    &__input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $gray-3;
+    }
+
+    &__input::-ms-input-placeholder {
+        /* IE 10+ */
+        color: $gray-3;
+    }
+
+    &__input::-moz-placeholder {
+        /* Firefox 18- */
+        color: $gray-3;
+    }
+
+    &__input:focus {
         outline: none;
         border-bottom: 1px solid rgb(74, 74, 255);
     }
 
-    &__input:focus:invalid{
+    &__input:focus:invalid {
         border-bottom: 1px solid orangered;
     }
 
-    &__label{
+    &__label {
         backface-visibility: hidden;
         display: block;
         transform: translate(-5.5rem, -3rem);
         margin-top: .5rem;
-        margin-left:1.2rem;
+        margin-left: 1.2rem;
         opacity: 0;
         color: $black;
         font-size: 1.2rem;
         transition: all .3s ease;
 
-    
+
     }
 
-    &__input:placeholder-shown + &__label{
+    &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
         // transform: translateX(-3rem);
