@@ -13,9 +13,9 @@ button {
 	transition: all .3s ease;
 	cursor: pointer;
 
-	&:hover{
+	&:hover {
 		border: 1px solid $black;
 		color: $white;
 		background-color: $black;
-	}	
+	}
 }

@@ -1,4 +1,5 @@
 .img-container {
+    position: relative;
     grid-column: col-start 2/ col-end 7;
     margin-top: 10rem;
 
@@ -9,6 +10,7 @@
 
     & .image-set img {
         opacity: 0;
+        position: absolute;
         max-width: 40rem;
         transition: opacity .5s ease;
 

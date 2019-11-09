@@ -19,7 +19,7 @@ if (window.innerWidth > 800) {
                     img.style.display = 'block'
                     img.style.opacity = 1
                     img.style.visibility = 'visible'
-                    console.log(item.getAttribute('data-tag'))
+    
                 } else {
                     img.style.display = 'none'
                     img.style.opacity = 0

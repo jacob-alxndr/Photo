@@ -4,7 +4,7 @@ import { elements } from './DOMelements'
 //2. Actions
 if (elements.closeModal) {
     function selectImg(e) {
-        if (window.innerWidth >= 800) {
+        if (window.innerWidth >= 889) {
             elements.modalCheck.checked = false
             elements.modal.style.opacity = 1
             elements.modal.style.visibility = 'visible'

@@ -978,6 +978,7 @@ body {
         margin: 0rem 0 8rem 0; } }
 
 .img-container {
+  position: relative;
   grid-column: col-start 2/ col-end 7;
   margin-top: 10rem; }
   @media (max-width: 56.25em) {
@@ -985,6 +986,7 @@ body {
       margin-top: 4rem; } }
   .img-container .image-set img {
     opacity: 0;
+    position: absolute;
     max-width: 40rem;
     transition: opacity .5s ease; }
     @media (max-width: 56.25em) {
