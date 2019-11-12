@@ -4,7 +4,8 @@
     grid-column: page-start/ page-end;
 
     .info{
-        display: grid;
+        display: flex;
+        flex-direction: column;
         grid-column: col-start 2 / col-end 5;
         grid-gap: 0rem 2rem;
         margin: 12rem 0 3rem 0;
@@ -31,6 +32,7 @@
     
         & .heading{
             max-width: 46rem;
+            margin-bottom: 1.6rem;
             & > *:not(:last-child){
                 margin-bottom: 1.6rem;
             }
@@ -39,7 +41,7 @@
 
         p{
             font-size: 1.5rem;
-            margin-bottom: 9.6rem;
+            margin-bottom: 2rem;
 
             @include respond(tab-land){
                 margin-bottom: 2.6rem;
