@@ -362,7 +362,7 @@ body {
   transform-origin: center;
   transform: translate(-50%, -50%);
   display: block;
-  width: 4rem;
+  width: 4.5rem;
   height: 2rem;
   border: 2px solid #1a1a1a;
   border-radius: 2rem;
@@ -370,11 +370,23 @@ body {
   box-shadow: 6px 8px 16px -7px rgba(0, 0, 0, 0.6);
   transition: all .5s;
   cursor: pointer; }
+  .light-switch-toggle-ui span {
+    white-space: nowrap;
+    position: absolute;
+    transition: all .2s;
+    font-size: xx-small;
+    top: 0;
+    left: 0;
+    transform: translateX(-10%);
+    opacity: 0; }
+  .light-switch-toggle-ui:hover span {
+    opacity: 1;
+    top: -25px; }
 
 .light-switch-toggle-ui--right {
   position: absolute;
   top: 50%;
-  left: 75%;
+  left: 80%;
   transform-origin: center;
   transform: translate(-50%, -50%);
   display: block;
@@ -629,8 +641,7 @@ footer {
   justify-content: flex-start;
   align-items: baseline;
   margin-bottom: 8rem;
-  padding-top: 3.2rem;
-  border-top: 1px solid #1a1a1a; }
+  border: 1px solid red; }
   @media (max-width: 75em) {
     footer {
       grid-column: col-start 1 / col-end 12; } }
@@ -649,11 +660,11 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-column: col-start 1 / col-end -1;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-column: col-start 2 / col-end 11;
   grid-gap: 6rem 0rem;
   min-height: 10vw;
-  margin: 8rem 0 8rem 0; }
+  margin: 8rem 0 12rem 0; }
   @media (max-width: 75em) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
@@ -737,10 +748,12 @@ footer {
 [data-theme="dark-mode"] .light-switch-toggle-ui {
   background-color: #f8f8f8;
   border: 2px solid #f8f8f8; }
+  [data-theme="dark-mode"] .light-switch-toggle-ui span {
+    color: #f8f8f8; }
 
 [data-theme="dark-mode"] .light-switch-toggle-ui--right {
   background-color: #1a1a1a;
-  left: 25%; }
+  left: 20%; }
 
 [data-theme="dark-mode"] .navigation:hover .navigation__link {
   color: #404040; }
@@ -806,9 +819,6 @@ footer {
 
 [data-theme="dark-mode"] .prevNext [class^='arrow'] path {
   fill: #f8f8f8; }
-
-[data-theme="dark-mode"] footer {
-  border-top: 1px solid #f8f8f8; }
 
 [data-theme="dark-mode"] footer span {
   color: #f8f8f8; }

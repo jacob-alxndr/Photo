@@ -43,7 +43,7 @@
     transform-origin: center;
     transform: translate(-50%, -50%);
     display: block;
-    width: 4rem;
+    width: 4.5rem;
     height: 2rem;
     border: 2px solid $black;
     border-radius: 2rem;
@@ -58,6 +58,22 @@
     transition: all .5s;
     cursor: pointer;
 
+    span{
+        white-space: nowrap;
+        position: absolute;
+        transition: all .2s;
+        font-size: xx-small;
+        top: 0;
+        left: 0;
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+
+    &:hover span {
+        opacity: 1;
+        top: -25px;
+    }
+
 
 }
 
@@ -65,7 +81,7 @@
 .light-switch-toggle-ui--right {
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 80%;
     transform-origin: center;
     transform: translate(-50%, -50%);
     display: block;

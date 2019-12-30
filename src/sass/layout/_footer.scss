@@ -4,8 +4,9 @@ footer{
     justify-content: flex-start;
     align-items: baseline;
     margin-bottom: 8rem;
-    padding-top: 3.2rem;
-    border-top: 1px solid $black;
+    border: 1px solid red;
+    // padding-top: 3.2rem;
+    // border-top: 1px solid $black;
 
     @include respond(tab-land) {
         grid-column: col-start 1 / col-end 12;

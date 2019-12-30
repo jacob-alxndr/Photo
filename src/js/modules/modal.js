@@ -25,5 +25,7 @@ if (elements.closeModal) {
     img.addEventListener('click', selectImg);
   });
 
+  elements.modal.addEventListener('click', close);
+
   elements.closeModal.addEventListener('click', close);
 }

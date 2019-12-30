@@ -42,6 +42,10 @@
 
         background-color: $white;
         border: 2px solid $white;
+        span{
+          color:$white;
+       
+        }
 
     }
 
@@ -49,7 +53,7 @@
         // width: 60%;
         background-color: $black;
         // border: 2px solid  $white;
-        left: 25%;
+        left: 20%;
     }
 
 
@@ -171,7 +175,7 @@
     }
 
     footer {
-        border-top: 1px solid $white;
+        // border-top: 1px solid $white;
     }
 
     footer span {
