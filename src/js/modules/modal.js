@@ -13,7 +13,8 @@ if (elements.closeModal) {
     }
   }
 
-  const close = () => {
+  const close = e => {
+    e.stopPropagation();
     elements.modal.style.opacity = 0;
     elements.modal.style.visibility = 'hidden';
     elements.modalImg.style.display = 'none';
