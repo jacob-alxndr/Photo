@@ -60,17 +60,17 @@
                 max-width: 100%;
             }
 
-            &:nth-child(3n + 1) {
-                width: 130%;
+            // &:nth-child(3n + 1) {
+            //     width: 130%;
 
-                @include respond(tab-land) {
-                    width: 110%;
-                }
+            //     @include respond(tab-land) {
+            //         width: 110%;
+            //     }
 
-                @include respond(phone) {
-                    max-width: 100%;
-                }
-            }
+            //     @include respond(phone) {
+            //         max-width: 100%;
+            //     }
+            // }
 
 
         }
