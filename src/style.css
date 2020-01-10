@@ -672,7 +672,8 @@ footer {
   margin: 2rem 0 12rem 0; }
   @media (min-width: 112.5em) {
     .gallery {
-      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      grid-column: col-start 4/ col-end 9; } }
   @media (max-width: 75em) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
