@@ -295,7 +295,7 @@ body {
 
 .image-set {
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   -webkit-animation: fadeIn 2.3s ease;
           animation: fadeIn 2.3s ease; }
@@ -313,6 +313,7 @@ body {
     top: 2rem;
     opacity: 1; }
   .image-set h5 {
+    font-size: 1.6rem;
     position: absolute;
     z-index: 3;
     top: 3rem;
@@ -449,7 +450,7 @@ body {
 .header {
   position: relative;
   display: flex;
-  grid-column: col-start 2/col-end 11;
+  grid-column: col-start 1/col-end 12;
   align-items: baseline;
   justify-content: space-between;
   max-height: 8rem;
@@ -468,7 +469,7 @@ body {
 
 .navigation {
   display: flex;
-  min-width: 30rem;
+  min-width: 24rem;
   justify-content: flex-end;
   align-items: baseline; }
   @media (max-width: 37.5em) {
@@ -660,11 +661,14 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-column: col-start 2 / col-end 11;
-  grid-gap: 6rem 0rem;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  grid-column: col-start 3/ col-end 10;
+  grid-gap: 3rem 3rem;
   min-height: 10vw;
-  margin: 8rem 0 12rem 0; }
+  margin: 2rem 0 12rem 0; }
+  @media (min-width: 112.5em) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); } }
   @media (max-width: 75em) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
@@ -839,9 +843,11 @@ footer {
   background-color: #f8f8f8;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  cursor: pointer; }
   .modal .image-container {
-    max-width: 45rem; }
+    max-width: 45rem;
+    cursor: default; }
     .modal .image-container img {
       height: 100%;
       width: 100%;
@@ -907,6 +913,17 @@ footer {
     transform: rotate(0deg); }
   .modal__checkbox:checked ~ .modal__button > .modal__icon::after {
     transform: rotate(0deg); }
+  .modal.open {
+    opacity: 1;
+    visibility: visible; }
+
+.featured {
+  display: grid;
+  grid-column: col-start 3 / col-end 10;
+  margin-top: 8rem; }
+  @media (max-width: 56.25em) {
+    .featured {
+      display: none; } }
 
 .contact {
   display: grid;
@@ -998,7 +1015,7 @@ footer {
 
 .img-container {
   position: relative;
-  grid-column: col-start 2/ col-end 7;
+  grid-column: col-start 3/ col-end 7;
   margin-top: 10rem; }
   @media (max-width: 56.25em) {
     .img-container {

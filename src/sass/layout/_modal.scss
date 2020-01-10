@@ -13,9 +13,12 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+    cursor: pointer;
+   
 
     & .image-container {
         max-width: 45rem;
+        cursor: default;
 
         img {
             height: 100%;
@@ -23,6 +26,8 @@
             border-radius: 0.3rem;
         }
     }
+
+  
 
     &__checkbox {
         display: none;
@@ -127,4 +132,9 @@
     //     opacity: 1;
     //     visibility: visible;
     // }
+    &.open{
+        opacity: 1;
+        visibility: visible;
+    }
 }
+

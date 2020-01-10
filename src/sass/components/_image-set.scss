@@ -1,6 +1,6 @@
 .image-set {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     animation: fadeIn 2.3s ease;
 
@@ -30,6 +30,7 @@
     }
 
     h5 {
+        font-size: 1.6rem;
         position: absolute;
         z-index: 3;
         top: 3rem;
