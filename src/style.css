@@ -307,11 +307,6 @@ body {
     background-color: rgba(0, 0, 0, 0.28);
     width: 100%;
     height: 100%; }
-  .image-set:hover .overlay {
-    opacity: 1; }
-  .image-set:hover h5 {
-    top: 2rem;
-    opacity: 1; }
   .image-set h5 {
     font-size: 1.6rem;
     position: absolute;
@@ -326,6 +321,15 @@ body {
     z-index: 1;
     width: 100%;
     border-radius: .2rem; }
+
+a:hover > .image-set .overlay,
+a:focus > .image-set .overlay {
+  opacity: 1; }
+
+a:hover > .image-set h5,
+a:focus > .image-set h5 {
+  top: 2rem;
+  opacity: 1; }
 
 .light-switch {
   position: fixed;
@@ -1017,9 +1021,9 @@ footer {
   position: relative;
   grid-column: col-start 3/ col-end 7;
   margin-top: 10rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .img-container {
-      margin-top: 4rem; } }
+      margin-right: 4rem; } }
   .img-container .image-set img {
     opacity: 0;
     position: absolute;

@@ -16,19 +16,6 @@
     }
     
 
-  &:hover .overlay{
-    
-        opacity: 1;
-
-    }
-
-
-    &:hover h5 {
-        top: 2rem;
-        opacity: 1;
-
-    }
-
     h5 {
         font-size: 1.6rem;
         position: absolute;
@@ -48,4 +35,13 @@
       
 
     }
+}
+
+a:hover > .image-set .overlay,
+a:focus > .image-set .overlay{  opacity: 1;}
+
+a:hover > .image-set h5,
+a:focus > .image-set h5 {
+        top: 2rem;
+        opacity: 1;
 }
