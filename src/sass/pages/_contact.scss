@@ -126,7 +126,7 @@
     }
 
     .form{
-        grid-column: col-start 7 / col-end 11;
+        grid-column: col-start 7 / col-end 10;
         margin: 12rem 0 3rem 0;
 
         @include respond(tab-land){
