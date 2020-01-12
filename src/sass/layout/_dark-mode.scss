@@ -13,6 +13,10 @@
     h6 {
         color: $white;
     }
+    ::selection{
+        color: $black;
+        background-color:white;
+    }
 
     & button.dark {
         border: 1px solid $white;

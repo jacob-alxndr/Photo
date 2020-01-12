@@ -86,6 +86,14 @@ html.open {
 main {
   display: block; }
 
+::-moz-selection {
+  color: #f8f8f8;
+  background-color: #1a1a1a; }
+
+::selection {
+  color: #f8f8f8;
+  background-color: #1a1a1a; }
+
 a {
   color: inherit;
   background-color: transparent;
@@ -727,6 +735,14 @@ footer {
 [data-theme="dark-mode"] h5,
 [data-theme="dark-mode"] h6 {
   color: #f8f8f8; }
+
+[data-theme="dark-mode"] ::-moz-selection {
+  color: #1a1a1a;
+  background-color: white; }
+
+[data-theme="dark-mode"] ::selection {
+  color: #1a1a1a;
+  background-color: white; }
 
 [data-theme="dark-mode"] button.dark {
   border: 1px solid #f8f8f8;
