@@ -891,7 +891,7 @@ footer {
   transition: all 0.5s;
   cursor: pointer; }
   .modal .image-container {
-    max-width: 45rem;
+    max-width: 50rem;
     cursor: default; }
     .modal .image-container img {
       height: 100%;

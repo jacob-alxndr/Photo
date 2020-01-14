@@ -25,7 +25,7 @@ if (elements.closeModal) {
     }
   };
 
-  const fluff = e => {
+  const bump = e => {
     if (e.keyCode === 37) {
       elements.prevEl.classList.add('fluff');
       console.log('true');
@@ -102,5 +102,5 @@ if (elements.closeModal) {
   elements.modal.addEventListener('click', removeModal);
   elements.closeModal.addEventListener('click', removeModal);
   window.addEventListener('keydown', removeModal);
-  window.addEventListener('keydown', fluff);
+  window.addEventListener('keydown', bump);
 }
