@@ -4,58 +4,6 @@ import { elements } from './DOMelements';
 
 // 2. Actions
 if (elements.closeModal) {
-  function selectImg(e) {
-    if (window.innerWidth >= 889) {
-      if (e.type === 'click') {
-        const { index } = e.target.dataset;
-
-        elements.modalCheck.checked = false;
-        elements.modal.classList.add('open');
-        elements.modalImg.src = e.target.src;
-
-        let num = 0;
-        const ar = Array.from(elements.imgs);
-        num = parseInt(index);
-        function prev(e) {
-          if (elements.modal.classList.contains('open')) {
-            if (e.keyCode === 37 || e.type === 'click') {
-              num -= 1;
-              if (num < 0) {
-                num = ar.length - 1;
-              }
-
-              elements.modalImg.src = ar[num].src;
-            }
-          }
-        }
-        function next(e) {
-          if (elements.modal.classList.contains('open')) {
-            if (e.keyCode === 39 || e.type === 'click') {
-              num += 1;
-              if (num >= ar.length) {
-                num = 0;
-              }
-
-              elements.modalImg.src = ar[num].src;
-            }
-          }
-        }
-        elements.prevEl.addEventListener('click', prev);
-        elements.nextEl.addEventListener('click', next);
-        window.addEventListener('keydown', next);
-        window.addEventListener('keydown', prev);
-      }
-      if (e.type === 'keydown') {
-        const ent = e.keyCode;
-        if (ent === 13) {
-          elements.modalCheck.checked = false;
-          elements.modal.classList.add('open');
-          elements.modalImg.src = e.target.querySelector('img').src;
-        }
-      }
-    }
-  }
-
   const removeModal = e => {
     if (elements.modal.classList.contains('open')) {
       if (e.type === 'click') {
@@ -77,8 +25,76 @@ if (elements.closeModal) {
     }
   };
 
+  const fluff = e => {
+    if (e.keyCode === 37) {
+      elements.prevEl.classList.add('fluff');
+      console.log('true');
+    } else if (e.keyCode === 39) {
+      elements.nextEl.classList.add('fluff');
+      console.log('true');
+    }
+  };
+
+  const removeAnimation = e => {
+    elements.prevEl.classList.remove('fluff');
+    elements.nextEl.classList.remove('fluff');
+    // console.log('3');
+  };
+
+  elements.prevEl.addEventListener('animationend', removeAnimation);
+  elements.nextEl.addEventListener('animationend', removeAnimation);
+
   // 3. Events
-  elements.imgs.forEach(img => {
+  elements.imgs.forEach((img, i) => {
+    function selectImg(e) {
+      if (window.innerWidth >= 889) {
+        if (e.type === 'click') {
+          elements.modalCheck.checked = false;
+          elements.modal.classList.add('open');
+          elements.modalImg.src = e.target.src;
+
+          const { imgs } = elements;
+
+          function prev(e) {
+            if (elements.modal.classList.contains('open')) {
+              if (e.keyCode === 37 || e.type === 'click') {
+                i -= 1;
+                if (i < 0) {
+                  i = imgs.length - 1;
+                }
+
+                elements.modalImg.src = imgs[i].src;
+              }
+            }
+          }
+          function next(e) {
+            if (elements.modal.classList.contains('open')) {
+              if (e.keyCode === 39 || e.type === 'click') {
+                i += 1;
+                if (i >= imgs.length) {
+                  i = 0;
+                }
+
+                elements.modalImg.src = imgs[i].src;
+              }
+            }
+          }
+          elements.prevEl.addEventListener('click', prev);
+          elements.nextEl.addEventListener('click', next);
+          window.addEventListener('keydown', next);
+          window.addEventListener('keydown', prev);
+        }
+        if (e.type === 'keydown') {
+          const ent = e.keyCode;
+          if (ent === 13) {
+            elements.modalCheck.checked = false;
+            elements.modal.classList.add('open');
+            elements.modalImg.src = e.target.querySelector('img').src;
+          }
+        }
+      }
+    }
+
     img.addEventListener('click', selectImg);
     img.closest('a').addEventListener('keydown', selectImg);
   });
@@ -86,4 +102,5 @@ if (elements.closeModal) {
   elements.modal.addEventListener('click', removeModal);
   elements.closeModal.addEventListener('click', removeModal);
   window.addEventListener('keydown', removeModal);
+  window.addEventListener('keydown', fluff);
 }

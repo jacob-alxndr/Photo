@@ -29,11 +29,17 @@
 
   .prev{
       margin-right: 4rem;
-      
+
+      &.fluff{
+          animation: fluffPrev .1s;
+      }
   }
 
   .next{
     margin-left: 4rem;
+    &.fluff{
+        animation: fluffNext .1s;
+    }
 }
 
     &__checkbox {

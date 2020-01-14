@@ -68,6 +68,38 @@
     width: 2.5rem;
     height: 2.5rem; } }
 
+@-webkit-keyframes fluffPrev {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-10px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes fluffPrev {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-10px); }
+  100% {
+    transform: translateX(0); } }
+
+@-webkit-keyframes fluffNext {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes fluffNext {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0); } }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -867,8 +899,14 @@ footer {
       border-radius: 0.3rem; }
   .modal .prev {
     margin-right: 4rem; }
+    .modal .prev.fluff {
+      -webkit-animation: fluffPrev .1s;
+              animation: fluffPrev .1s; }
   .modal .next {
     margin-left: 4rem; }
+    .modal .next.fluff {
+      -webkit-animation: fluffNext .1s;
+              animation: fluffNext .1s; }
   .modal__checkbox {
     display: none; }
   .modal__button {
