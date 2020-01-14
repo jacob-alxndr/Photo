@@ -865,6 +865,10 @@ footer {
       height: 100%;
       width: 100%;
       border-radius: 0.3rem; }
+  .modal .prev {
+    margin-right: 4rem; }
+  .modal .next {
+    margin-left: 4rem; }
   .modal__checkbox {
     display: none; }
   .modal__button {

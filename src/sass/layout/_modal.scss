@@ -27,7 +27,14 @@
         }
     }
 
-  
+  .prev{
+      margin-right: 4rem;
+      
+  }
+
+  .next{
+    margin-left: 4rem;
+}
 
     &__checkbox {
         display: none;

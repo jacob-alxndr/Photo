@@ -1,3 +1,4 @@
+/* eslint-disable no-inner-declarations */
 // 1. Selectors
 import { elements } from './DOMelements';
 
@@ -6,15 +7,46 @@ if (elements.closeModal) {
   function selectImg(e) {
     if (window.innerWidth >= 889) {
       if (e.type === 'click') {
-        const link = e.target.closest('a');
-        // link.preventDefault();
-        console.dir(e);
+        const { index } = e.target.dataset;
+
         elements.modalCheck.checked = false;
         elements.modal.classList.add('open');
         elements.modalImg.src = e.target.src;
-      } else if (e.type === 'keydown') {
+
+        let num = 0;
+        const ar = Array.from(elements.imgs);
+        num = parseInt(index);
+        function prev(e) {
+          if (elements.modal.classList.contains('open')) {
+            if (e.keyCode === 37 || e.type === 'click') {
+              num -= 1;
+              if (num < 0) {
+                num = ar.length - 1;
+              }
+
+              elements.modalImg.src = ar[num].src;
+            }
+          }
+        }
+        function next(e) {
+          if (elements.modal.classList.contains('open')) {
+            if (e.keyCode === 39 || e.type === 'click') {
+              num += 1;
+              if (num >= ar.length) {
+                num = 0;
+              }
+
+              elements.modalImg.src = ar[num].src;
+            }
+          }
+        }
+        elements.prevEl.addEventListener('click', prev);
+        elements.nextEl.addEventListener('click', next);
+        window.addEventListener('keydown', next);
+        window.addEventListener('keydown', prev);
+      }
+      if (e.type === 'keydown') {
         const ent = e.keyCode;
-        console.log(e.keyCode);
         if (ent === 13) {
           elements.modalCheck.checked = false;
           elements.modal.classList.add('open');
@@ -27,9 +59,12 @@ if (elements.closeModal) {
   const removeModal = e => {
     if (elements.modal.classList.contains('open')) {
       if (e.type === 'click') {
-        // console.log(e.target);
-
+        const prev = e.target === elements.prevEl;
+        const next = e.target === elements.nextEl;
         const isOutside = !e.target.closest('.image-container');
+        if (prev || next) {
+          return false;
+        }
         if (isOutside) {
           elements.modal.classList.remove('open');
         }
