@@ -170,8 +170,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background-color .5s; }
+  -moz-osx-font-smoothing: grayscale; }
 
 p,
 a,
