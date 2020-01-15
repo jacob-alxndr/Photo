@@ -68,7 +68,7 @@
     width: 2.5rem;
     height: 2.5rem; } }
 
-@-webkit-keyframes fluffPrev {
+@-webkit-keyframes shakePrev {
   0% {
     transform: translateX(0); }
   50% {
@@ -76,7 +76,7 @@
   100% {
     transform: translateX(0); } }
 
-@keyframes fluffPrev {
+@keyframes shakePrev {
   0% {
     transform: translateX(0); }
   50% {
@@ -84,7 +84,7 @@
   100% {
     transform: translateX(0); } }
 
-@-webkit-keyframes fluffNext {
+@-webkit-keyframes shakeNext {
   0% {
     transform: translateX(0); }
   50% {
@@ -92,7 +92,7 @@
   100% {
     transform: translateX(0); } }
 
-@keyframes fluffNext {
+@keyframes shakeNext {
   0% {
     transform: translateX(0); }
   50% {
@@ -238,7 +238,7 @@ h5 {
   line-height: 1.4; }
   @media (max-width: 75em) {
     h5 {
-      font-size: calc(2.4rem - 8px); } }
+      font-size: calc(2.4rem - 6px); } }
 
 h6 {
   font-size: 1.6rem;
@@ -723,7 +723,7 @@ footer {
       margin: 6rem 0; } }
   @media (max-width: 37.5em) {
     .gallery {
-      margin: 3rem 0; } }
+      margin: 2rem 0; } }
   .gallery-set {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -899,14 +899,14 @@ footer {
       border-radius: 0.3rem; }
   .modal .prev {
     margin-right: 4rem; }
-    .modal .prev.fluff {
-      -webkit-animation: fluffPrev .1s;
-              animation: fluffPrev .1s; }
+    .modal .prev.shake {
+      -webkit-animation: shakePrev .1s;
+              animation: shakePrev .1s; }
   .modal .next {
     margin-left: 4rem; }
-    .modal .next.fluff {
-      -webkit-animation: fluffNext .1s;
-              animation: fluffNext .1s; }
+    .modal .next.shake {
+      -webkit-animation: shakeNext .1s;
+              animation: shakeNext .1s; }
   .modal__checkbox {
     display: none; }
   .modal__button {
@@ -978,7 +978,10 @@ footer {
   margin-top: 8rem; }
   @media (max-width: 56.25em) {
     .featured {
-      display: none; } }
+      grid-column: col-start 1 / col-end 3; } }
+  @media (max-width: 37.5em) {
+    .featured {
+      margin-top: 4rem; } }
 
 .contact {
   display: grid;
@@ -1006,7 +1009,7 @@ footer {
       .contact .info .heading > *:not(:last-child) {
         margin-bottom: 1.6rem; }
     .contact .info p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-bottom: 2rem; }
       @media (max-width: 75em) {
         .contact .info p {

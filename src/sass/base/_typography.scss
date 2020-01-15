@@ -107,7 +107,7 @@ h5 {
     line-height: 1.4;
 
     @include respond(tab-land) {
-        font-size: calc(2.4rem - 8px);
+        font-size: calc(2.4rem - 6px);
     }
 }
 

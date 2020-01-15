@@ -25,72 +25,50 @@ if (elements.closeModal) {
     }
   };
 
-  const bump = e => {
-    if (e.keyCode === 37) {
-      elements.prevEl.classList.add('fluff');
-      console.log('true');
-    } else if (e.keyCode === 39) {
-      elements.nextEl.classList.add('fluff');
-      console.log('true');
+  const shakeAnimation = e => {
+    if (e.keyCode === 37 || e.target === elements.prevEl) {
+      elements.prevEl.classList.add('shake');
+    } else if (e.keyCode === 39 || e.target === elements.nextEl) {
+      elements.nextEl.classList.add('shake');
     }
   };
 
-  const removeAnimation = e => {
-    elements.prevEl.classList.remove('fluff');
-    elements.nextEl.classList.remove('fluff');
-    // console.log('3');
+  const removeAnimation = () => {
+    elements.prevEl.classList.remove('shake');
+    elements.nextEl.classList.remove('shake');
   };
-
-  elements.prevEl.addEventListener('animationend', removeAnimation);
-  elements.nextEl.addEventListener('animationend', removeAnimation);
 
   // 3. Events
   elements.imgs.forEach((img, i) => {
     function selectImg(e) {
       if (window.innerWidth >= 889) {
-        if (e.type === 'click') {
+        if (e.type === 'click' || e.keyCode === 13) {
           elements.modalCheck.checked = false;
           elements.modal.classList.add('open');
           elements.modalImg.src = e.target.src;
 
           const { imgs } = elements;
 
-          function prev(e) {
+          function slideShow(e) {
             if (elements.modal.classList.contains('open')) {
-              if (e.keyCode === 37 || e.type === 'click') {
+              if (e.keyCode === 37 || e.target === elements.prevEl) {
                 i -= 1;
                 if (i < 0) {
                   i = imgs.length - 1;
                 }
-
-                elements.modalImg.src = imgs[i].src;
-              }
-            }
-          }
-          function next(e) {
-            if (elements.modal.classList.contains('open')) {
-              if (e.keyCode === 39 || e.type === 'click') {
+              } else if (e.keyCode === 39 || e.target === elements.nextEl) {
                 i += 1;
                 if (i >= imgs.length) {
                   i = 0;
                 }
-
-                elements.modalImg.src = imgs[i].src;
               }
+
+              elements.modalImg.src = imgs[i].src;
             }
           }
-          elements.prevEl.addEventListener('click', prev);
-          elements.nextEl.addEventListener('click', next);
-          window.addEventListener('keydown', next);
-          window.addEventListener('keydown', prev);
-        }
-        if (e.type === 'keydown') {
-          const ent = e.keyCode;
-          if (ent === 13) {
-            elements.modalCheck.checked = false;
-            elements.modal.classList.add('open');
-            elements.modalImg.src = e.target.querySelector('img').src;
-          }
+
+          window.addEventListener('click', slideShow);
+          window.addEventListener('keydown', slideShow);
         }
       }
     }
@@ -100,7 +78,8 @@ if (elements.closeModal) {
   });
 
   elements.modal.addEventListener('click', removeModal);
-  elements.closeModal.addEventListener('click', removeModal);
   window.addEventListener('keydown', removeModal);
-  window.addEventListener('keydown', bump);
+  window.addEventListener('click', shakeAnimation);
+  window.addEventListener('keydown', shakeAnimation);
+  window.addEventListener('animationend', removeAnimation);
 }
