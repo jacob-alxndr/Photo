@@ -2,7 +2,6 @@
 import { elements } from './DOMelements';
 
 const currentTheme = localStorage.getItem('theme');
-console.log(currentTheme);
 
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);

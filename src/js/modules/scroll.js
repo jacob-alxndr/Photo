@@ -16,7 +16,7 @@ if (elements.gallerySet) {
       const bottomTag = image.getBoundingClientRect().bottom;
       // && bottomTag > 0
       if (topTag < window.innerHeight) {
-        image.style.animation = `fadeIn .8s ${delay}s both`;
+        image.style.animation = `fadeIn .5s ${delay}s both`;
         delay += 0.1;
         image.style.opacity = 1;
       }

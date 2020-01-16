@@ -100,6 +100,18 @@
   100% {
     transform: translateX(0); } }
 
+@-webkit-keyframes fadeOutAndIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeOutAndIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -336,8 +348,8 @@ body {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  -webkit-animation: fadeIn 2.3s ease;
-          animation: fadeIn 2.3s ease; }
+  -webkit-animation: fadeIn 0s;
+          animation: fadeIn 0s; }
   .image-set .overlay {
     opacity: 0;
     transition: all .3s ease;
@@ -890,8 +902,10 @@ footer {
   transition: all 0.5s;
   cursor: pointer; }
   .modal .image-container {
+    transform: translateX(0px);
     max-width: 50rem;
-    cursor: default; }
+    cursor: default;
+    transition: all .3s; }
     .modal .image-container img {
       height: 100%;
       width: 100%;

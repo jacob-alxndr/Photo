@@ -17,13 +17,17 @@
    
 
     & .image-container {
+        transform: translateX(0px);
         max-width: 50rem;
         cursor: default;
+      
+        transition: all .3s;
 
         img {
             height: 100%;
             width: 100%;
             border-radius: 0.3rem;
+         
         }
     }
 
@@ -148,6 +152,15 @@
     &.open{
         opacity: 1;
         visibility: visible;
+
+        // & .image-container .clicked {
+        //     // transform: translateX(100px);
+        //     animation: fadeOutAndIn 1.5s;
+        // }
+
+
     }
+
+
 }
 
