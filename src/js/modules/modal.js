@@ -1,11 +1,11 @@
 /* eslint-disable no-inner-declarations */
-// 1. Selectors
 import { elements } from './DOMelements';
 
-// 2. Actions
 if (elements.closeModal) {
+  // 1. Selectors
   let index;
-
+  const keyCode = { esc: 27, leftAr: 37, rightAr: 39, ent: 13 };
+  // 2. Actions
   const removeModal = e => {
     if (elements.modal.classList.contains('open')) {
       if (e.type === 'click') {
@@ -18,7 +18,7 @@ if (elements.closeModal) {
         }
       } else if (e.type === 'keydown') {
         const escKey = e.keyCode;
-        if (escKey === 27) {
+        if (escKey === keyCode.esc) {
           elements.modal.classList.remove('open');
         }
       }
@@ -26,9 +26,9 @@ if (elements.closeModal) {
   };
 
   const shakeAnimation = e => {
-    if (e.keyCode === 37 || e.target === elements.prevEl) {
+    if (e.keyCode === keyCode.leftAr || e.target === elements.prevEl) {
       elements.prevEl.classList.add('shake');
-    } else if (e.keyCode === 39 || e.target === elements.nextEl) {
+    } else if (e.keyCode === keyCode.rightAr || e.target === elements.nextEl) {
       elements.nextEl.classList.add('shake');
     }
   };
@@ -42,6 +42,7 @@ if (elements.closeModal) {
     const { imgs } = elements;
     const prev = () => {
       index -= 1;
+
       if (index < 0) {
         index = imgs.length - 1;
       }
@@ -53,9 +54,12 @@ if (elements.closeModal) {
       }
     };
     if (elements.modal.classList.contains('open')) {
-      if (e.keyCode === 37 || e.target === elements.prevEl) {
+      if (e.keyCode === keyCode.leftAr || e.target === elements.prevEl) {
         prev();
-      } else if (e.keyCode === 39 || e.target === elements.nextEl) {
+      } else if (
+        e.keyCode === keyCode.rightAr ||
+        e.target === elements.nextEl
+      ) {
         next();
       }
 
@@ -67,7 +71,7 @@ if (elements.closeModal) {
   elements.imgs.forEach((img, i) => {
     function openModal(e) {
       if (window.innerWidth >= 889) {
-        if (e.type === 'click' || e.keyCode === 13) {
+        if (e.type === 'click' || e.keyCode === keyCode.ent) {
           elements.modalCheck.checked = false;
           elements.modal.classList.add('open');
           elements.modalImg.src = e.target.src;
@@ -85,8 +89,8 @@ if (elements.closeModal) {
   elements.nextEl.addEventListener('animationend', removeAnimation);
   elements.modal.addEventListener('click', removeModal);
   window.addEventListener('keydown', removeModal);
-  window.addEventListener('click', shakeAnimation);
-  window.addEventListener('keydown', shakeAnimation);
   window.addEventListener('click', slideShow);
   window.addEventListener('keydown', slideShow);
+  window.addEventListener('click', shakeAnimation);
+  window.addEventListener('keydown', shakeAnimation);
 }

@@ -1091,6 +1091,9 @@ footer {
   @media (max-width: 75em) {
     .img-container {
       margin-right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .img-container {
+      display: none; } }
   .img-container .image-set img {
     opacity: 0;
     position: absolute;

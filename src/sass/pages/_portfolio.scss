@@ -9,6 +9,12 @@
       
     }
 
+    @include respond(phone) {
+        display: none;
+        // margin-top: 0rem;
+      
+    }
+
 
 
     & .image-set img {
