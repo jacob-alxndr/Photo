@@ -12,7 +12,7 @@
     background-color: $white;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s;
+    transition: all 0.3s;
     cursor: pointer;
    
 
@@ -54,11 +54,14 @@
         // display: none;
         z-index: 10;
         position: absolute;
-        top: 10%;
-        right: 5%;
+        top: 3%;
+        right: 4%;
         height: 3.5rem;
         width: 3.5rem;
+        border-radius: 50%;
+        background-color:$white;
         cursor: pointer;
+
 
         @include respond(tab-port) {
             display: block;
@@ -96,11 +99,12 @@
         &::before {
             content: '';
             position: absolute;
-            top: 50%;
+            top: 48%;
+            left:19%;
             transform-origin: center;
             transform: rotate(225deg);
             display: block;
-            width: 3rem;
+            width: 2.2rem;
             height: 0.2rem;
             background-color: $black;
             transition: all 0.3s ease-in-out;
@@ -113,12 +117,13 @@
         &::after {
             content: '';
             position: absolute;
-            top: 50%;
+            top: 48%;
+            left:19%;
             transform-origin: center;
             transform: rotate(-45deg);
             display: block;
             height: 0.2rem;
-            width: 3rem;
+            width: 2.2rem;
             background-color: $black;
             transition: all 0.3s ease-in-out;
 

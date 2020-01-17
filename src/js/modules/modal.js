@@ -11,8 +11,7 @@ if (elements.closeModal) {
       if (e.type === 'click') {
         const notPrevBtn = e.target !== elements.prevEl;
         const notNextBtn = e.target !== elements.nextEl;
-        const isOutside =
-          !e.target.closest('.image-container') && notPrevBtn && notNextBtn;
+        const isOutside = !e.target.closest('img') && notPrevBtn && notNextBtn;
         if (isOutside) {
           elements.modal.classList.remove('open');
         }
@@ -21,6 +20,8 @@ if (elements.closeModal) {
         if (escKey === keyCode.esc) {
           elements.modal.classList.remove('open');
         }
+      } else if (e.type === 'scroll') {
+        elements.modal.classList.remove('open');
       }
     }
   };
@@ -87,10 +88,12 @@ if (elements.closeModal) {
 
   elements.prevEl.addEventListener('animationend', removeAnimation);
   elements.nextEl.addEventListener('animationend', removeAnimation);
+  elements.closeModal.addEventListener('click', removeModal);
   elements.modal.addEventListener('click', removeModal);
   window.addEventListener('keydown', removeModal);
   window.addEventListener('click', slideShow);
   window.addEventListener('keydown', slideShow);
   window.addEventListener('click', shakeAnimation);
   window.addEventListener('keydown', shakeAnimation);
+  window.addEventListener('scroll', removeModal);
 }

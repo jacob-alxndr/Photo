@@ -117,11 +117,11 @@ h6 {
     line-height: 1.4;
 
     @include respond(tab-land) {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     @include respond(tab-port) {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
 }

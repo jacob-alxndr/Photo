@@ -11,7 +11,7 @@
     // animation: fadeDown 1.3s ease;
 
     @include respond(tab-port) {
-        grid-column: col-start 2 /col-end 11;
+        // grid-column: col-start 2 /col-end 11;
         // align-items: center;
     }
 
@@ -20,7 +20,7 @@
         align-items: center;
         max-height: 6rem;
         margin-top: 3rem;
-        grid-column: col-start 1 /col-end 12;
+        // grid-column: col-start 1 /col-end 12;
         // flex-direction: column;
 
     }
