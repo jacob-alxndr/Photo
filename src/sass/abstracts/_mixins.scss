@@ -63,7 +63,7 @@
 
 //STYLE
 @mixin boxShadow {
-	box-shadow: 0 1.5rem 5rem rgba(red, .2);
+	box-shadow: 0 1.2rem 2rem rgba(rgb(20, 20, 20), .05);
 }
 
 @mixin gradientText {

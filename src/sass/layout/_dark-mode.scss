@@ -101,7 +101,7 @@
     .modal {
         background-color: $black;
         &__button{
-            background-color: $black;
+            background-color: transparent;
         }
 
         &__icon::before,

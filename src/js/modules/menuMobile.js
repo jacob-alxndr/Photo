@@ -13,6 +13,7 @@ const menuFadeIn = () => {
   if (elements.navToggle.checked) {
     elements.menuPopup.style.opacity = 1;
     elements.menuPopup.style.visibility = 'visible';
+    elements.menuPopup.style.zIndex = 5;
     elements.htmlTag.style.height = `${height}px`;
     elements.htmlTag.classList.add('open');
 

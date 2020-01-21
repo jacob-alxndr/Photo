@@ -13,7 +13,7 @@ if (elements.gallerySet) {
     let delay = 0.1;
     images.forEach(image => {
       const topTag = image.getBoundingClientRect().top;
-      const bottomTag = image.getBoundingClientRect().bottom;
+      // const bottomTag = image.getBoundingClientRect().bottom;
       // && bottomTag > 0
       if (topTag < window.innerHeight) {
         image.style.animation = `fadeIn .5s ${delay}s both`;
