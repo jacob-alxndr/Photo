@@ -354,6 +354,9 @@ body {
   .image-set:hover {
     transform: translateY(-10px) scale(1.01);
     box-shadow: 0 1.2rem 2rem rgba(20, 20, 20, 0.05); }
+    @media (max-width: 37.5em) {
+      .image-set:hover {
+        transform: translateY(0px) scale(1); } }
   .image-set .overlay {
     opacity: 0;
     transition: all .3s ease;
@@ -385,6 +388,9 @@ a:focus > .image-set .overlay {
 a:focus > .image-set {
   transform: translateY(-10px) scale(1.01);
   box-shadow: 0 1.2rem 2rem rgba(20, 20, 20, 0.05); }
+  @media (max-width: 37.5em) {
+    a:focus > .image-set {
+      transform: translateY(0px) scale(1); } }
 
 a:hover > .image-set h5,
 a:focus > .image-set h5 {
