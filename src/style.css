@@ -1023,6 +1023,11 @@ footer {
     grid-column: col-start 2 / col-end 5;
     grid-gap: 0rem 2rem;
     margin: 12rem 0 3rem 0; }
+    .contact .info .social__item a {
+      border-bottom: 1px solid transparent;
+      transition: border-bottom .2s ease; }
+      .contact .info .social__item a:hover {
+        border-bottom: 1px solid #1a1a1a; }
     @media (max-width: 75em) {
       .contact .info {
         grid-column: col-start 3 / col-end 10;

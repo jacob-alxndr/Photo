@@ -18,6 +18,15 @@
         //     grid-column: col-start 3 / col-end 10;
         // }
 
+        .social__item a{
+             border-bottom: 1px solid transparent;
+             transition: border-bottom .2s ease;
+             
+            &:hover {
+                border-bottom: 1px solid $black;
+            }
+        }
+
         @include respond(tab-land){
             grid-column: col-start 3 / col-end 10;
             margin: 12rem 0 2rem 0;
@@ -88,7 +97,11 @@
             justify-content: space-between;
             flex-direction: row-reverse;
             // grid-column: col-start 4 / col-end 5;
+
+           
         }
+
+    
 
         img {
             position: relative;
