@@ -382,6 +382,10 @@ a:hover > .image-set .overlay,
 a:focus > .image-set .overlay {
   opacity: 1; }
 
+a:focus > .image-set {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 1.2rem 2rem rgba(20, 20, 20, 0.05); }
+
 a:hover > .image-set h5,
 a:focus > .image-set h5 {
   top: 2rem;
@@ -486,7 +490,7 @@ a:focus > .image-set h5 {
   @media (max-width: 37.5em) {
     .prevNext {
       grid-column: col-start 1/col-end 12;
-      margin: 1rem 0; } }
+      margin: 1rem 0 3.5rem 0; } }
   .prevNext a {
     position: relative; }
     .prevNext a:hover span {
@@ -1083,7 +1087,7 @@ footer {
     @media (max-width: 75em) {
       .contact .form {
         grid-column: col-start 3 / col-end 10;
-        margin: 0 0 2rem 0; } }
+        margin: 1rem 0 8rem 0; } }
     @media (max-width: 56.25em) {
       .contact .form {
         grid-column: col-start 1 / col-end 12; } }

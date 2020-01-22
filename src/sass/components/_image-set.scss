@@ -50,6 +50,15 @@
 a:hover > .image-set .overlay,
 a:focus > .image-set .overlay{  opacity: 1;}
 
+a:focus  > .image-set {
+
+    transform: translateY(-10px) scale(1.01);
+    // box-shadow: rgba(0, 0, 0, 0.28);
+    @include boxShadow;
+
+}
+
+
 a:hover > .image-set h5,
 a:focus > .image-set h5 {
         top: 2rem;
