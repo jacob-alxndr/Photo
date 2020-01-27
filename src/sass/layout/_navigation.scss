@@ -14,7 +14,7 @@
     }
 
     &:hover .navigation__link {
-        color: $gray-7;
+        color: $gray-2;
     }
 
     &__button {
@@ -45,7 +45,7 @@
         display: none;
         width: 3rem;
         height: .2rem;
-        background-color: $black;
+        background-color: $white;
         transform: translate(-50%, -50%);
         transition: all .3s ease-in-out;
 
@@ -64,7 +64,7 @@
             display: block;
             width: 3rem;
             height: .2rem;
-            background-color: $black;
+            background-color: $white;
             transition: all .3s ease-in-out;
 
             // &:hover{
@@ -84,7 +84,7 @@
             display: block;
             height: .2rem;
             width: 3rem;
-            background-color: $black;
+            background-color: $white;
             transition: all .3s ease-in-out;
 
             // &:hover{
@@ -143,7 +143,7 @@
             border-bottom: 1px solid transparent;
 
             &:hover {
-                color: $black;
+                color: $white;
             }
 
             &--checked {

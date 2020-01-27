@@ -7,7 +7,7 @@
     margin: 2rem 0 12rem 0;
 
     @include respond(desktop) {
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
         grid-column: col-start 4/ col-end 9;
     }
 

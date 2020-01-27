@@ -23,7 +23,7 @@
              transition: border-bottom .2s ease;
              
             &:hover {
-                border-bottom: 1px solid $black;
+                border-bottom: 1px solid $white;
             }
         }
 
@@ -127,7 +127,7 @@
             }
             cursor: pointer;
             path{
-                fill: $black;
+                fill: $white;
                 transform-origin: center;
                 transform: rotate(180deg);
      

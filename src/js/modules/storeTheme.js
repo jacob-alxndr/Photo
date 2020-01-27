@@ -15,11 +15,11 @@ function switchTheme(e) {
   if (e.target.checked) {
     elements.htmlTag.setAttribute('data-theme', 'dark-mode');
     localStorage.setItem('theme', 'dark-mode');
-    elements.switchText.innerHTML = 'light mode';
+    elements.switchText.innerHTML = 'dark theme';
   } else {
     elements.htmlTag.setAttribute('data-theme', 'light-mode');
     localStorage.setItem('theme', 'light-mode');
-    elements.switchText.innerHTML = 'dark mode';
+    elements.switchText.innerHTML = 'light theme';
   }
 }
 

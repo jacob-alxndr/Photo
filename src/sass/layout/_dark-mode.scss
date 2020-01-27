@@ -1,6 +1,6 @@
 [data-theme="dark-mode"] {
     & body {
-        background-color: $black;
+        background-color: $white;
     }
 
     & p,
@@ -11,43 +11,49 @@
     h4,
     h5,
     h6 {
-        color: $white;
+        color: $black;
     }
     ::selection{
-        color: $black;
-        background-color:white;
+        color: $white;
+        background-color:$black;
     }
 
     & button.dark {
-        border: 1px solid $white;
-        color: $white;
-        background-color: $black;
+        border: 1px solid $black;
+        color: $black;
+        background-color: $white;
 
         &:hover {
-            border: 1px solid $white;
-            background-color: $white;
-            color: $black;
+            border: 1px solid $black;
+            background-color: $black;
+            color: $white;
         }
     }
 
     path {
-        fill: $white;
+        fill: $black;
+    }
+
+    .image-set{
+        h5{
+            color: $white;
+        }
     }
 
     .connect .social__list path {
-        fill: $white;
+        fill: $black;
     }
 
     & .menu-full {
-        background-color: $black;
+        background-color: $white;
     }
 
     .light-switch-toggle-ui {
 
-        background-color: $white;
-        border: 2px solid $white;
+        background-color: $black;
+        border: 2px solid $black;
         span{
-          color:$white;
+          color:$black;
        
         }
 
@@ -55,7 +61,7 @@
 
     .light-switch-toggle-ui--right {
         // width: 60%;
-        background-color: $black;
+        background-color: $white;
         // border: 2px solid  $white;
         left: 20%;
     }
@@ -67,23 +73,27 @@
 
     & .navigation__item {
         & .navigation__link--checked {
-            border-bottom: 1px solid $white;
+            border-bottom: 1px solid $black;
         }
 
         &:hover {
             .navigation__link {
-                color: $white;
+                color: $black;
             }
         }
     }
 
     & .navigation__icon {
-        background-color: $white;
+        background-color: $black;
 
         &::before,
         &::after {
-            background-color: $white;
+            background-color: $black;
         }
+    }
+
+    .menu-full__list:hover .menu__link {
+        color: $gray-2;
     }
 
     & .menu__list:hover .menu__link {
@@ -93,51 +103,51 @@
     & .menu__item {
         &:hover {
             .menu__link {
-                color: $white;
+                color: $black;
             }
         }
     }
 
     .modal {
-        background-color: $black;
+        background-color: $white;
         &__button{
             background-color: transparent;
         }
 
         &__icon::before,
         &__icon::after {
-            background-color: $white;
+            background-color: $black;
         }
     }
 
     .form {
 
         &__input {
-            color: $white;
-            border: 1px solid $white;
+            color: $black;
+            border: 1px solid $black;
 
             &--textarea {
-                border: 1px solid $white;
+                border: 1px solid $black;
             }
         }
 
         &__input::-webkit-input-placeholder {
-            color: rgb(235, 235, 235);
+            color: $black;
         }
 
         &__input::-moz-placeholder {
             /* Firefox 19+ */
-            color: rgb(235, 235, 235);
+            color: $black;
         }
 
         &__input::-ms-input-placeholder {
             /* IE 10+ */
-            color: rgb(235, 235, 235);
+            color: $black;
         }
 
         &__input::-moz-placeholder {
             /* Firefox 18- */
-            color: rgb(235, 235, 235);
+            color: $black;
         }
 
         &__input:focus {
@@ -145,7 +155,7 @@
             border-bottom: 1px solid rgb(74, 74, 255);
 
             &--textarea {
-                border: 1px solid $white;
+                border: 1px solid $black;
             }
         }
 
@@ -153,13 +163,13 @@
             border-bottom: 1px solid orangered;
 
             &--textarea {
-                border: 1px solid $white;
+                border: 1px solid $black;
             }
         }
 
         &__label {
 
-            color: $white;
+            color: $black;
 
         }
 
@@ -170,13 +180,13 @@
     .prevNext {
         span {
             &:hover {
-                border-bottom: 1px solid $white;
+                border-bottom: 1px solid $black;
             }
         }
 
         [class^='arrow'] {
             path {
-                fill: $white;
+                fill: $black;
             }
         }
     }
@@ -186,11 +196,11 @@
     }
 
     footer span {
-        color: $white;
+        color: $black;
     }
 
     .thankyou a {
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid $black;
     }
 
 
