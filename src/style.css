@@ -307,13 +307,13 @@ body {
   .form__input {
     display: block;
     width: 100%;
-    padding: 1.2rem 2.2rem .5rem 1.2rem;
+    padding: 1.2rem 2.2rem 0.5rem 1.2rem;
     border: none;
     border: 1px solid #f8f8f8;
     background-color: transparent;
     font-family: inherit;
     font-size: 1.2rem;
-    color: #1a1a1a; }
+    color: #f8f8f8; }
     @media (max-width: 56.25em) {
       .form__input {
         width: 100%; } }
@@ -347,12 +347,12 @@ body {
             backface-visibility: hidden;
     display: block;
     transform: translate(-5.5rem, -3rem);
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-left: 1.2rem;
     opacity: 0;
     color: #f8f8f8;
     font-size: 1.2rem;
-    transition: all .3s ease; }
+    transition: all 0.3s ease; }
   .form__input:placeholder-shown + .form__label {
     opacity: 0;
     visibility: hidden; }
@@ -740,14 +740,14 @@ footer {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-  grid-column: col-start 3/ col-end 10;
+  grid-column: col-start 3 / col-end 10;
   grid-gap: 3rem 3rem;
   min-height: 10vw;
   margin: 2rem 0 12rem 0; }
   @media (min-width: 112.5em) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-      grid-column: col-start 4/ col-end 9; } }
+      grid-column: col-start 4 / col-end 9; } }
   @media (max-width: 75em) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
