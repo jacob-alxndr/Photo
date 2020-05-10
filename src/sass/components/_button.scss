@@ -5,12 +5,12 @@ button {
 	color: $black;
 	background-color: $white;
 	border: 1px solid $black;
-	letter-spacing: .091em;
+	letter-spacing: 0.091em;
 	line-height: 1em;
 	text-align: center;
 	white-space: nowrap;
 	outline: none;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 	cursor: pointer;
 
 	&:hover {

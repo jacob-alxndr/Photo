@@ -13,9 +13,9 @@
     h6 {
         color: $black;
     }
-    ::selection{
+    ::selection {
         color: $white;
-        background-color:$black;
+        background-color: $black;
     }
 
     & button.dark {
@@ -34,8 +34,8 @@
         fill: $black;
     }
 
-    .image-set{
-        h5{
+    .image-set {
+        h5 {
             color: $white;
         }
     }
@@ -49,14 +49,11 @@
     }
 
     .light-switch-toggle-ui {
-
         background-color: $black;
         border: 2px solid $black;
-        span{
-          color:$black;
-       
+        span {
+            color: $black;
         }
-
     }
 
     .light-switch-toggle-ui--right {
@@ -65,7 +62,6 @@
         // border: 2px solid  $white;
         left: 20%;
     }
-
 
     & .navigation:hover .navigation__link {
         color: $gray-2;
@@ -93,11 +89,11 @@
     }
 
     .menu-full__list:hover .menu__link {
-        color: $gray-2;
+        color: $gray-1;
     }
 
     & .menu__list:hover .menu__link {
-        color: $gray-2;
+        color: $gray-7;
     }
 
     & .menu__item {
@@ -110,7 +106,7 @@
 
     .modal {
         background-color: $white;
-        &__button{
+        &__button {
             background-color: transparent;
         }
 
@@ -121,7 +117,6 @@
     }
 
     .form {
-
         &__input {
             color: $black;
             border: 1px solid $black;
@@ -151,7 +146,6 @@
         }
 
         &__input:focus {
-
             border-bottom: 1px solid rgb(74, 74, 255);
 
             &--textarea {
@@ -168,13 +162,11 @@
         }
 
         &__label {
-
             color: $black;
-
         }
 
-        &__input:placeholder-shown+&__label {}
-
+        &__input:placeholder-shown + &__label {
+        }
     }
 
     .prevNext {
@@ -184,7 +176,7 @@
             }
         }
 
-        [class^='arrow'] {
+        [class^="arrow"] {
             path {
                 fill: $black;
             }
@@ -202,6 +194,4 @@
     .thankyou a {
         border-bottom: 1px solid $black;
     }
-
-
 }

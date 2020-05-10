@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400");
 
 @font-face {
-    src: url(./fonts/Agrandir/Agrandir-regular.otf);
+    src: url(../fonts/Agrandir/Agrandir-regular.otf);
     font-family: "Agrandir";
     font-weight: 400;
-
 }
 
 body {
@@ -29,20 +28,17 @@ h5,
 h6 {
     font-family: "Agrandir";
     font-weight: 400;
-    transition: color .2s;
+    transition: color 0.2s;
 }
 
 a button {
     font-size: 1.4rem;
 }
 
-
-
 //HEADINGS
 %heading {
     font-family: "Agrandir";
     font-weight: 400;
-
 }
 
 h1 {
@@ -123,5 +119,4 @@ h6 {
     @include respond(tab-port) {
         font-size: 1.4rem;
     }
-
 }

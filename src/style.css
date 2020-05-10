@@ -184,7 +184,7 @@ body.open {
   -webkit-overflow-scrolling: touch; }
 
 @font-face {
-  src: url(./fonts/Agrandir/Agrandir-regular.otf);
+  src: url(../fonts/Agrandir/Agrandir-regular.otf);
   font-family: "Agrandir";
   font-weight: 400; }
 
@@ -208,7 +208,7 @@ h5,
 h6 {
   font-family: "Agrandir";
   font-weight: 400;
-  transition: color .2s; }
+  transition: color 0.2s; }
 
 a button {
   font-size: 1.4rem; }
@@ -281,12 +281,12 @@ button {
   color: #1a1a1a;
   background-color: #f8f8f8;
   border: 1px solid #1a1a1a;
-  letter-spacing: .091em;
+  letter-spacing: 0.091em;
   line-height: 1em;
   text-align: center;
   white-space: nowrap;
   outline: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   cursor: pointer; }
   button:hover {
     border: 1px solid #1a1a1a;
@@ -418,7 +418,7 @@ a:focus > .image-set h5 {
   transform: translate(-50%, -50%);
   width: 2.5rem;
   height: 2.5rem;
-  transition: all .5s; }
+  transition: all 0.5s; }
   @media (max-width: 56.25em) {
     .light-switch {
       display: none; } }
@@ -437,7 +437,7 @@ a:focus > .image-set h5 {
   border: 2px solid #f8f8f8;
   border-radius: 50%;
   background-color: #1a1a1a;
-  transition: all .5s; }
+  transition: all 0.5s; }
 
 .light-switch-toggle-ui {
   position: absolute;
@@ -452,12 +452,12 @@ a:focus > .image-set h5 {
   border-radius: 2rem;
   background-color: #f8f8f8;
   box-shadow: 6px 8px 16px -7px rgba(0, 0, 0, 0.6);
-  transition: all .5s;
+  transition: all 0.5s;
   cursor: pointer; }
   .light-switch-toggle-ui span {
     white-space: nowrap;
     position: absolute;
-    transition: all .2s;
+    transition: all 0.2s;
     font-size: xx-small;
     top: 0;
     left: 0;
@@ -479,9 +479,8 @@ a:focus > .image-set h5 {
   height: 1.5rem;
   border-radius: 50%;
   background-color: #1a1a1a;
-  transition: all .5s;
-  cursor: pointer;
-  box-shadow: 13rem 4.5rem 5rem rgba(212, 21, 21, 0.2); }
+  transition: all 0.1s ease-out;
+  cursor: pointer; }
 
 .light-switch-toggle-ui.active {
   background-color: #1a1a1a;
@@ -856,10 +855,10 @@ footer {
     background-color: #1a1a1a; }
 
 [data-theme="dark-mode"] .menu-full__list:hover .menu__link {
-  color: #404040; }
+  color: #262626; }
 
 [data-theme="dark-mode"] .menu__list:hover .menu__link {
-  color: #404040; }
+  color: #CCCCCC; }
 
 [data-theme="dark-mode"] .menu__item:hover .menu__link {
   color: #1a1a1a; }
@@ -908,7 +907,7 @@ footer {
 [data-theme="dark-mode"] .prevNext span:hover {
   border-bottom: 1px solid #1a1a1a; }
 
-[data-theme="dark-mode"] .prevNext [class^='arrow'] path {
+[data-theme="dark-mode"] .prevNext [class^="arrow"] path {
   fill: #1a1a1a; }
 
 [data-theme="dark-mode"] footer span {

@@ -1,11 +1,11 @@
 // Require all the needed components
-let gulp = require('gulp');
-let sass = require('gulp-sass');
-let cleanCss = require('gulp-clean-css');
-let sourcemaps = require('gulp-sourcemaps');
-let browserSync = require('browser-sync');
-let webpack = require('webpack-stream');
-let autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const cleanCss = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
+const browserSync = require('browser-sync');
+const webpack = require('webpack-stream');
+const autoprefixer = require('gulp-autoprefixer');
 sass.compiler = require('node-sass');
 
 // Run Sass through cleanCss and output to dist folder
